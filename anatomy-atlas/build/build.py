@@ -70,4 +70,6 @@ body = [
      "ids": [i for i in sysids("nervous") if i not in used and i not in elements("brain")], "keep": 0.1},
 ] + organ_groups
 write_scene("body", body)
+# the female body starts from exactly these groups (build8.py)
+(OUT / "body-groups.json").write_text(json.dumps(body))
 

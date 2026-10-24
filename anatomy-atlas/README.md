@@ -1,6 +1,6 @@
 # Anatomy Atlas (design demo)
 
-An interactive 3D atlas for students learning organs and bones, with a male and a female body (DECISIONS D12, D36, D38). The whole body opens first, with a
+An interactive 3D atlas for students learning organs and bones, with a male and a female body. The female body is the same reference body with a female pelvic region (DECISIONS D12, D36, D38). The whole body opens first, with a
 switch between **Organs** and **Bones** so only one kind is clickable at a time. Organs and bone
 regions marked "Workstation" open a study view with the structure in its body region, labels with
 leader lines, section cuts, an exploded view, see-through and vessel views (organs), an orientation
@@ -93,7 +93,7 @@ from the npm package, which was checked to match the official tables exactly. `a
 5. `build2.py`: heart (with great vessels cut short near the heart) and thorax context.
 6. `build4.py`: liver/gallbladder/pancreas, digestive tract, urinary system, and abdomen context.
 7. `build7.py`: male reproductive organs and the pelvis context.
-8. `build8.py`: female body, female reproductive organs and female pelvis (Human Reference Atlas; `glb.py` reads the files).
+8. `build8.py`: female body (the male body with the Visible Human Female pelvic region fitted in; writes `female-fit.json`), female reproductive organs and female pelvis (Human Reference Atlas; `glb.py` reads the files).
 9. `content_*.py`: quoted text, the mapping from each mesh to a passage, the guided tours, and the Sources page data.
 
 Organ and bone workstation meshes are simplified only as far as keeps every original vertex within 1 mm (`common.py`).

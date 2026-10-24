@@ -71,13 +71,14 @@ if VER:
             "The 3D geometry is read straight from the official archive (isa_BP3D_4.0_obj_99.zip). In every organ and bone workstation, every vertex of the original lies within "
             f"{max(v['max_mm'] for v in g.values()):.1f} mm of what you see.",
             "The data errors listed in each organ's Notes tab (two misplaced lung arteries, two brain structures named for the wrong side) are present in the official archive itself.",
-            f"Female body: every Human Reference Atlas model used has a CC BY 4.0 licence and a DOI in its own metadata. In the female reproductive "
+            f"Female body: the reference body with the Visible Human Female pelvic region fitted in (see Human Reference Atlas below). Every Human Reference Atlas model used has a CC BY 4.0 licence and a DOI in its own metadata. In the female reproductive "
             f"and pelvis workstations, every vertex of the original lies within {max(v['max_mm'] for v in h.values() if isinstance(v, dict) and 'max_mm' in v):.1f} mm "
             f"of what you see (files pinned by SHA-256, ccf-releases commit {h['commit'][:7]}).",
             "The official archive has five pairs of meshes with the same FMA ID and identical geometry (hyoid bone FJ2772/FJ3201, cricoid cartilage FJ2440/FJ2769, celiac artery FJ1846/FJ2013, hepatic artery FJ1916/FJ2386 and FJ1924/FJ2394). Only the first mesh of each pair is shown.",
         ]}
 if os.path.exists(f"{OUT}/hra-sources.json"):  # female body: Human Reference Atlas files actually used (written by build8.py)
     data["hra"] = json.load(open(f"{OUT}/hra-sources.json"))
+    data["femaleFit"] = json.load(open(f"{OUT}/female-fit.json"))
 if XCHECK:
     data["crosscheck"] = json.load(open(XCHECK))
 json.dump(data, open(f"{OUT}/sources.json", "w"), indent=1)

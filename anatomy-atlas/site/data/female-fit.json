@@ -1,0 +1,85 @@
+{
+ "rotationDeg": 6.5,
+ "translationM": [
+  0.0134,
+  0.0755,
+  -0.0431
+ ],
+ "pelvisSurfaceGapMm": {
+  "median": 8.2,
+  "p90": 16.4
+ },
+ "hipJointOffsetMm": {
+  "left": 15.3,
+  "right": 21.5
+ },
+ "skinTrianglesRemoved": 12244,
+ "skinCutBoxM": [
+  [
+   -0.041999999433755875,
+   0.7580000162124634,
+   -0.04500000178813934
+  ],
+  [
+   0.04100000113248825,
+   0.8769999742507935,
+   0.11100000143051147
+  ]
+ ],
+ "removedFromMaleBody": [
+  "Corpus cavernosum of penis",
+  "Corpus spongiosum of penis",
+  "Deep dorsal vein of penis",
+  "Glans penis",
+  "Left deferent duct",
+  "Left dorsal artery of penis",
+  "Left epididymis",
+  "Left hip bone",
+  "Left seminal vesicle",
+  "Left superficial dorsal vein of penis",
+  "Left testicular artery",
+  "Left testicular vein",
+  "Left testis",
+  "Prostate",
+  "Right deferent duct",
+  "Right dorsal artery of penis",
+  "Right epididymis",
+  "Right hip bone",
+  "Right seminal vesicle",
+  "Right superficial dorsal vein of penis",
+  "Right testicular artery",
+  "Right testicular vein",
+  "Right testis",
+  "Sacrum",
+  "Superficial dorsal vein of penis",
+  "Urethra",
+  "Urinary bladder"
+ ],
+ "overlapPercent": {
+  "uterus": {
+   "Descending colon": 4.9,
+   "Distal part of ileum": 1.0,
+   "Taenia libera": 0.1
+  },
+  "uterine tubes": {
+   "Descending colon": 47.9,
+   "Taenia mesocolica": 1.8
+  },
+  "ovaries": {
+   "Descending colon": 50.8,
+   "Right psoas major": 10.7
+  },
+  "bladder": {
+   "Distal part of ileum": 4.6,
+   "Right external oblique": 1.1,
+   "Left external oblique": 0.6,
+   "Right obturator internus": 0.2,
+   "Right gracilis": 0.1,
+   "Right pectineus": 0.1
+  }
+ },
+ "ureterEndToBladderMm": {
+  "Left ureter": 23.7,
+  "Right ureter": 16.5
+ }
+}
