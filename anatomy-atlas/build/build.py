@@ -15,6 +15,8 @@ ORGANS = [  # (key, FMA concept name as in the dataset, color)
     ("kidney", "kidney", 0x9c3f3a), ("small-intestine", "small intestine", 0xe2a487),
     ("large-intestine", "large intestine", 0xc98466), ("urinary-bladder", "urinary bladder", 0xd9b27a),
     ("esophagus", "esophagus", 0xc77b6b), ("trachea", "trachea", 0xcfd6dc), ("diaphragm", "diaphragm", 0xa2584e),
+    ("urethra", "urethra", 0xf0d9a8), ("testis", "testis", 0xe0b38a), ("epididymis", "epididymis", 0xc98f6a),
+    ("deferent-duct", "deferent duct", 0xd9c27a), ("seminal-vesicle", "seminal vesicle", 0xb7a2c9), ("prostate", "prostate", 0xa98ab0),
 ]
 # Data errors found by the workstation checks (build3.py, build5.py) are left out everywhere.
 # Only meshes with a data error in the source (misplaced, or name contradicting position); meshes left out of a
@@ -32,6 +34,13 @@ for key, cname, col in ORGANS:
     used.update(ids)
     organ_groups.append({"key": key, "label": cname, "fma": c["id"], "layer": "organs", "color": col,
                          "ids": ids, "keep": 0.17, "clickable": True})
+
+# The penis has no single concept in the dataset: its three meshes are grouped and their own FMA IDs listed.
+PENIS = ["corpus cavernosum of penis", "corpus spongiosum of penis", "glans penis"]
+ids = [e for n in PENIS for e in elements(n) if e not in used]
+used.update(ids)
+organ_groups.append({"key": "penis", "label": "penis", "fma": ", ".join(concepts[n]["id"] for n in PENIS), "layer": "organs",
+                     "color": 0xd99a8a, "ids": ids, "keep": 0.17, "clickable": True})
 
 # Bones: the regions from build6.py (dataset FMA concepts). Muscles the dataset files as skeletal (FMA: muscle organ)
 # go to the muscles layer.

@@ -198,6 +198,7 @@
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport",
     "quotes": 15,
     "used": [
+     "Male reproductive system",
      "Urinary system"
     ]
    },
@@ -209,13 +210,22 @@
     "used": [
      "Urinary system"
     ]
+   },
+   {
+    "number": "27.1",
+    "title": "Anatomy and Physiology of the Testicular Reproductive System",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-1-anatomy-and-physiology-of-the-testicular-reproductive-system",
+    "quotes": 28,
+    "used": [
+     "Male reproductive system"
+    ]
    }
   ]
  },
  "verification": {
   "date": "2026-10-24",
   "items": [
-   "All 348 quotes were found word for word on the live openstax.org pages, and all 20 section links open the right page and paragraph.",
+   "All 376 quotes were found word for word on the live openstax.org pages, and all 21 section links open the right page and paragraph.",
    "All 2,234 meshes in the dataset exist in the official archive, and every name and FMA ID matches the official tables.",
    "The 3D geometry is read straight from the official archive (isa_BP3D_4.0_obj_99.zip). In every organ and bone workstation, every vertex of the original lies within 1.0 mm of what you see.",
    "The data errors listed in each organ's Notes tab (two misplaced lung arteries, two brain structures named for the wrong side) are present in the official archive itself.",

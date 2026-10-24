@@ -18,7 +18,7 @@ await page.goto('http://127.0.0.1:8765/anatomy-atlas.html');
 await page.waitForFunction(() => getComputedStyle(document.getElementById('load')).opacity === '0');
 await wait(3500); await shot('1-body');
 if (ORG.startsWith('bones-')) { await page.click('#modeSwitch [data-mode="bones"]'); await wait(2500); await shot('1b-bones-mode'); }
-await page.click(`.ocard[data-key="${({lungs:'right-lung',gut:'stomach',urinary:'kidney'})[ORG] || ORG}"]`); await wait(2500); await shot('2-body-selected');
+await page.click(`.ocard[data-key="${({lungs:'right-lung',gut:'stomach',urinary:'kidney','repro-male':'testis'})[ORG] || ORG}"]`); await wait(2500); await shot('2-body-selected');
 await page.click('#openOrgan');
 await page.waitForFunction(() => document.getElementById('hLoad').hidden && document.querySelectorAll('#partList .row').length > 0);
 await wait(4000); await shot('3-learn');

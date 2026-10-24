@@ -58,5 +58,10 @@
   "max_mm": 0.99,
   "worst": "Middle phalanx of left little toe",
   "meshes": 64
+ },
+ "repro-male": {
+  "max_mm": 0.98,
+  "worst": "Right dorsal artery of penis",
+  "meshes": 25
  }
 }

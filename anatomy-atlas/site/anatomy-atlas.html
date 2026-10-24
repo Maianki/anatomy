@@ -383,14 +383,19 @@ const ORGANS={
     meta:[['FMA IDs','FMA7131, FMA7148, FMA7200, FMA7201'],['Parts','128 (82 organ + 46 vessel)']],
     labeled:['Esophagus','Stomach','Duodenum','Ascending colon','Transverse colon','Descending colon','Rectum','Appendix','Ileocecal junction']},
   urinary:{label:'Urinary system',short:'urinary system',scene:'urinary',content:'content-urinary.json',ctxScene:'abdomen',ctx:'urinary',tour:'Path of urine',
-    bodyKeys:['kidney','urinary-bladder'],tools:{see:true,vessels:true},seeGroups:['kidneys','bladder','adrenal','prostate'],vesselGroups:['renal-arteries','renal-veins','great'],vesselLabel:'Vessels',startHidden:[],
+    bodyKeys:['kidney','urinary-bladder','urethra'],tools:{see:true,vessels:true},seeGroups:['kidneys','bladder','adrenal','prostate'],vesselGroups:['renal-arteries','renal-veins','great'],vesselLabel:'Vessels',startHidden:[],
     meta:[['FMA IDs','FMA7203, FMA15900'],['Parts','54']],
     labeled:['Left kidney','Right kidney','Left ureter','Right ureter','Urinary bladder','Urethra','Abdominal aorta','Left renal artery','Left adrenal gland','Right adrenal gland','Prostate']},
   brain:{label:'Brain',short:'brain',scene:'brain',content:'content-brain.json',ctxScene:'head',ctx:'brain',tour:'Path of CSF',bodyKeys:['brain'],
     tools:{see:true,vessels:true},seeGroups:['cortex','white'],vesselGroups:['arteries'],vesselLabel:'Arteries',startHidden:['context','arteries'],
     meta:[['FMA ID','FMA50801'],['Parts','239 (107 brain + 132 artery)']],
     labeled:['Left precentral gyrus','Left postcentral gyrus','Left superior frontal gyrus','Left occipital lobe','Left insula','Cerebellum','Pons','Medulla oblongata',
-      'Midbrain','Corpus callosum','Left thalamus','Left lateral ventricle','Third ventricle','Fourth ventricle','Left caudate nucleus','Left hippocampus']}
+      'Midbrain','Corpus callosum','Left thalamus','Left lateral ventricle','Third ventricle','Fourth ventricle','Left caudate nucleus','Left hippocampus']},
+  'repro-male':{label:'Male reproductive system',short:'male reproductive system',scene:'repro-male',content:'content-repro-male.json',ctxScene:'pelvis',ctx:'repro-male',tour:'Path of sperm',
+    bodyKeys:['testis','epididymis','deferent-duct','seminal-vesicle','prostate','penis'],tools:{see:true,vessels:true},seeGroups:['penis','bladder'],
+    vesselGroups:['penile-arteries','penile-veins','great-tarteries','great-tveins'],vesselLabel:'Vessels',startHidden:[],
+    meta:[['FMA IDs','FMA7210 testis, FMA9600 prostate'],['Parts','26 (14 organ + 12 vessel)']],
+    labeled:['Left testis','Left epididymis','Left deferent duct','Left seminal vesicle','Prostate','Corpus cavernosum of penis','Corpus spongiosum of penis','Glans penis','Urethra','Urinary bladder']}
 };
 // bone workstations: one per skeleton region; meshes, groups and tours come from the data files
 const BONE_WS={
@@ -404,7 +409,7 @@ const BONE_WS={
 Object.entries(BONE_WS).forEach(([r,b])=>{ORGANS['bones-'+r]={label:b.label,short:b.label.toLowerCase(),bone:true,scene:'bones-'+r,content:'content-bones-'+r+'.json',ctxScene:'skeleton',ctx:r,
   tour:'Bone by bone',bodyKeys:['bones-'+r],tools:{see:false,vessels:false},startHidden:[],labeled:b.labeled};});
 const BODY_TO_ORGAN={};Object.entries(ORGANS).forEach(([k,o])=>o.bodyKeys.forEach(b=>BODY_TO_ORGAN[b]=k));
-const REGION={thorax:'Chest',abdomen:'Abdomen',head:'Head',skeleton:'Skeleton'};
+const REGION={thorax:'Chest',abdomen:'Abdomen',head:'Head',skeleton:'Skeleton',pelvis:'Pelvis'};
 const BP3D_CREDIT='3D: BodyParts3D 4.0, \u00a9 The Database Center for Life Science, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>';
 const CONTENT={};let BODYTEXT={};let SOURCES=null;
 
@@ -500,7 +505,7 @@ async function buildBody(){
     mesh.material.opacity=BASE_OPACITY[g.layer];
     if(g.layer==='skin')mesh.renderOrder=10;
     mesh.userData.g=g;body.scene.add(mesh);
-    body.groups[g.key]={g,mesh,parts:ms.length};
+    body.groups[g.key]={g,mesh,parts:ms.length,names:ms.map(m=>m.name)};
   });
   body.total=meta.meshes.length;body.ready=true;
 }
@@ -526,11 +531,14 @@ function setMode(m){
 document.querySelectorAll('#modeSwitch [data-mode]').forEach(b=>b.onclick=()=>setMode(b.dataset.mode));
 function bodyList(){
   const q=$('organSearch').value.trim().toLowerCase();
-  const all=organs().filter(o=>!q||o.g.label.toLowerCase().includes(q));
+  // a search also finds a group by the names of the parts inside it (typing "femur" finds Lower limbs)
+  const hit=o=>q?o.names.filter(n=>n.toLowerCase().includes(q)):[];
+  const all=organs().filter(o=>!q||o.g.label.toLowerCase().includes(q)||hit(o).length);
   const ws=all.filter(o=>BODY_TO_ORGAN[o.g.key]),only=all.filter(o=>!BODY_TO_ORGAN[o.g.key]);
   const card=o=>{const org=BODY_TO_ORGAN[o.g.key];
     return '<button class="ocard" type="button" data-key="'+o.g.key+'" aria-current="'+(body.selected===o.g.key)+'"><span class="n">'+dot(o.g.color)+esc(cap(o.g.label))+'</span><span class="s">'+
-      (org?esc(ORGANS[org].label===cap(o.g.label)?'Workstation':'In '+ORGANS[org].label.toLowerCase()):'Body view only')+'</span></button>';};
+      (q&&!o.g.label.toLowerCase().includes(q)&&hit(o).length?'Has '+esc(hit(o).slice(0,2).join(', '))+(hit(o).length>2?' and '+(hit(o).length-2)+' more':''):
+       org?esc(ORGANS[org].label===cap(o.g.label)?'Workstation':'In '+ORGANS[org].label.toLowerCase()):'Body view only')+'</span></button>';};
   $('organList').innerHTML=(ws.length?'<div class="ogroup">With a workstation</div><div class="ocards">'+ws.map(card).join('')+'</div>':'')+
     (only.length?'<div class="ogroup">Body view only</div><div class="ocards">'+only.map(card).join('')+'</div>':'')+
     (!all.length?'<p class="muted small">No '+(isBones()?'bone region':'organ')+' matches “'+esc(q)+'”.</p>':'');
@@ -553,8 +561,9 @@ function bodyInfo(){
   const o=body.groups[k],org=BODY_TO_ORGAN[k];
   const text=org&&CONTENT[org]?CONTENT[org].topics.overview.slice(0,1):(BODYTEXT.text&&BODYTEXT.text[k])||[];
   el.innerHTML='<div class="kicker">'+dot(o.g.color)+(o.g.bone?'Bone region':'Organ')+'</div><h2>'+esc(cap(o.g.label))+'</h2>'+
-    '<div class="facts"><span class="fact">FMA ID'+(o.g.fma.includes(',')?'s':'')+' <b>'+esc(o.g.fma)+'</b></span><span class="fact">Parts in body view <b>'+o.parts+'</b></span></div>'+
+    '<div class="facts">'+(o.g.fma?'<span class="fact">FMA ID'+(o.g.fma.includes(',')?'s':'')+' <b>'+esc(o.g.fma)+'</b></span>':'')+'<span class="fact">Parts in body view <b>'+o.parts+'</b></span></div>'+
     '<p class="cite" style="margin:8px 0 0">'+BP3D_CREDIT+'</p>'+
+    (o.g.bone&&org&&CONTENT[org]?'<p class="small" style="margin:10px 0 0"><b>Bones in this region:</b> '+esc(CONTENT[org].flow.map(f=>f.title).join(', '))+'</p>':'')+
     (text.length?quotes(text):'<p class="muted small">No quoted text yet.</p>')+
     (org?'<div class="row-actions"><button class="btn primary" id="openOrgan" type="button">Open '+esc(ORGANS[org].short||ORGANS[org].label.toLowerCase())+' workstation<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button></div>'
       :(BODYTEXT.notes&&BODYTEXT.notes[k]?box('note','About this model',esc(BODYTEXT.notes[k])):'')+box('note','No workstation','This organ is a single mesh in the dataset, with no named parts to study.'));
@@ -607,7 +616,7 @@ const cCanvas=$('ctxCanvas');
 const cRenderer=makeRenderer(cCanvas);
 const cCam=new THREE.PerspectiveCamera(30,1,0.01,10);
 const CTXS={};let C={center:new THREE.Vector3(),dist:1};
-const CTX_BASE={skull:0.3,spine:0.3,thorax:0.3,upper:0.3,pelvis:0.3,lower:0.3,other:0.3,bones:0.5,lungs:0.16,airway:0.35,diaphragm:0.25,heart:1,liver:0.5,gut:0.3,urinary:0.6,spleen:0.6,brain:0.4};
+const CTX_BASE={bladder:0.4,'repro-male':1,skull:0.3,spine:0.3,thorax:0.3,upper:0.3,pelvis:0.3,lower:0.3,other:0.3,bones:0.5,lungs:0.16,airway:0.35,diaphragm:0.25,heart:1,liver:0.5,gut:0.3,urinary:0.6,spleen:0.6,brain:0.4};
 async function buildContext(name){
   if(CTXS[name])return;
   const Cx={scene:new THREE.Scene(),groups:{},center:new THREE.Vector3(),dist:1};lights(Cx.scene);CTXS[name]=Cx;

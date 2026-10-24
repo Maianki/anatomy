@@ -376,7 +376,8 @@
 }
 ],
 "gaps": [
-"The teeth are not part of this workstation. They appear in the whole-body view only."
+"The teeth are not part of this workstation. They appear in the whole-body view only.",
+"The dataset has no meshes for the auditory ossicles (malleus, incus and stapes), the three small bones of each middle ear."
 ],
 "notes": []
 }

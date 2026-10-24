@@ -11,11 +11,12 @@ TITLES = {  # OpenStax A&P 2e section titles, as passed to contentlib.slug in th
     "23.6": "Accessory Organs in Digestion: The Liver, Pancreas, and Gallbladder", "25.2": "Gross Anatomy of Urine Transport",
     "25.3": "Gross Anatomy of the Kidney", "Ch. 19": "Chapter Review",
     "7.1": "Divisions of the Skeletal System", "7.2": "The Skull", "7.3": "The Vertebral Column", "7.4": "The Thoracic Cage",
-    "8.1": "The Pectoral Girdle", "8.2": "Bones of the Upper Limb", "8.3": "The Pelvic Girdle and Pelvis", "8.4": "Bones of the Lower Limb"}
+    "8.1": "The Pectoral Girdle", "8.2": "Bones of the Upper Limb", "8.3": "The Pelvic Girdle and Pelvis", "8.4": "Bones of the Lower Limb",
+    "27.1": "Anatomy and Physiology of the Testicular Reproductive System"}
 NAMES = {"heart": "Heart", "lungs": "Lungs", "liver": "Liver, gallbladder and pancreas", "gut": "Digestive tract",
          "urinary": "Urinary system", "brain": "Brain", "body": "Whole body (spleen, diaphragm)",
          "bones-skull": "Skull", "bones-spine": "Vertebral column", "bones-thorax": "Thoracic cage", "bones-upper": "Upper limbs",
-         "bones-pelvis": "Pelvis", "bones-lower": "Lower limbs"}
+         "bones-pelvis": "Pelvis", "bones-lower": "Lower limbs", "repro-male": "Male reproductive system"}
 sections = {}
 
 

@@ -54,6 +54,9 @@ Last updated: 2026-10-24 (bones added; organ tools on every workstation; WebMD c
 | D32 | **Identical duplicate meshes are shown once.** Five pairs in the official archive have the same FMA ID and byte-identical geometry. The build keeps the lower mesh ID, records the other in the scene file, and shows it in the Notes tab. | Two identical surfaces in the same place flicker and are counted twice. Nothing differs between them, so nothing is lost. |
 | D33 | **WebMD is used only to cross-check facts**, as D5 requires. No WebMD text, image or model is copied. For each check, `sources/crosscheck/webmd.json` records our quote, the WebMD page (title, reviewer, date), whether the two agree, and a summary in our own words. It is shown on the Sources page with a thank-you. **NIH 3D is not used**, so it is not credited. | The user asked for a shout-out to sources used. Crediting a source we did not use would be inaccurate. |
 | D34 | Every selected part shows the BodyParts3D credit with a link to the licence, beside its FMA ID and mesh ID. | "Citations everywhere": each 3D part carries its source, as each quote does. |
+| D35 | **Male reproductive workstation** from BodyParts3D: the 12 meshes the dataset files as reproductive, plus the urethra, the dorsal vessels of the penis, the testicular arteries and veins, and the bladder for context. Text from OpenStax 27.1 (titled "Anatomy and Physiology of the Testicular Reproductive System" in the current edition) and 25.2. Passages on disorders (prostate enlargement, prostate cancer, vasectomy) are left for version 2. The body view now shows these organs and the urethra; before this they were missing from it. | Requested by the user. Every mesh is from the dataset; the build fails if a candidate mesh matches no group or two. |
+| D36 | **Female body: not built yet.** BodyParts3D is one male body and has no female structures (no uterus, ovaries, uterine tubes, vagina, vulva or breast). A candidate source is the Human Reference Atlas (HRA) reference organs on NIH 3D, built from the Visible Human Female and licensed CC BY. Its ovaries and a female body set are confirmed; a uterus and the full contents still need checking. humanatlas.io is blocked by this environment's network policy. Placing female organs in the male body is not done: they come from a different person, and the pelvis differs between the sexes (OpenStax 8.3). Waiting on the user's choice. | Accuracy first: no invented or mismatched anatomy. |
+| D37 | The body page's bone search also matches the names of the bones inside each region ("femur" finds Lower limbs), and a selected region lists its bone groups. | The user could not find the femur: it was in the Lower limbs workstation, but nothing on the body page named it. |
 
 ## 3. What is built
 
@@ -72,6 +75,7 @@ Last updated: 2026-10-24 (bones added; organ tools on every workstation; WebMD c
 | Upper limbs | Upper limbs | Bone by bone, 8 steps | 8.1, 8.2 |
 | Pelvis | Pelvis | Bone by bone, 2 steps | 8.3, 7.3 |
 | Lower limbs | Lower limbs | Bone by bone, 8 steps | 8.4 |
+| Male reproductive system | Testis, epididymis, deferent duct, seminal vesicle, prostate, penis | Path of sperm, 7 steps | 27.1, 25.2 |
 
 Quoted sections also include the Chapter 19 Chapter Review page (one heart quote).
 
@@ -115,8 +119,12 @@ The geometry and the FMA ID are identical in each pair (checked on the official 
 - **Brain:** meninges and spinal cord (apart from its central canal) are not in the workstation. Of the
   blood vessels, only the internal carotid and vertebral artery branches are shown. The dataset's brain
   concept omits the corpus callosum, thalamus, basal nuclei, amygdala and others.
-- **Bones:** no coccyx mesh; costal cartilage meshes for ribs 1 to 7 only. The teeth are in the body view,
-  not the skull workstation.
+- **Bones:** no coccyx mesh and no auditory ossicles (malleus, incus, stapes); costal cartilage meshes for ribs 1
+  to 7 only. The teeth are in the body view, not the skull workstation. Against the usual adult count of 206
+  bones, the dataset has 199: every other bone is present, each as its own mesh (the sternum as three parts).
+- **Male reproductive:** no scrotum, spermatic cord, ejaculatory ducts, bulbourethral glands or prepuce. The
+  urethra is one mesh (its four regions are not separate).
+- **Female:** none. BodyParts3D has no female body or female organs (D36).
 
 ### Gaps in the text (OpenStax)
 
@@ -135,12 +143,13 @@ The geometry and the FMA ID are identical in each pair (checked on the official 
 | Kidney | 10.8 cm (left), 10.6 cm (right) | 11–14 cm |
 | Spleen | 10.7 cm | about 12 cm |
 | Gallbladder | 6.0 cm | 8–10 cm |
+| Testis | 2.9 cm (each) | about 4–5 cm |
 
 The right kidney sits about 2 cm lower than the left, as the text says.
 
 ### Verification against the original sources (2026-10-24)
 
-- **OpenStax:** all 348 quotes found word for word on the live openstax.org pages; all 20 links open the right page
+- **OpenStax:** all 376 quotes found word for word on the live openstax.org pages; all 21 links open the right page
   and land on the quoted paragraph (`sources/verification/openstax.json`). This check caught one quote with an empty
   figure reference, "(; see also )", which the build's guard then learned to reject (D7).
 - **BodyParts3D names:** all 2,234 meshes exist in the official archive; every name and FMA ID matches the official
@@ -202,9 +211,10 @@ WebMD's kidney and liver "picture" pages now open disease articles, so there was
 - [ ] **Educator review** of structure names, the brain grouping, the quoted passages, and every item in section 4.
 - [x] **Check the repackaged data against the original** BodyParts3D archive. Done 2026-10-24; geometry now comes from the official archive.
 - [x] **Confirm the brachium name swap** and the misplaced lung arteries against the original archive. Both are in the official data. Consider reporting them to DBCLS.
-- [x] **Open every OpenStax section link.** Done 2026-10-24: all 20 pages and all 348 quotes verified on the live site.
+- [x] **Open every OpenStax section link.** Done 2026-10-24: all 21 pages and all 376 quotes verified on the live site.
+- [ ] **Female body (D36):** the user decides the approach. Allowing `humanatlas.io` and `cdn.humanatlas.io` in the environment's network settings would let the HRA library's contents and licence be checked.
 - [ ] **Decide on commercial use.** If the app will be paid, replace the OpenStax text (D6).
-- [ ] **Find a verified female body source** (D12).
+- [ ] **Find a verified female body source** (D12, D36).
 - [ ] **Decide whether lungs need surfaces** from a second source, which would need its own checks (D15).
 - [ ] **Test on real phones, tablets and laptops** with a GPU. So far tested only in headless Chromium with software rendering.
 - [ ] **Review naming differences** between dataset and textbook (papillary muscles, "pineal body" vs "pineal gland", "superior temporal gyrus" vs "superior temporal lobe", older segment names).

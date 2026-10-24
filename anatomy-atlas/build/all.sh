@@ -19,14 +19,16 @@ python3 -I "$HERE/build6.py" "$SRC" "$OUT"   # bones: six regions + skeleton con
 python3 -I "$HERE/build.py" "$SRC" "$OUT"    # whole body
 python3 -I "$HERE/build2.py" "$SRC" "$OUT"   # heart + thorax context
 python3 -I "$HERE/build4.py" "$SRC" "$OUT"   # liver, digestive tract, urinary + abdomen context
+python3 -I "$HERE/build7.py" "$SRC" "$OUT"   # male reproductive + pelvis context
 python3 -I "$HERE/content_heart.py" "$OS/m46676.cnxml" "$OUT/heart2.json" "$OUT/content-heart.json"
 python3 -I "$HERE/content_lungs.py" "$OS" "$OUT/lungs.json" "$OUT/content-lungs.json"
 python3 -I "$HERE/content_abdomen.py" "$OS" "$OUT"
 python3 -I "$HERE/content_brain.py" "$OS" "$OUT" "$SRC" "$BP/partof_element_parts.txt"
 python3 -I "$HERE/content_body.py" "$OS" "$OUT"
 python3 -I "$HERE/content_bones.py" "$OS" "$OUT"
+python3 -I "$HERE/content_repro.py" "$OS" "$OUT"
 python3 -I "$HERE/content_sources.py" "$OUT" "$PKG" "$HERE/../sources/verification" "$HERE/../sources/crosscheck/webmd.json"   # Sources screen: sections and quote counts actually used
-for n in body heart2 thorax lungs liver gut urinary abdomen brain head skeleton bones-skull bones-spine bones-thorax bones-upper bones-pelvis bones-lower; do
+for n in body heart2 thorax lungs liver gut urinary abdomen brain head skeleton bones-skull bones-spine bones-thorax bones-upper bones-pelvis bones-lower repro-male pelvis; do
   base64 < "$OUT/$n.bin.gz" | tr -d '\n' > "$OUT/$n.gz.txt"
   rm "$OUT/$n.bin.gz"
 done

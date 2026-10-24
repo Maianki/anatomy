@@ -90,7 +90,8 @@ GROUP_TEXT = {  # group key -> (module, section heading)
 }
 OVERVIEW = {"skull": SKU, "spine": VER, "thorax": THO, "upper": UPP, "pelvis": PEL, "lower": LOW}
 GAPS = {
-    "skull": ["The teeth are not part of this workstation. They appear in the whole-body view only."],
+    "skull": ["The teeth are not part of this workstation. They appear in the whole-body view only.",
+              "The dataset has no meshes for the auditory ossicles (malleus, incus and stapes), the three small bones of each middle ear."],
     "spine": ["The dataset has no mesh for the coccyx."],
     "thorax": ["The dataset has costal cartilage meshes for ribs 1 to 7 only."],
     "upper": [], "pelvis": [], "lower": [],
