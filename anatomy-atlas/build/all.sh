@@ -18,6 +18,7 @@ python3 -I "$HERE/content_lungs.py" "$OS" "$OUT/lungs.json" "$OUT/content-lungs.
 python3 -I "$HERE/content_abdomen.py" "$OS" "$OUT"
 python3 -I "$HERE/content_brain.py" "$OS" "$OUT" "$SRC"
 python3 -I "$HERE/content_body.py" "$OS" "$OUT"
+python3 -I "$HERE/content_sources.py" "$OUT" "$SRC/.."   # Sources screen: sections and quote counts actually used
 for n in body heart2 thorax lungs liver gut urinary abdomen brain head; do
   base64 < "$OUT/$n.bin.gz" | tr -d '\n' > "$OUT/$n.gz.txt"
   rm "$OUT/$n.bin.gz"

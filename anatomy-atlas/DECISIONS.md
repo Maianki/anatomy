@@ -3,7 +3,7 @@
 The single reference for what we are building, what has been decided and why, what the data is
 missing, and what still needs checking. Update it whenever a decision changes or a check is done.
 
-Last updated: 2026-10-24.
+Last updated: 2026-10-24 (sources page and redesign added).
 
 ## 1. What we are building
 
@@ -41,100 +41,5 @@ Last updated: 2026-10-24.
 | D19 | **Size comparisons** between model and textbook are shown as plain notes, without conclusions. | One reference body; measured from simplified scan data. |
 | D20 | Geometry is stored as base64 gzip text (`.gz.txt`). | The artifact host does not serve raw binary files. |
 | D21 | Work is saved to GitHub `Maianki/anatomy`, branch `claude/new-session-oqwx8r`, folder `anatomy-atlas/`. | The cloud container is temporary. |
-
-## 3. What is built
-
-| Workstation | Opened from body view | Tour | Text (OpenStax sections) |
-| --- | --- | --- | --- |
-| Heart | Heart | Blood flow, 12 steps | 19.1 |
-| Lungs | Left lung, right lung, trachea | Air and blood, 6 steps | 22.1, 22.2 |
-| Liver, gallbladder and pancreas | Liver, gallbladder, pancreas | Blood and bile, 7 steps | 23.5, 23.6 |
-| Digestive tract | Esophagus, stomach, small and large intestine | Path of food, 10 steps | 23.3, 23.4, 23.5 |
-| Urinary system | Kidney, urinary bladder | Path of urine, 5 steps | 25.2, 25.3 |
-| Brain | Brain | Path of CSF, 7 steps | 13.2, 13.3 |
-| (body view only) | Spleen, diaphragm | none | 21.1, 22.2 |
-
-Live demo: https://claude.ai/artifact/Scn9ufkjgswd4MQXWQj1HK (private until shared).
-
-## 4. Data findings
-
-### Errors in the source data (left out everywhere)
-
-| Mesh | Problem |
-| --- | --- |
-| Right anterior segmental artery (FJ2041, FJ2044, FMA8620) | Sits 22–26 cm below the rest of its lung segment, at liver level. |
-| Brachium of left superior colliculus (FJ1735, FMA73462) | Lies on the right side of the body. |
-| Brachium of right superior colliculus (FJ1736, FMA73461) | Lies on the left side. The colliculi themselves are on the correct sides, so the two names look swapped. |
-
-### Left out of a workstation for other reasons (still in the body view)
-
-- Interpeduncular fossa (a space) and tentorium cerebelli (dura mater): not brain tissue.
-
-### Gaps (not in the dataset)
-
-- **Lungs:** surfaces, fissures, pleura. No artery for right lower lobe medial basal; no veins for
-  left lower lobe superior and medial basal.
-- **Liver:** common bile duct, hepatopancreatic ampulla, ligaments. "Hepatovenous segment IX" exists
-  but is not in the dataset's liver concept (included, with a note).
-- **Digestive tract:** cecum, sigmoid colon, anal canal.
-- **Kidneys:** single outer surfaces (no cortex, medulla, pyramids). The ureter meshes branch inside
-  each kidney; the branches are not named, so they are not labelled as renal pelvis or calyces.
-- **Brain:** meninges, brain vessels, spinal cord (apart from its central canal). The dataset's brain
-  concept omits the corpus callosum, thalamus, basal nuclei, amygdala and others.
-
-### Gaps in the text (OpenStax)
-
-- Does not describe individual bronchopulmonary segments by name.
-- Describes the liver by lobes, not the numbered segments the model uses.
-- Does not name 50 of 107 brain meshes (mostly individual gyri and tracts).
-- Some small heart vessels have no passage of their own; the group's passage is shown with a note.
-
-### Sizes compared with the text (longest axis, `build/measure.py`)
-
-| Organ | Model | OpenStax |
-| --- | --- | --- |
-| Kidney | 10.8 cm (left), 10.6 cm (right) | 11–14 cm |
-| Spleen | 10.7 cm | about 12 cm |
-| Gallbladder | 6.0 cm | 8–10 cm |
-
-The right kidney sits about 2 cm lower than the left, as the text says.
-
-### Checks that pass
-
-- Every quote found word for word; no quote points at a missing figure.
-- 10 bronchopulmonary segments per lung; each lung mesh in exactly one lobe; segment heights in
-  anatomical order.
-- Every heart mesh within 3 cm of the heart walls.
-- No left/right mismatches in lungs, digestive tract, urinary system, abdomen. Heart "right"
-  structures lie up to 3 cm left of the midline, matching the text ("the right side of the heart is
-  deflected anteriorly"). A few "left" liver vessels lie within 2 cm right of the midline.
-- A clean rebuild reproduces every data file exactly.
-
-### Corrections made during the project
-
-- OpenStax licence corrected from CC BY to CC BY-NC-SA (D6).
-- The liver was first missing its main tissue because vessel meshes were excluded; fixed by selecting
-  organs by FMA concept (D9).
-- "Renal pelvis not modelled" was wrong; replaced with the accurate description of the ureter meshes.
-- A sentence splitter bug joined two heart sentences in one quote; fixed and all text rebuilt.
-- "Brachium of … colliculus" was briefly grouped with the brain stem by a loose name rule; it now
-  follows its FMA white-matter concept.
-
-## 5. Needs checking (open items)
-
-- [ ] **Educator review** of structure names, the brain grouping, the quoted passages, and every item in section 4.
-- [ ] **Check the repackaged data against the original** BodyParts3D archive (`isa_BP3D_4.0_obj_99.zip`, dbarchive.biosciencedbc.jp). Needs that domain allowed in the environment's network settings.
-- [ ] **Confirm the brachium name swap** and the misplaced lung arteries against the original archive.
-- [ ] **Open every OpenStax section link** once; links follow OpenStax's URL pattern but openstax.org was blocked here.
-- [ ] **Decide on commercial use.** If the app will be paid, replace the OpenStax text (D6).
-- [ ] **Find a verified female body source** (D12).
-- [ ] **Decide whether lungs need surfaces** from a second source, which would need its own checks (D15).
-- [ ] **Test on real phones, tablets and laptops** with a GPU. So far tested only in headless Chromium with software rendering.
-- [ ] **Review naming differences** between dataset and textbook (papillary muscles, "pineal body" vs "pineal gland", "superior temporal gyrus" vs "superior temporal lobe", older segment names).
-- [ ] **NIH 3D and WebMD were never accessed** (blocked). If they are to be used as cross-check sources, allow them and record what was checked.
-- [ ] **Body-view brain shows 59 meshes** (dataset brain concept) while the brain workstation shows 107; decide whether the body view should match.
-
-## 6. Next steps
-
-- Version 1: educator review, real-device testing, then any further organs the data supports.
-- Version 2: diseases, using the disease passages already identified in the same OpenStax sections.
+| D22 | A **Sources page** lists the 3D dataset (publisher, licence, paper, download, how the data reaches the app), the textbook (publisher, licence, source files), every OpenStax section quoted with its quote count and where it is used, FMA IDs, software, and the review status. It is built from what the app actually uses (`build/content_sources.py`). OpenStax authors are not typed in; the page links to OpenStax's contributor list. | Shows students and reviewers where everything comes from. Avoids writing citation details from memory. |
+| D23 | **Redesign**: Poppins for the interface, Source Serif 4 only for quoted textbook passages; light and dark themes; 3D views always on a dark stage; organ pages use tabs (Learn, Parts, Tour, Notes) with the region view as a picture-in-picture; organ cards with search on the body page. | The first UI was hard to use. Serif quotes make it obvious which words are from the textbook. |

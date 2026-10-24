@@ -1,0 +1,139 @@
+{
+ "geometry": {
+  "name": "BodyParts3D 4.0",
+  "publisher": "The Database Center for Life Science (DBCLS), Japan",
+  "license": "CC BY 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "url": "https://dbarchive.biosciencedbc.jp/en/bodyparts3d/download.html",
+  "citation": "Mitsuhashi et al. (2009), BodyParts3D: 3D structure database for anatomical concepts. Nucleic Acids Research.",
+  "doi": "10.1093/nar/gkn613",
+  "file": "isa_BP3D_4.0_obj_99.zip",
+  "chain": [
+   "BodyParts3D 4.0 (DBCLS)",
+   "Human Atlas, commit f5d5b74 (axes, units, simplification within 0.2% error)",
+   "@dagno/anatomy-model 0.1.2 on npm (manifest only)",
+   "This app (quantised and grouped by organ)"
+  ],
+  "body": "One adult male reference anatomy, based on MRI data with anatomical illustration refinements."
+ },
+ "text": {
+  "name": "Anatomy and Physiology 2e",
+  "publisher": "OpenStax, Rice University",
+  "license": "CC BY-NC-SA 4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "url": "https://openstax.org/details/books/anatomy-and-physiology-2e",
+  "repo": "https://github.com/openstax/osbooks-anatomy-physiology",
+  "sections": [
+   {
+    "number": "13.2",
+    "title": "The Central Nervous System",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
+    "quotes": 47,
+    "used": [
+     "Brain"
+    ]
+   },
+   {
+    "number": "13.3",
+    "title": "Circulation and the Central Nervous System",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system",
+    "quotes": 13,
+    "used": [
+     "Brain"
+    ]
+   },
+   {
+    "number": "19.1",
+    "title": "Heart Anatomy",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
+    "quotes": 67,
+    "used": [
+     "Heart"
+    ]
+   },
+   {
+    "number": "21.1",
+    "title": "Anatomy of the Lymphatic and Immune Systems",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/21-1-anatomy-of-the-lymphatic-and-immune-systems",
+    "quotes": 2,
+    "used": [
+     "Whole body (spleen, diaphragm)"
+    ]
+   },
+   {
+    "number": "22.1",
+    "title": "Organs and Structures of the Respiratory System",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system",
+    "quotes": 7,
+    "used": [
+     "Lungs"
+    ]
+   },
+   {
+    "number": "22.2",
+    "title": "The Lungs",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs",
+    "quotes": 15,
+    "used": [
+     "Lungs",
+     "Whole body (spleen, diaphragm)"
+    ]
+   },
+   {
+    "number": "23.3",
+    "title": "The Mouth, Pharynx, and Esophagus",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus",
+    "quotes": 3,
+    "used": [
+     "Digestive tract"
+    ]
+   },
+   {
+    "number": "23.4",
+    "title": "The Stomach",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach",
+    "quotes": 5,
+    "used": [
+     "Digestive tract"
+    ]
+   },
+   {
+    "number": "23.5",
+    "title": "The Small and Large Intestines",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
+    "quotes": 25,
+    "used": [
+     "Digestive tract",
+     "Liver, gallbladder and pancreas"
+    ]
+   },
+   {
+    "number": "23.6",
+    "title": "Accessory Organs in Digestion: The Liver, Pancreas, and Gallbladder",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder",
+    "quotes": 22,
+    "used": [
+     "Liver, gallbladder and pancreas"
+    ]
+   },
+   {
+    "number": "25.2",
+    "title": "Gross Anatomy of Urine Transport",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport",
+    "quotes": 15,
+    "used": [
+     "Urinary system"
+    ]
+   },
+   {
+    "number": "25.3",
+    "title": "Gross Anatomy of the Kidney",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney",
+    "quotes": 8,
+    "used": [
+     "Urinary system"
+    ]
+   }
+  ]
+ }
+}
