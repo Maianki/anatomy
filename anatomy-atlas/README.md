@@ -85,67 +85,9 @@ cd site && python3 -m http.server 8765
 # open http://127.0.0.1:8765/anatomy-atlas.html  (or #heart, #lungs, #liver, #gut, #urinary, #brain)
 ```
 
-## Data findings (please keep this list up to date)
+## Decisions, data findings and open checks
 
-These came up while building and are shown on the page.
-
-**Errors in the source data, left out everywhere:**
-
-- Lungs: two meshes named "Right anterior segmental artery" (FJ2041, FJ2044, FMA8620) sit about
-  22–26 cm below the rest of their segment, at liver level.
-- Brain: "Brachium of left superior colliculus" (FJ1735) lies on the right of the body and "Brachium
-  of right superior colliculus" (FJ1736) on the left, while the colliculi themselves are on the
-  correct sides. The names look swapped; they are left out rather than corrected.
-
-**Gaps in the source data:**
-
-- Lungs: no meshes for the lung surfaces, fissures or pleura. Lobes are shown through the airways and
-  vessels the dataset assigns to them. Right lower lobe medial basal has no artery mesh; left lower
-  lobe superior and medial basal have no vein meshes.
-- Liver: no meshes for the common bile duct, the hepatopancreatic ampulla or the liver's ligaments.
-  "Hepatovenous segment IX" exists but is not in the dataset's liver concept (included, with a note).
-- Digestive tract: no meshes for the cecum, sigmoid colon or anal canal.
-- Kidneys: single outer surfaces; no cortex, medulla or pyramids. The ureter meshes continue into
-  each kidney and branch there; the dataset does not name the branches, so they are not labelled as
-  the renal pelvis or calyces.
-- Brain: the dataset's "brain" concept leaves out the corpus callosum, thalamus, basal nuclei,
-  amygdala and more. The workstation groups brain meshes by quoted OpenStax sentences, then by each
-  mesh's FMA concept; structures neither source places (geniculate bodies, optic chiasm and tracts,
-  septum) are listed under "Other". 50 of 107 brain meshes have no passage of their own.
-
-**Duplicates and grouping:**
-
-- The dataset's "system" field has errors (brain ventricles under "cardiac", liver tissue under
-  "venous", choroid plexus under "sensory"). Organs are selected by FMA concept or name instead.
-- "Pancreas" and "Parenchyma of pancreas" share nearly the same surface, as do "Pancreatic duct" and
-  "Pancreatic duct tree". One of each pair starts hidden.
-
-**Sizes compared with the quoted text** (longest axis, `build/measure.py`):
-
-| Organ | This model | OpenStax |
-| --- | --- | --- |
-| Kidney | 10.8 cm (left), 10.6 cm (right) | 11–14 cm |
-| Spleen | 10.7 cm | about 12 cm |
-| Gallbladder | 6.0 cm | 8–10 cm |
-
-The right kidney sits about 2 cm lower than the left, as the text describes.
-
-**Checks that pass:** 10 bronchopulmonary segments per lung; each lung mesh in exactly one lobe;
-segment heights in anatomical order; every heart mesh within 3 cm of the heart walls; no left/right
-mismatches in the lungs, digestive tract, urinary system or abdomen. Heart structures named "right"
-lie up to 3 cm left of the midline, which matches the text ("the right side of the heart is deflected
-anteriorly"). A few "left" liver vessels lie within 2 cm right of the midline.
-
-**Naming:** some dataset names differ from OpenStax wording (papillary muscles of the left ventricle,
-"pineal body" versus "pineal gland", "superior temporal gyrus" versus "superior temporal lobe").
-Both are shown as they are.
-
-## Before use with students
-
-- An anatomy educator should review the structure names, the data findings above, the brain
-  grouping, and the choice of quoted passages.
-- The original BodyParts3D archive was not reachable from the build environment. The repackaged copy
-  should be checked against `isa_BP3D_4.0_obj_99.zip` from dbarchive.biosciencedbc.jp.
-- Tested only in headless Chromium with software rendering, at desktop and phone widths.
+All project decisions, data errors and gaps, size comparisons, passing checks and the review
+checklist are kept in one place: [DECISIONS.md](DECISIONS.md).
 
 For learning only, not for diagnosis.
