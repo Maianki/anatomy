@@ -98,9 +98,10 @@ ORGANS = [  # (key, FMA concept name as in the dataset, color)
     ("large-intestine", "large intestine", 0xc98466), ("urinary-bladder", "urinary bladder", 0xd9b27a),
     ("esophagus", "esophagus", 0xc77b6b), ("trachea", "trachea", 0xcfd6dc), ("diaphragm", "diaphragm", 0xa2584e),
 ]
-# Placement errors found by the lung workstation check (build3.py): two "Right anterior segmental artery"
-# meshes sit below the diaphragm. Left out everywhere.
-used = {e["id"] for e in json.loads((OUT / "lungs.json").read_text())["excluded"]}
+# Data errors found by the workstation checks (build3.py, build5.py) are left out everywhere.
+# Only meshes with a data error in the source (misplaced, or name contradicting position); meshes left out of a
+# workstation for other reasons (e.g. not brain tissue) stay in the body view.
+used = {e["id"] for f in ("lungs.json", "brain.json") for e in json.loads((OUT / f).read_text())["excluded"] if "source data" in e["why"]}
 organ_groups = []
 for key, cname, col in ORGANS:
     c = concepts[cname]

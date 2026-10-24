@@ -3,8 +3,8 @@ sys.path.insert(0, __file__.rsplit("/", 1)[0])
 from contentlib import Module
 OS, LUNGS, OUT = sys.argv[1], sys.argv[2], sys.argv[3]
 BASE = "https://openstax.org/books/anatomy-and-physiology-2e/pages/"
-L = Module(OS + "/m46551.cnxml", "22.2", BASE + "22-2-the-lungs")
-A = Module(OS + "/m46548.cnxml", "22.1", BASE + "22-1-organs-and-structures-of-the-respiratory-system")
+L = Module(OS + "/m46551.cnxml", "22.2", BASE + "22-2-the-lungs", "The Lungs")
+A = Module(OS + "/m46548.cnxml", "22.1", BASE + "22-1-organs-and-structures-of-the-respiratory-system", "Organs and Structures of the Respiratory System")
 T = {
  "overview": [(L, "fs-id2627237", "The lungs are pyramid-shaped"), (L, "fs-id2627237", "The right lung is shorter and wider"),
               (L, "fs-id2627237", "The apex of the lung"), (L, "fs-id2627237", "The costal surface"),

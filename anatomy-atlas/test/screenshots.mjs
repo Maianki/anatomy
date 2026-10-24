@@ -21,7 +21,8 @@ if (ORG === 'lungs') {
   await page.click('[data-color="lobe"]'); await page.click('#tabFlow'); await page.click('#steps .step[data-i="2"]'); await wait(3500); await shot('4-tour');
   await page.click('#tabExplore'); await page.click('#partList .row:has-text("Right medial basal segmental bronchial tree")'); await wait(3000); await shot('5-gap'); console.log('GAPTEXT', await page.$eval('#hInfo', e => e.innerText.slice(0, 700)));
 } else {
-  await page.click('#partList .row[data-id]'); await wait(3000); await shot('2-part');
+  await page.click('#partList .row[data-id]'); await wait(3000); await shot('2-part'); console.log('PART', await page.$eval('#hInfo', e => e.innerText.slice(0, 500)));
+  await page.click('#tabFlow'); await page.click('#steps .step[data-i="1"]'); await wait(3500); await shot('3-tour');
 }
-await page.click('#crumbBody'); await wait(2500); await page.click('#organList .row[data-key="right-lung"]'); await wait(3000); await shot('6-body');
+await page.click('#crumbBody'); await wait(2500); await page.click('#organList .row[data-key="'+({lungs:'right-lung',heart:'heart',liver:'liver',gut:'stomach',urinary:'kidney',brain:'brain'})[ORG]+'"]'); await wait(3000); await shot('6-body');
 await browser.close();

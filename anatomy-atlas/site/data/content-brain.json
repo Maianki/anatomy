@@ -1,0 +1,1004 @@
+{
+"topics": {
+"overview": [
+{
+"text": "The spinal cord is a single structure, whereas the adult brain is described in terms of four major regions: the cerebrum, the diencephalon, the brain stem, and the cerebellum.",
+"pid": "fs-id1518907",
+"label": "13.2 The Central Nervous System",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The wrinkled portion is the cerebral cortex, and the rest of the structure is beneath that outer covering.",
+"pid": "fs-id1476424",
+"label": "13.2 The Cerebrum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "It separates the cerebrum into two distinct halves, a right and left cerebral hemisphere.",
+"pid": "fs-id1476424",
+"label": "13.2 The Cerebrum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "Deep within the cerebrum, the white matter of the corpus callosum provides the major pathway for communication between the two hemispheres of the cerebral cortex.",
+"pid": "fs-id1476424",
+"label": "13.2 The Cerebrum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"cortex": [
+{
+"text": "The cerebrum is covered by a continuous layer of gray matter that wraps around either side of the forebrain\u2014the cerebral cortex.",
+"pid": "fs-id1298164",
+"label": "13.2 Cerebral Cortex",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "A gyrus (plural = gyri) is the ridge of one of those wrinkles, and a sulcus (plural = sulci) is the groove between two gyri.",
+"pid": "fs-id1298164",
+"label": "13.2 Cerebral Cortex",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The pattern of these folds of tissue indicates specific regions of the cerebral cortex.",
+"pid": "fs-id1298164",
+"label": "13.2 Cerebral Cortex",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "Superior to the lateral sulcus are the parietal lobe and frontal lobe, which are separated from each other by the central sulcus.",
+"pid": "fs-id1137638",
+"label": "13.2 Cerebral Cortex",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The posterior region of the cortex is the occipital lobe, which has no obvious anatomical border between it and the parietal or temporal lobes on the lateral surface of the brain.",
+"pid": "fs-id1137638",
+"label": "13.2 Cerebral Cortex",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"precentral": [
+{
+"text": "Anterior to the central sulcus is the frontal lobe, which is primarily associated with motor functions.",
+"pid": "fs-id1119780",
+"label": "13.2 Cerebral Cortex",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The precentral gyrus is the primary motor cortex.",
+"pid": "fs-id1119780",
+"label": "13.2 Cerebral Cortex",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"postcentral": [
+{
+"text": "The main sensation associated with the parietal lobe is somatosensation, meaning the general sensations associated with the body.",
+"pid": "fs-id1319713",
+"label": "13.2 Cerebral Cortex",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "Posterior to the central sulcus is the postcentral gyrus, the primary somatosensory cortex, which is identified as Brodmann\u2019s areas 1, 2, and 3.",
+"pid": "fs-id1319713",
+"label": "13.2 Cerebral Cortex",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"occipital": [
+{
+"text": "The posterior region of the cortex is the occipital lobe, which has no obvious anatomical border between it and the parietal or temporal lobes on the lateral surface of the brain.",
+"pid": "fs-id1137638",
+"label": "13.2 Cerebral Cortex",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "Areas 17 and 18 in the occipital lobe are responsible for primary visual perception.",
+"pid": "fs-id1163314",
+"label": "13.2 Cerebral Cortex",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"suptemporal": [
+{
+"text": "The temporal lobe is associated with primary auditory sensation, known as Brodmann\u2019s areas 41 and 42 in the superior temporal lobe.",
+"pid": "fs-id2055928",
+"label": "13.2 Cerebral Cortex",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"white": [
+{
+"text": "Deep within the cerebrum, the white matter of the corpus callosum provides the major pathway for communication between the two hemispheres of the cerebral cortex.",
+"pid": "fs-id1476424",
+"label": "13.2 The Cerebrum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"basal": [
+{
+"text": "The basal nuclei are a set of nuclei in the cerebrum responsible for comparing cortical processing with the general state of activity in the nervous system to influence the likelihood of movement taking place.",
+"pid": "fs-id793857",
+"label": "13.2 Subcortical structures",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The major structures of the basal nuclei that control movement are the caudate, putamen, and globus pallidus, which are located deep in the cerebrum.",
+"pid": "fs-id1433950",
+"label": "13.2 Subcortical structures",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"caudate": [
+{
+"text": "The major structures of the basal nuclei that control movement are the caudate, putamen, and globus pallidus, which are located deep in the cerebrum.",
+"pid": "fs-id1433950",
+"label": "13.2 Subcortical structures",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The caudate is a long nucleus that follows the basic C-shape of the cerebrum from the frontal lobe, through the parietal and occipital lobes, into the temporal lobe.",
+"pid": "fs-id1433950",
+"label": "13.2 Subcortical structures",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "Together, the caudate and putamen are called the striatum.",
+"pid": "fs-id1433950",
+"label": "13.2 Subcortical structures",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"putamen": [
+{
+"text": "The major structures of the basal nuclei that control movement are the caudate, putamen, and globus pallidus, which are located deep in the cerebrum.",
+"pid": "fs-id1433950",
+"label": "13.2 Subcortical structures",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The putamen is mostly deep in the anterior regions of the frontal and parietal lobes.",
+"pid": "fs-id1433950",
+"label": "13.2 Subcortical structures",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "Together, the caudate and putamen are called the striatum.",
+"pid": "fs-id1433950",
+"label": "13.2 Subcortical structures",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"pallidus": [
+{
+"text": "The major structures of the basal nuclei that control movement are the caudate, putamen, and globus pallidus, which are located deep in the cerebrum.",
+"pid": "fs-id1433950",
+"label": "13.2 Subcortical structures",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The globus pallidus is a layered nucleus that lies just medial to the putamen; they are called the lenticular nuclei because they look like curved pieces fitting together like lenses.",
+"pid": "fs-id1433950",
+"label": "13.2 Subcortical structures",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The globus pallidus has two subdivisions, the external and internal segments, which are lateral and medial, respectively.",
+"pid": "fs-id1433950",
+"label": "13.2 Subcortical structures",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"hippo": [
+{
+"text": "The hippocampus and amygdala are medial-lobe structures that, along with the adjacent cortex, are involved in long-term memory formation and emotional responses.",
+"pid": "fs-id793857",
+"label": "13.2 Subcortical structures",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"dien": [
+{
+"text": "The diencephalon is deep beneath the cerebrum and constitutes the walls of the third ventricle.",
+"pid": "fs-id2026939",
+"label": "13.2 The Diencephalon",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The diencephalon can be described as any region of the brain with \u201cthalamus\u201d in its name.",
+"pid": "fs-id2026939",
+"label": "13.2 The Diencephalon",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"thalamus": [
+{
+"text": "The thalamus is a collection of nuclei that relay information between the cerebral cortex and the periphery, spinal cord, or brain stem.",
+"pid": "fs-id1234023",
+"label": "13.2 Thalamus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "All sensory information, except for the sense of smell, passes through the thalamus before processing by the cortex.",
+"pid": "fs-id1234023",
+"label": "13.2 Thalamus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"hypothalamus": [
+{
+"text": "Inferior and slightly anterior to the thalamus is the hypothalamus, the other major region of the diencephalon.",
+"pid": "fs-id1490316",
+"label": "13.2 Hypothalamus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The hypothalamus is a collection of nuclei that are largely involved in regulating homeostasis.",
+"pid": "fs-id1490316",
+"label": "13.2 Hypothalamus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The hypothalamus is the executive region in charge of the autonomic nervous system and the endocrine system through its regulation of the anterior pituitary gland.",
+"pid": "fs-id1490316",
+"label": "13.2 Hypothalamus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"pineal": [
+{
+"text": "There are other structures, such as the epithalamus, which contains the pineal gland, or the subthalamus, which includes the subthalamic nucleus that is part of the basal nuclei.",
+"pid": "fs-id2026939",
+"label": "13.2 The Diencephalon",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"brainstem": [
+{
+"text": "The structure emerges from the ventral surface of the forebrain as a tapering cone that connects the brain to the spinal cord.",
+"pid": "fs-id1523364",
+"label": "13.2 Brain Stem",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The midbrain coordinates sensory representations of the visual, auditory, and somatosensory perceptual spaces.",
+"pid": "fs-id1523364",
+"label": "13.2 Brain Stem",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The pons and the medulla regulate several crucial functions, including the cardiovascular and respiratory systems and rates.",
+"pid": "fs-id1523364",
+"label": "13.2 Brain Stem",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"midbrain": [
+{
+"text": "One of the original regions of the embryonic brain, the midbrain is a small region between the thalamus and pons.",
+"pid": "fs-id890816",
+"label": "13.2 Midbrain",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The cerebral aqueduct passes through the center of the midbrain, such that these regions are the roof and floor of that canal.",
+"pid": "fs-id890816",
+"label": "13.2 Midbrain",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"inferiorcoll": [
+{
+"text": "The tectum is composed of four bumps known as the colliculi (singular = colliculus), which means \u201clittle hill\u201d in Latin.",
+"pid": "fs-id1282943",
+"label": "13.2 Midbrain",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The inferior colliculus is the inferior pair of these enlargements and is part of the auditory brain stem pathway.",
+"pid": "fs-id1282943",
+"label": "13.2 Midbrain",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"superiorcoll": [
+{
+"text": "The tectum is composed of four bumps known as the colliculi (singular = colliculus), which means \u201clittle hill\u201d in Latin.",
+"pid": "fs-id1282943",
+"label": "13.2 Midbrain",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The superior colliculus is the superior pair and combines sensory information about visual space, auditory space, and somatosensory space.",
+"pid": "fs-id1282943",
+"label": "13.2 Midbrain",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"pons": [
+{
+"text": "The word pons comes from the Latin word for bridge.",
+"pid": "fs-id1179935",
+"label": "13.2 Pons",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "It is visible on the anterior surface of the brain stem as the thick bundle of white matter attached to the cerebellum.",
+"pid": "fs-id1179935",
+"label": "13.2 Pons",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The pons is the main connection between the cerebellum and the brain stem.",
+"pid": "fs-id1179935",
+"label": "13.2 Pons",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"medulla": [
+{
+"text": "The medulla is the region known as the myelencephalon in the embryonic brain.",
+"pid": "fs-id2166609",
+"label": "13.2 Medulla",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The initial portion of the name, \u201cmyel,\u201d refers to the significant white matter found in this region\u2014especially on its exterior, which is continuous with the white matter of the spinal cord.",
+"pid": "fs-id2166609",
+"label": "13.2 Medulla",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"cerebellum": [
+{
+"text": "The cerebellum, as the name suggests, is the \u201clittle brain.\u201d",
+"pid": "fs-id1520379",
+"label": "13.2 The Cerebellum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "The cerebellum is largely responsible for comparing information from the cerebrum with sensory feedback from the periphery through the spinal cord.",
+"pid": "fs-id1520379",
+"label": "13.2 The Cerebellum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+},
+{
+"text": "It accounts for approximately 10 percent of the mass of the brain.",
+"pid": "fs-id1520379",
+"label": "13.2 The Cerebellum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"lateralv": [
+{
+"text": "There are four ventricles within the brain, all of which developed from the original hollow space within the neural tube, the central canal.",
+"pid": "fs-id1490421",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+},
+{
+"text": "The first two are named the lateral ventricles and are deep within the cerebrum.",
+"pid": "fs-id1490421",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+],
+"ivf": [
+{
+"text": "These ventricles are connected to the third ventricle by two openings called the interventricular foramina.",
+"pid": "fs-id1490421",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+},
+{
+"text": "The interventricular foramina connect the frontal region of the lateral ventricles with the third ventricle.",
+"pid": "fs-id2855889",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+],
+"thirdv": [
+{
+"text": "The third ventricle is the space between the left and right sides of the diencephalon, which opens into the cerebral aqueduct that passes through the midbrain.",
+"pid": "fs-id1490421",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+},
+{
+"text": "The third ventricle is the space bounded by the medial walls of the hypothalamus and thalamus.",
+"pid": "fs-id1136775",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+],
+"aqueduct": [
+{
+"text": "The cerebral aqueduct opens just inferior to the epithalamus and passes through the midbrain.",
+"pid": "fs-id1136775",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+},
+{
+"text": "The tectum and tegmentum of the midbrain are the roof and floor of the cerebral aqueduct, respectively.",
+"pid": "fs-id1136775",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+],
+"fourthv": [
+{
+"text": "The aqueduct opens up into the fourth ventricle.",
+"pid": "fs-id1136775",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+},
+{
+"text": "The floor of the fourth ventricle is the dorsal surface of the pons and upper medulla (that gray matter making a continuation of the tegmentum of the midbrain).",
+"pid": "fs-id1136775",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+},
+{
+"text": "The fourth ventricle then narrows into the central canal of the spinal cord.",
+"pid": "fs-id1136775",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+],
+"canal": [
+{
+"text": "The fourth ventricle then narrows into the central canal of the spinal cord.",
+"pid": "fs-id1136775",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+],
+"choroid": [
+{
+"text": "In some of these spaces, CSF is produced by filtering of the blood that is performed by a specialized membrane known as a choroid plexus.",
+"pid": "fs-id1187632",
+"label": "13.3 The Ventricular System",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+},
+{
+"text": "The choroid plexuses are found in all four ventricles.",
+"pid": "fs-id1298119",
+"label": "13.3 Cerebrospinal Fluid Circulation",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+],
+"pituitary": [
+{
+"text": "The hypothalamus is the executive region in charge of the autonomic nervous system and the endocrine system through its regulation of the anterior pituitary gland.",
+"pid": "fs-id1490316",
+"label": "13.2 Hypothalamus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
+}
+],
+"none": []
+},
+"meshTopic": {
+"FJ1753": {
+"topic": "hippo",
+"note": null
+},
+"FJ1759": {
+"topic": "hippo",
+"note": null
+},
+"FJ1807": {
+"topic": "hippo",
+"note": null
+},
+"FJ1829": {
+"topic": "hippo",
+"note": null
+},
+"FJ1754": {
+"topic": "caudate",
+"note": null
+},
+"FJ1757": {
+"topic": "pallidus",
+"note": null
+},
+"FJ1776": {
+"topic": "putamen",
+"note": null
+},
+"FJ1802": {
+"topic": "caudate",
+"note": null
+},
+"FJ1805": {
+"topic": "pallidus",
+"note": null
+},
+"FJ1823": {
+"topic": "putamen",
+"note": null
+},
+"FJ1730": {
+"topic": "thirdv",
+"note": null
+},
+"FJ1731": {
+"topic": "fourthv",
+"note": null
+},
+"FJ1737": {
+"topic": "canal",
+"note": null
+},
+"FJ1738": {
+"topic": "aqueduct",
+"note": null
+},
+"FJ1752": {
+"topic": "ivf",
+"note": null
+},
+"FJ1767": {
+"topic": "lateralv",
+"note": null
+},
+"FJ1814": {
+"topic": "lateralv",
+"note": null
+},
+"FJ1755": {
+"topic": "choroid",
+"note": "The dataset files this mesh under the sensory system."
+},
+"FJ1803": {
+"topic": "choroid",
+"note": "The dataset files this mesh under the sensory system."
+},
+"FJ1781": {
+"topic": "cerebellum",
+"note": null
+},
+"FJ1830": {
+"topic": "cerebellum",
+"note": null
+},
+"FJ1762": {
+"topic": "inferiorcoll",
+"note": null
+},
+"FJ1769": {
+"topic": "medulla",
+"note": null
+},
+"FJ1770": {
+"topic": "midbrain",
+"note": null
+},
+"FJ1774": {
+"topic": "midbrain",
+"note": "This source does not describe this structure by name. The dataset names it as part of the midbrain."
+},
+"FJ1775": {
+"topic": "pons",
+"note": null
+},
+"FJ1779": {
+"topic": "superiorcoll",
+"note": null
+},
+"FJ1810": {
+"topic": "inferiorcoll",
+"note": null
+},
+"FJ1817": {
+"topic": "midbrain",
+"note": null
+},
+"FJ1821": {
+"topic": "midbrain",
+"note": "This source does not describe this structure by name. The dataset names it as part of the midbrain."
+},
+"FJ1822": {
+"topic": "pons",
+"note": null
+},
+"FJ1826": {
+"topic": "superiorcoll",
+"note": null
+},
+"FJ1831": {
+"topic": "medulla",
+"note": null
+},
+"FJ1743": {
+"topic": "dien",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: zone of diencephalon."
+},
+"FJ1760": {
+"topic": "hypothalamus",
+"note": null
+},
+"FJ1768": {
+"topic": "dien",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gray matter of hypothalamus."
+},
+"FJ1777": {
+"topic": "dien",
+"note": "This source does not describe this structure by name. The source counts any brain region with \u201cthalamus\u201d in its name as part of the diencephalon."
+},
+"FJ1780": {
+"topic": "dien",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: hypothalamus, zone of diencephalon."
+},
+"FJ1782": {
+"topic": "thalamus",
+"note": null
+},
+"FJ1795": {
+"topic": "pineal",
+"note": "The source calls this the pineal gland."
+},
+"FJ1808": {
+"topic": "hypothalamus",
+"note": null
+},
+"FJ1815": {
+"topic": "dien",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gray matter of hypothalamus."
+},
+"FJ1824": {
+"topic": "dien",
+"note": "This source does not describe this structure by name. The source counts any brain region with \u201cthalamus\u201d in its name as part of the diencephalon."
+},
+"FJ1827": {
+"topic": "thalamus",
+"note": null
+},
+"FJ1828": {
+"topic": "dien",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: hypothalamus, zone of diencephalon."
+},
+"FJ1732": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1733": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1739": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1740": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1744": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1745": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1746": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1747": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1748": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: lobe of cerebral hemisphere."
+},
+"FJ1749": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: lobe of cerebral hemisphere."
+},
+"FJ1783": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1784": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1785": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1786": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1787": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1788": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1789": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1790": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1791": {
+"topic": "occipital",
+"note": null
+},
+"FJ1792": {
+"topic": "occipital",
+"note": null
+},
+"FJ1793": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1794": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1797": {
+"topic": "postcentral",
+"note": null
+},
+"FJ1798": {
+"topic": "postcentral",
+"note": null
+},
+"FJ1800": {
+"topic": "precentral",
+"note": null
+},
+"FJ1801": {
+"topic": "precentral",
+"note": null
+},
+"FJ1833": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1834": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1835": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: lobule of cerebral hemisphere."
+},
+"FJ1836": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: lobule of cerebral hemisphere."
+},
+"FJ1837": {
+"topic": "suptemporal",
+"note": "The source speaks of the superior temporal lobe. The dataset names this mesh as part of the superior temporal gyrus."
+},
+"FJ1838": {
+"topic": "suptemporal",
+"note": "The source speaks of the superior temporal lobe. The dataset names this mesh as part of the superior temporal gyrus."
+},
+"FJ1839": {
+"topic": "suptemporal",
+"note": "The source speaks of the superior temporal lobe. The dataset names this mesh as part of the superior temporal gyrus."
+},
+"FJ1840": {
+"topic": "suptemporal",
+"note": "The source speaks of the superior temporal lobe. The dataset names this mesh as part of the superior temporal gyrus."
+},
+"FJ1841": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1842": {
+"topic": "cortex",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+},
+"FJ1734": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: white matter of neuraxis, white matter of telencephalon."
+},
+"FJ1741": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: commissure of neuraxis."
+},
+"FJ1742": {
+"topic": "white",
+"note": null
+},
+"FJ1750": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: white matter of neuraxis, white matter of telencephalon."
+},
+"FJ1751": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: white matter of neuraxis, white matter of telencephalon."
+},
+"FJ1756": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: segment of white matter of neuraxis, white matter of neuraxis."
+},
+"FJ1758": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: white matter of neuraxis, white matter of telencephalon."
+},
+"FJ1761": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: segment of white matter of neuraxis, white matter of neuraxis."
+},
+"FJ1764": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: segment of white matter of neuraxis, white matter of neuraxis."
+},
+"FJ1778": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: segment of white matter of neuraxis, white matter of neuraxis."
+},
+"FJ1799": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: commissure of neuraxis."
+},
+"FJ1804": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: segment of white matter of neuraxis, white matter of neuraxis."
+},
+"FJ1806": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: white matter of neuraxis, white matter of telencephalon."
+},
+"FJ1809": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: segment of white matter of neuraxis, white matter of neuraxis."
+},
+"FJ1812": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: segment of white matter of neuraxis, white matter of neuraxis."
+},
+"FJ1825": {
+"topic": "none",
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: segment of white matter of neuraxis, white matter of neuraxis."
+},
+"FJ1796": {
+"topic": "pituitary",
+"note": "Shown for context. The passage mentions the pituitary gland."
+},
+"FJ1766": {
+"topic": "none",
+"note": "Neither this source nor the dataset's concepts say which brain region this structure belongs to, so it is listed on its own."
+},
+"FJ1771": {
+"topic": "none",
+"note": "Neither this source nor the dataset's concepts say which brain region this structure belongs to, so it is listed on its own."
+},
+"FJ1773": {
+"topic": "none",
+"note": "Neither this source nor the dataset's concepts say which brain region this structure belongs to, so it is listed on its own."
+},
+"FJ1813": {
+"topic": "none",
+"note": "Neither this source nor the dataset's concepts say which brain region this structure belongs to, so it is listed on its own."
+},
+"FJ1816": {
+"topic": "none",
+"note": "Neither this source nor the dataset's concepts say which brain region this structure belongs to, so it is listed on its own."
+},
+"FJ1816M": {
+"topic": "none",
+"note": "Neither this source nor the dataset's concepts say which brain region this structure belongs to, so it is listed on its own."
+},
+"FJ1818": {
+"topic": "none",
+"note": "Neither this source nor the dataset's concepts say which brain region this structure belongs to, so it is listed on its own."
+},
+"FJ1820": {
+"topic": "none",
+"note": "Neither this source nor the dataset's concepts say which brain region this structure belongs to, so it is listed on its own."
+},
+"FJ1832": {
+"topic": "none",
+"note": "Neither this source nor the dataset's concepts say which brain region this structure belongs to, so it is listed on its own."
+}
+},
+"flow": [
+{
+"title": "Lateral ventricles",
+"parts": [
+"Left lateral ventricle",
+"Right lateral ventricle"
+],
+"passage": {
+"text": "The first two are named the lateral ventricles and are deep within the cerebrum.",
+"pid": "fs-id1490421",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+},
+{
+"title": "Choroid plexus",
+"parts": [
+"Choroid plexus of cerebral hemisphere"
+],
+"passage": {
+"text": "In some of these spaces, CSF is produced by filtering of the blood that is performed by a specialized membrane known as a choroid plexus.",
+"pid": "fs-id1187632",
+"label": "13.3 The Ventricular System",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+},
+{
+"title": "Interventricular foramina",
+"parts": [
+"Interventricular foramen"
+],
+"passage": {
+"text": "These ventricles are connected to the third ventricle by two openings called the interventricular foramina.",
+"pid": "fs-id1490421",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+},
+{
+"title": "Third ventricle",
+"parts": [
+"Third ventricle"
+],
+"passage": {
+"text": "The third ventricle is the space between the left and right sides of the diencephalon, which opens into the cerebral aqueduct that passes through the midbrain.",
+"pid": "fs-id1490421",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+},
+{
+"title": "Cerebral aqueduct",
+"parts": [
+"Cerebral aqueduct"
+],
+"passage": {
+"text": "The cerebral aqueduct opens just inferior to the epithalamus and passes through the midbrain.",
+"pid": "fs-id1136775",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+},
+{
+"title": "Fourth ventricle",
+"parts": [
+"Fourth ventricle"
+],
+"passage": {
+"text": "The aqueduct opens up into the fourth ventricle.",
+"pid": "fs-id1136775",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+},
+{
+"title": "Central canal",
+"parts": [
+"Central canal of spinal cord"
+],
+"passage": {
+"text": "The fourth ventricle then narrows into the central canal of the spinal cord.",
+"pid": "fs-id1136775",
+"label": "13.3 The Ventricles",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+}
+],
+"gaps": [
+"This workstation shows the brain only. The meninges, the brain's blood vessels and the spinal cord itself (apart from its central canal) are not included."
+],
+"notes": [
+"The dataset's own brain concept leaves out many brain structures, so this workstation groups meshes by quoted textbook sentences where they exist and by each mesh's FMA concept otherwise. Structures neither source places in a region are listed under Other."
+]
+}

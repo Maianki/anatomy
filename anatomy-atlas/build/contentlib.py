@@ -3,9 +3,15 @@ import re, xml.etree.ElementTree as ET
 NS = "{http://cnx.rice.edu/cnxml}"
 
 
+def slug(number, title):
+    """OpenStax page slug, e.g. 22.1 + "Organs and Structures of the Respiratory System"."""
+    t = re.sub(r"[^a-z0-9 ]+", "", title.lower().replace("’", ""))
+    return "https://openstax.org/books/anatomy-and-physiology-2e/pages/" + number.replace(".", "-") + "-" + "-".join(t.split())
+
+
 class Module:
-    def __init__(self, path, number, url):
-        self.paras, self.section, self.number, self.url = {}, {}, number, url
+    def __init__(self, path, number, url, title=""):
+        self.paras, self.section, self.number, self.url, self.title = {}, {}, number, url, title
         root = ET.parse(path).getroot()
         self._walk(root.find(NS + "content"), "")
 
@@ -24,8 +30,8 @@ class Module:
     def sent(self, pid, prefix):
         p = self.paras[pid]
         i = p.index(prefix)  # fails loudly if the words are not in the source
-        m = re.search(r"\.(?=\s|$)", p[i:])
+        m = re.search(r"\.[\u201d\"\u2019]?(?=\s|$)", p[i:])
         s = p[i:i + m.end()]
-        assert not re.search(r"\(\s*\)|\(see \)|\([a-z]\)| shows | in \.$", s), s  # sentence points at a figure we don't show
+        assert not re.search(r"\(\s*\)|\(see [a-z]?\s*\)|\([a-z]\)| shows | shown in ,| in \.$| in ,", s), s  # sentence points at a figure we don't show
         sec = self.section[pid]
-        return {"text": s, "pid": pid, "label": self.number + (" " + sec if sec else ""), "url": self.url}
+        return {"text": s, "pid": pid, "label": self.number + " " + (sec or self.title), "url": self.url}

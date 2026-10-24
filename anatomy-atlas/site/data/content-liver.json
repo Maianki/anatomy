@@ -1,0 +1,648 @@
+{
+"topics": {
+"overview": [
+{
+"text": "The liver is the largest gland in the body, weighing about three pounds in an adult.",
+"pid": "fs-id1907412",
+"label": "23.6 The Liver",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "The liver lies inferior to the diaphragm in the right upper quadrant of the abdominal cavity and receives protection from the surrounding ribs.",
+"pid": "fs-id1907412",
+"label": "23.6 The Liver",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "The liver is divided into two primary lobes: a large right lobe and a much smaller left lobe.",
+"pid": "fs-id1479465",
+"label": "23.6 The Liver",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "In the right lobe, some anatomists also identify an inferior quadrate lobe and a posterior caudate lobe, which are defined by internal features.",
+"pid": "fs-id1479465",
+"label": "23.6 The Liver",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "The porta hepatis (\u201cgate to the liver\u201d) is where the hepatic artery and hepatic portal vein enter the liver.",
+"pid": "fs-id1842507",
+"label": "23.6 The Liver",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+}
+],
+"lobes": [
+{
+"text": "The liver is divided into two primary lobes: a large right lobe and a much smaller left lobe.",
+"pid": "fs-id1479465",
+"label": "23.6 The Liver",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "In the right lobe, some anatomists also identify an inferior quadrate lobe and a posterior caudate lobe, which are defined by internal features.",
+"pid": "fs-id1479465",
+"label": "23.6 The Liver",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+}
+],
+"portal": [
+{
+"text": "The porta hepatis (\u201cgate to the liver\u201d) is where the hepatic artery and hepatic portal vein enter the liver.",
+"pid": "fs-id1842507",
+"label": "23.6 The Liver",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "The hepatic portal vein delivers partially deoxygenated blood containing nutrients absorbed from the small intestine and actually supplies more oxygen to the liver than do the much smaller hepatic arteries.",
+"pid": "fs-id1842507",
+"label": "23.6 The Liver",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "With this hepatic portal circulation, all blood from the alimentary canal passes through the liver.",
+"pid": "fs-id1842507",
+"label": "23.6 The Liver",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+}
+],
+"arteries": [
+{
+"text": "The porta hepatis (\u201cgate to the liver\u201d) is where the hepatic artery and hepatic portal vein enter the liver.",
+"pid": "fs-id1842507",
+"label": "23.6 The Liver",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "A hepatic sinusoid is an open, porous blood space formed by fenestrated capillaries from nutrient-rich hepatic portal veins and oxygen-rich hepatic arteries.",
+"pid": "fs-id1966736",
+"label": "23.6 Histology",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+}
+],
+"hveins": [
+{
+"text": "After processing the bloodborne nutrients and toxins, the liver releases nutrients needed by other cells back into the blood, which drains into the central vein and then through the hepatic vein to the inferior vena cava.",
+"pid": "fs-id1842507",
+"label": "23.6 The Liver",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "Blood then flows through a hepatic vein into the inferior vena cava.",
+"pid": "fs-id1966736",
+"label": "23.6 Histology",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+}
+],
+"biliary": [
+{
+"text": "The bile ducts unite to form the larger right and left hepatic ducts, which themselves merge and exit the liver as the common hepatic duct.",
+"pid": "fs-id1356003",
+"label": "23.6 Histology",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "This duct then joins with the cystic duct from the gallbladder, forming the common bile duct through which bile flows into the small intestine.",
+"pid": "fs-id1356003",
+"label": "23.6 Histology",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+}
+],
+"cystic": [
+{
+"text": "The cystic duct is 1\u20132 cm (less than 1 in) long and turns inferiorly as it bridges the neck and hepatic duct.",
+"pid": "fs-id1854598",
+"label": "23.6 The Gallbladder",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "This duct then joins with the cystic duct from the gallbladder, forming the common bile duct through which bile flows into the small intestine.",
+"pid": "fs-id1356003",
+"label": "23.6 Histology",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+}
+],
+"gallbladder": [
+{
+"text": "The gallbladder is 8\u201310 cm (~3\u20134 in) long and is nested in a shallow area on the posterior aspect of the right lobe of the liver.",
+"pid": "fs-id1854598",
+"label": "23.6 The Gallbladder",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "This muscular sac stores, concentrates, and, when stimulated, propels the bile into the duodenum via the common bile duct.",
+"pid": "fs-id1854598",
+"label": "23.6 The Gallbladder",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "It is divided into three regions.",
+"pid": "fs-id1854598",
+"label": "23.6 The Gallbladder",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "The fundus is the widest portion and tapers medially into the body, which in turn narrows to become the neck.",
+"pid": "fs-id1854598",
+"label": "23.6 The Gallbladder",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+}
+],
+"pancreas": [
+{
+"text": "The soft, oblong, glandular pancreas lies transversely in the retroperitoneum behind the stomach.",
+"pid": "fs-id2094509",
+"label": "23.6 The Pancreas",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "Its head is nestled into the \u201cc-shaped\u201d curvature of the duodenum with the body extending to the left about 15.2 cm (6 in) and ending as a tapering tail in the hilum of the spleen.",
+"pid": "fs-id2094509",
+"label": "23.6 The Pancreas",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+}
+],
+"pducts": [
+{
+"text": "These acinar cells secrete enzyme-rich pancreatic juice into tiny merging ducts that form two dominant ducts.",
+"pid": "fs-id1836151",
+"label": "23.6 The Pancreas",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "The larger duct fuses with the common bile duct (carrying bile from the liver and gallbladder) just before entering the duodenum via a common opening (the hepatopancreatic ampulla).",
+"pid": "fs-id1836151",
+"label": "23.6 The Pancreas",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+{
+"text": "The second and smaller pancreatic duct, the accessory duct (duct of Santorini), runs from the pancreas directly into the duodenum, approximately 1 inch above the hepatopancreatic ampulla.",
+"pid": "fs-id1836151",
+"label": "23.6 The Pancreas",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+}
+],
+"duodenum": [
+{
+"text": "The shortest region is the 25.4-cm (10-in) duodenum, which begins at the pyloric sphincter.",
+"pid": "fs-id2271264",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "Just past the pyloric sphincter, it bends posteriorly behind the peritoneum, becoming retroperitoneal, and then makes a C-shaped curve around the head of the pancreas before ascending anteriorly again to return to the peritoneal cavity and join the jejunum.",
+"pid": "fs-id2271264",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"ivc": [
+{
+"text": "Blood then flows through a hepatic vein into the inferior vena cava.",
+"pid": "fs-id1966736",
+"label": "23.6 Histology",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+}
+]
+},
+"meshTopic": {
+"FJ2409": {
+"topic": "lobes",
+"note": "This source describes the liver's lobes. It does not describe the numbered segments used in this 3D model."
+},
+"FJ2816": {
+"topic": "lobes",
+"note": null
+},
+"FJ2818": {
+"topic": "lobes",
+"note": "This source describes the liver's lobes. It does not describe the numbered segments used in this 3D model."
+},
+"FJ2819": {
+"topic": "lobes",
+"note": "This source describes the liver's lobes. It does not describe the numbered segments used in this 3D model."
+},
+"FJ2820": {
+"topic": "lobes",
+"note": "This source describes the liver's lobes. It does not describe the numbered segments used in this 3D model."
+},
+"FJ2821": {
+"topic": "lobes",
+"note": "This source describes the liver's lobes. It does not describe the numbered segments used in this 3D model."
+},
+"FJ2822": {
+"topic": "lobes",
+"note": "This source describes the liver's lobes. It does not describe the numbered segments used in this 3D model."
+},
+"FJ2823": {
+"topic": "lobes",
+"note": "This source describes the liver's lobes. It does not describe the numbered segments used in this 3D model."
+},
+"FJ2824": {
+"topic": "lobes",
+"note": "This source describes the liver's lobes. It does not describe the numbered segments used in this 3D model."
+},
+"FJ1858": {
+"topic": "lobes",
+"note": "This source describes the liver's lobes. It does not describe the numbered segments used in this 3D model. The dataset also does not file this mesh under its liver concept."
+},
+"FJ1893": {
+"topic": "portal",
+"note": null
+},
+"FJ1913": {
+"topic": "portal",
+"note": null
+},
+"FJ1914": {
+"topic": "portal",
+"note": null
+},
+"FJ2404": {
+"topic": "portal",
+"note": null
+},
+"FJ2405": {
+"topic": "portal",
+"note": null
+},
+"FJ3073": {
+"topic": "portal",
+"note": null
+},
+"FJ3074": {
+"topic": "portal",
+"note": null
+},
+"FJ3102": {
+"topic": "portal",
+"note": null
+},
+"FJ3111": {
+"topic": "portal",
+"note": null
+},
+"FJ3112": {
+"topic": "portal",
+"note": null
+},
+"FJ3113": {
+"topic": "portal",
+"note": null
+},
+"FJ3122": {
+"topic": "portal",
+"note": null
+},
+"FJ3124": {
+"topic": "portal",
+"note": null
+},
+"FJ3125": {
+"topic": "portal",
+"note": null
+},
+"FJ3126": {
+"topic": "portal",
+"note": null
+},
+"FJ3127": {
+"topic": "portal",
+"note": null
+},
+"FJ3128": {
+"topic": "portal",
+"note": null
+},
+"FJ1853": {
+"topic": "portal",
+"note": null
+},
+"FJ1916": {
+"topic": "arteries",
+"note": null
+},
+"FJ2386": {
+"topic": "arteries",
+"note": null
+},
+"FJ3075": {
+"topic": "arteries",
+"note": null
+},
+"FJ3076": {
+"topic": "arteries",
+"note": null
+},
+"FJ3077": {
+"topic": "arteries",
+"note": null
+},
+"FJ3081": {
+"topic": "arteries",
+"note": null
+},
+"FJ3091": {
+"topic": "arteries",
+"note": null
+},
+"FJ3092": {
+"topic": "arteries",
+"note": null
+},
+"FJ3093": {
+"topic": "arteries",
+"note": null
+},
+"FJ3095": {
+"topic": "arteries",
+"note": null
+},
+"FJ3106": {
+"topic": "arteries",
+"note": null
+},
+"FJ3107": {
+"topic": "arteries",
+"note": null
+},
+"FJ3114": {
+"topic": "arteries",
+"note": null
+},
+"FJ3115": {
+"topic": "arteries",
+"note": null
+},
+"FJ3116": {
+"topic": "arteries",
+"note": null
+},
+"FJ3117": {
+"topic": "arteries",
+"note": null
+},
+"FJ3078": {
+"topic": "arteries",
+"note": null
+},
+"FJ2415": {
+"topic": "hveins",
+"note": null
+},
+"FJ2416": {
+"topic": "hveins",
+"note": null
+},
+"FJ3083": {
+"topic": "hveins",
+"note": null
+},
+"FJ3086": {
+"topic": "hveins",
+"note": null
+},
+"FJ2414": {
+"topic": "hveins",
+"note": null
+},
+"FJ1867": {
+"topic": "hveins",
+"note": null
+},
+"FJ3084": {
+"topic": "hveins",
+"note": null
+},
+"FJ3085": {
+"topic": "hveins",
+"note": null
+},
+"FJ3097": {
+"topic": "hveins",
+"note": null
+},
+"FJ3098": {
+"topic": "hveins",
+"note": null
+},
+"FJ3099": {
+"topic": "hveins",
+"note": null
+},
+"FJ3100": {
+"topic": "hveins",
+"note": null
+},
+"FJ3101": {
+"topic": "hveins",
+"note": null
+},
+"FJ3118": {
+"topic": "hveins",
+"note": null
+},
+"FJ3119": {
+"topic": "hveins",
+"note": null
+},
+"FJ3120": {
+"topic": "hveins",
+"note": null
+},
+"FJ3121": {
+"topic": "hveins",
+"note": null
+},
+"FJ1883": {
+"topic": "biliary",
+"note": null
+},
+"FJ3071": {
+"topic": "biliary",
+"note": null
+},
+"FJ3072": {
+"topic": "biliary",
+"note": null
+},
+"FJ3088": {
+"topic": "biliary",
+"note": null
+},
+"FJ3089": {
+"topic": "biliary",
+"note": null
+},
+"FJ3090": {
+"topic": "biliary",
+"note": null
+},
+"FJ3096": {
+"topic": "biliary",
+"note": null
+},
+"FJ3103": {
+"topic": "biliary",
+"note": null
+},
+"FJ3104": {
+"topic": "biliary",
+"note": null
+},
+"FJ3105": {
+"topic": "biliary",
+"note": null
+},
+"FJ3108": {
+"topic": "biliary",
+"note": null
+},
+"FJ3109": {
+"topic": "biliary",
+"note": null
+},
+"FJ3110": {
+"topic": "biliary",
+"note": null
+},
+"FJ3123": {
+"topic": "biliary",
+"note": null
+},
+"FJ3079": {
+"topic": "biliary",
+"note": null
+},
+"FJ3080": {
+"topic": "cystic",
+"note": null
+},
+"FJ2817": {
+"topic": "gallbladder",
+"note": null
+},
+"FJ1895": {
+"topic": "pancreas",
+"note": null
+},
+"FJ2629": {
+"topic": "pancreas",
+"note": null
+},
+"FJ2630": {
+"topic": "pducts",
+"note": null
+},
+"FJ1896": {
+"topic": "pducts",
+"note": null
+},
+"FJ2573": {
+"topic": "duodenum",
+"note": "Shown for context. This source passage is about the duodenum."
+},
+"FJ3441": {
+"topic": "ivc",
+"note": null
+},
+"FJ3659": {
+"topic": "ivc",
+"note": null
+}
+},
+"flow": [
+{
+"title": "Hepatic portal vein",
+"passage": {
+"text": "The porta hepatis (\u201cgate to the liver\u201d) is where the hepatic artery and hepatic portal vein enter the liver.",
+"pid": "fs-id1842507",
+"label": "23.6 The Liver",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+"groups": [
+"portal"
+]
+},
+{
+"title": "Hepatic arteries",
+"passage": {
+"text": "A hepatic sinusoid is an open, porous blood space formed by fenestrated capillaries from nutrient-rich hepatic portal veins and oxygen-rich hepatic arteries.",
+"pid": "fs-id1966736",
+"label": "23.6 Histology",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+"groups": [
+"arteries"
+]
+},
+{
+"title": "Hepatic veins to the inferior vena cava",
+"passage": {
+"text": "Blood then flows through a hepatic vein into the inferior vena cava.",
+"pid": "fs-id1966736",
+"label": "23.6 Histology",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+"groups": [
+"hveins",
+"ivc"
+]
+},
+{
+"title": "Bile ducts",
+"passage": {
+"text": "The bile ducts unite to form the larger right and left hepatic ducts, which themselves merge and exit the liver as the common hepatic duct.",
+"pid": "fs-id1356003",
+"label": "23.6 Histology",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+"groups": [
+"biliary"
+]
+},
+{
+"title": "Cystic duct and gallbladder",
+"passage": {
+"text": "This duct then joins with the cystic duct from the gallbladder, forming the common bile duct through which bile flows into the small intestine.",
+"pid": "fs-id1356003",
+"label": "23.6 Histology",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+"parts": [
+"Cystic duct",
+"Gallbladder"
+]
+},
+{
+"title": "Pancreatic duct",
+"passage": {
+"text": "The larger duct fuses with the common bile duct (carrying bile from the liver and gallbladder) just before entering the duodenum via a common opening (the hepatopancreatic ampulla).",
+"pid": "fs-id1836151",
+"label": "23.6 The Pancreas",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-6-accessory-organs-in-digestion-the-liver-pancreas-and-gallbladder"
+},
+"groups": [
+"pduct-tree"
+]
+},
+{
+"title": "Into the duodenum",
+"passage": {
+"text": "This ampulla opens into the duodenum at a tiny volcano-shaped structure called the major duodenal papilla.",
+"pid": "fs-id2227124",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+"groups": [
+"duodenum"
+]
+}
+],
+"gaps": [
+"The dataset has no mesh for the common bile duct, the hepatopancreatic ampulla or the liver's ligaments."
+],
+"notes": [
+"The gallbladder in this model measures 6.0 cm along its longest axis (build/measure.py). The quoted text gives 8 to 10 cm."
+]
+}

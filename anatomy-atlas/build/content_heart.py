@@ -25,7 +25,7 @@ walk(root.find(ns + "content"), "Heart Anatomy")
 def sent(pid, prefix):
     p = paras[pid]
     i = p.index(prefix)  # raises if the text is not in the source
-    m = re.search(r"\.(?=\s|$)", p[i:])
+    m = re.search(r"\.[\u201d\"\u2019]?(?=\s|$)", p[i:])
     s = p[i:i + m.end()]
     assert not re.search(r"\(\s*\)|\(see \)|\([a-z]\)| shows | in \.$", s), s  # skip sentences that point at missing figures
     return {"text": s, "pid": pid, "label": "19.1 " + section_of[pid],

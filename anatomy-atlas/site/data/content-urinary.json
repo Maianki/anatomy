@@ -1,0 +1,463 @@
+{
+"topics": {
+"overview": [
+{
+"text": "The kidneys lie on either side of the spine in the retroperitoneal space between the parietal peritoneum and the posterior abdominal wall, well protected by muscle, fat, and ribs.",
+"pid": "fs-id1542887",
+"label": "25.3 Gross Anatomy of the Kidney",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+},
+{
+"text": "The left kidney is located at about the T12 to L3 vertebrae, whereas the right is lower due to slight displacement by the liver.",
+"pid": "fs-id1592078",
+"label": "25.3 External Anatomy",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+},
+{
+"text": "The kidneys and ureters are completely retroperitoneal, and the bladder has a peritoneal covering only over the dome.",
+"pid": "fs-id2338701",
+"label": "25.2 Ureters",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+},
+{
+"text": "The urethra transports urine from the bladder to the outside of the body for disposal.",
+"pid": "fs-id2569293",
+"label": "25.2 Urethra",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+}
+],
+"kidneys": [
+{
+"text": "The kidneys lie on either side of the spine in the retroperitoneal space between the parietal peritoneum and the posterior abdominal wall, well protected by muscle, fat, and ribs.",
+"pid": "fs-id1542887",
+"label": "25.3 Gross Anatomy of the Kidney",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+},
+{
+"text": "They are roughly the size of your fist, and the male kidney is typically a bit larger than the female kidney.",
+"pid": "fs-id1542887",
+"label": "25.3 Gross Anatomy of the Kidney",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+},
+{
+"text": "The left kidney is located at about the T12 to L3 vertebrae, whereas the right is lower due to slight displacement by the liver.",
+"pid": "fs-id1592078",
+"label": "25.3 External Anatomy",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+},
+{
+"text": "They are about 11\u201314 cm in length, 6 cm wide, and 4 cm thick, and are directly covered by a fibrous capsule composed of dense, irregular connective tissue that helps to hold their shape and protect them.",
+"pid": "fs-id1592078",
+"label": "25.3 External Anatomy",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+}
+],
+"ureters": [
+{
+"text": "The renal pelvis narrows to become the ureter of each kidney.",
+"pid": "fs-id2338701",
+"label": "25.2 Ureters",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+},
+{
+"text": "As urine passes through the ureter, it does not passively drain into the bladder but rather is propelled by waves of peristalsis.",
+"pid": "fs-id2338701",
+"label": "25.2 Ureters",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+},
+{
+"text": "As the ureters enter the pelvis, they sweep laterally, hugging the pelvic walls.",
+"pid": "fs-id2338701",
+"label": "25.2 Ureters",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+},
+{
+"text": "The ureters are approximately 30 cm long.",
+"pid": "fs-id2140392",
+"label": "25.2 Ureters",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+}
+],
+"bladder": [
+{
+"text": "In males, the anatomy is similar, minus the uterus, and with the addition of the prostate inferior to the bladder.",
+"pid": "fs-id1616696",
+"label": "25.2 Bladder",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+},
+{
+"text": "The bladder is a retroperitoneal organ whose \"dome\" distends superiorly when the bladder is filling with urine.",
+"pid": "fs-id1616696",
+"label": "25.2 Bladder",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+},
+{
+"text": "The bladder is a highly distensible organ comprised of irregular crisscrossing bands of smooth muscle collectively called the detrusor muscle.",
+"pid": "fs-id2978014",
+"label": "25.2 Bladder",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+},
+{
+"text": "Volumes in adults can range from nearly zero to 500\u2013600 mL.",
+"pid": "fs-id2978014",
+"label": "25.2 Bladder",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+}
+],
+"urethra": [
+{
+"text": "The urethra transports urine from the bladder to the outside of the body for disposal.",
+"pid": "fs-id2569293",
+"label": "25.2 Urethra",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+},
+{
+"text": "The length of the male urethra varies between people but averages 20 cm in length.",
+"pid": "fs-id2071647",
+"label": "25.2 Male Urethra",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+},
+{
+"text": "It is divided into four regions: the preprostatic urethra, the prostatic urethra, the membranous urethra, and the spongy or penile urethra.",
+"pid": "fs-id2071647",
+"label": "25.2 Male Urethra",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+}
+],
+"renal": [
+{
+"text": "The renal hilum is the entry and exit site for structures servicing the kidneys: vessels, nerves, lymphatics, and ureters.",
+"pid": "fs-id1764618",
+"label": "25.3 Renal Hilum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+},
+{
+"text": "The renal arteries form directly from the descending aorta, whereas the renal veins return cleansed blood directly to the inferior vena cava.",
+"pid": "fs-id1764618",
+"label": "25.3 Renal Hilum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+},
+{
+"text": "The artery, vein, and renal pelvis are arranged in an anterior-to-posterior order.",
+"pid": "fs-id1764618",
+"label": "25.3 Renal Hilum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+}
+],
+"great": [
+{
+"text": "The renal arteries form directly from the descending aorta, whereas the renal veins return cleansed blood directly to the inferior vena cava.",
+"pid": "fs-id1764618",
+"label": "25.3 Renal Hilum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+}
+],
+"adrenal": [
+{
+"text": "On the superior aspect of each kidney is the adrenal gland.",
+"pid": "fs-id2488605",
+"label": "25.3 External Anatomy",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+}
+],
+"prostate": [
+{
+"text": "The prostatic urethra passes through the prostate gland.",
+"pid": "fs-id2071647",
+"label": "25.2 Male Urethra",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+}
+]
+},
+"meshTopic": {
+"FJ3145": {
+"topic": "kidneys",
+"note": null
+},
+"FJ3147": {
+"topic": "kidneys",
+"note": null
+},
+"FJ3144": {
+"topic": "ureters",
+"note": null
+},
+"FJ3146": {
+"topic": "ureters",
+"note": null
+},
+"FJ3149": {
+"topic": "bladder",
+"note": null
+},
+"FJ3148": {
+"topic": "urethra",
+"note": null
+},
+"FJ2038": {
+"topic": "renal",
+"note": null
+},
+"FJ2042": {
+"topic": "renal",
+"note": null
+},
+"FJ2043": {
+"topic": "renal",
+"note": null
+},
+"FJ2045": {
+"topic": "renal",
+"note": null
+},
+"FJ2046": {
+"topic": "renal",
+"note": null
+},
+"FJ2049": {
+"topic": "renal",
+"note": null
+},
+"FJ2052": {
+"topic": "renal",
+"note": null
+},
+"FJ2053": {
+"topic": "renal",
+"note": null
+},
+"FJ2054": {
+"topic": "renal",
+"note": null
+},
+"FJ3458": {
+"topic": "renal",
+"note": null
+},
+"FJ3459": {
+"topic": "renal",
+"note": null
+},
+"FJ3460": {
+"topic": "renal",
+"note": null
+},
+"FJ3461": {
+"topic": "renal",
+"note": null
+},
+"FJ3462": {
+"topic": "renal",
+"note": null
+},
+"FJ3463": {
+"topic": "renal",
+"note": null
+},
+"FJ3467": {
+"topic": "renal",
+"note": null
+},
+"FJ3472": {
+"topic": "renal",
+"note": null
+},
+"FJ3473": {
+"topic": "renal",
+"note": null
+},
+"FJ3474": {
+"topic": "renal",
+"note": null
+},
+"FJ3475": {
+"topic": "renal",
+"note": null
+},
+"FJ3476": {
+"topic": "renal",
+"note": null
+},
+"FJ3481": {
+"topic": "renal",
+"note": null
+},
+"FJ3558": {
+"topic": "renal",
+"note": null
+},
+"FJ3559": {
+"topic": "renal",
+"note": null
+},
+"FJ3560": {
+"topic": "renal",
+"note": null
+},
+"FJ3561": {
+"topic": "renal",
+"note": null
+},
+"FJ3562": {
+"topic": "renal",
+"note": null
+},
+"FJ3563": {
+"topic": "renal",
+"note": null
+},
+"FJ3573": {
+"topic": "renal",
+"note": null
+},
+"FJ3574": {
+"topic": "renal",
+"note": null
+},
+"FJ3575": {
+"topic": "renal",
+"note": null
+},
+"FJ3576": {
+"topic": "renal",
+"note": null
+},
+"FJ3581": {
+"topic": "renal",
+"note": null
+},
+"FJ3582": {
+"topic": "renal",
+"note": null
+},
+"FJ3584": {
+"topic": "renal",
+"note": null
+},
+"FJ3586": {
+"topic": "renal",
+"note": null
+},
+"FJ3477": {
+"topic": "renal",
+"note": null
+},
+"FJ3478": {
+"topic": "renal",
+"note": null
+},
+"FJ3480": {
+"topic": "renal",
+"note": null
+},
+"FJ3577": {
+"topic": "renal",
+"note": null
+},
+"FJ3578": {
+"topic": "renal",
+"note": null
+},
+"FJ3580": {
+"topic": "renal",
+"note": null
+},
+"FJ1932": {
+"topic": "great",
+"note": null
+},
+"FJ3441": {
+"topic": "great",
+"note": null
+},
+"FJ3659": {
+"topic": "great",
+"note": null
+},
+"FJ3129": {
+"topic": "adrenal",
+"note": null
+},
+"FJ3130": {
+"topic": "adrenal",
+"note": null
+},
+"FJ3139": {
+"topic": "prostate",
+"note": null
+}
+},
+"flow": [
+{
+"title": "Kidneys",
+"passage": {
+"text": "As urine is formed, it drains into the calyces of the kidney, which merge to form the funnel-shaped renal pelvis in the hilum of each kidney.",
+"pid": "fs-id2338701",
+"label": "25.2 Ureters",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+},
+"groups": [
+"kidneys"
+]
+},
+{
+"title": "Ureters",
+"passage": {
+"text": "The renal pelvis narrows to become the ureter of each kidney.",
+"pid": "fs-id2338701",
+"label": "25.2 Ureters",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+},
+"groups": [
+"ureters"
+]
+},
+{
+"title": "Into the bladder",
+"passage": {
+"text": "As they approach the bladder, they turn medially and pierce the bladder wall obliquely.",
+"pid": "fs-id2338701",
+"label": "25.2 Ureters",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+},
+"groups": [
+"ureters",
+"bladder"
+]
+},
+{
+"title": "Urethra",
+"passage": {
+"text": "The urethra transports urine from the bladder to the outside of the body for disposal.",
+"pid": "fs-id2569293",
+"label": "25.2 Urethra",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport"
+},
+"groups": [
+"urethra"
+]
+},
+{
+"title": "Blood in and out of the kidneys",
+"passage": {
+"text": "The renal arteries form directly from the descending aorta, whereas the renal veins return cleansed blood directly to the inferior vena cava.",
+"pid": "fs-id1764618",
+"label": "25.3 Renal Hilum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-3-gross-anatomy-of-the-kidney"
+},
+"groups": [
+"renal-arteries",
+"renal-veins",
+"great"
+]
+}
+],
+"gaps": [
+"Each kidney in this dataset is a single outer surface. The renal cortex, medulla and pyramids are not modelled."
+],
+"notes": [
+"The dataset's ureter meshes continue up into each kidney and branch there. The dataset does not name those branches separately, so this page does not label them as the renal pelvis or calyces.",
+"This is an adult male reference body, so the urethra shown is the male urethra.",
+"The kidneys in this model measure 10.8 cm (left) and 10.6 cm (right) along their longest axis (build/measure.py). The quoted text gives 11 to 14 cm."
+]
+}

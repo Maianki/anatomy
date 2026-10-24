@@ -1,0 +1,708 @@
+{
+"topics": {
+"overview": [
+{
+"text": "The esophagus is a muscular tube that connects the pharynx to the stomach.",
+"pid": "fs-id1984077",
+"label": "23.3 The Esophagus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus"
+},
+{
+"text": "The funnel-shaped pylorus connects the stomach to the duodenum.",
+"pid": "fs-id2052808",
+"label": "23.4 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach"
+},
+{
+"text": "The longest part of the alimentary canal, the small intestine is about 3.05 meters (10 feet) long in a living person (but about twice as long in a cadaver due to the loss of muscle tone).",
+"pid": "fs-id2142144",
+"label": "23.5 The Small Intestine",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "The large intestine runs from the appendix to the anus.",
+"pid": "fs-id1850868",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "The large intestine is subdivided into four main regions: the cecum, the colon, the rectum, and the anus.",
+"pid": "fs-id1422467",
+"label": "23.5 Subdivisions",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"esophagus": [
+{
+"text": "The esophagus is a muscular tube that connects the pharynx to the stomach.",
+"pid": "fs-id1984077",
+"label": "23.3 The Esophagus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus"
+},
+{
+"text": "It is approximately 25.4 cm (10 in) in length, located posterior to the trachea, and remains in a collapsed form when not engaged in swallowing.",
+"pid": "fs-id1984077",
+"label": "23.3 The Esophagus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus"
+},
+{
+"text": "To enter the abdomen, the esophagus penetrates the diaphragm through an opening called the esophageal hiatus.",
+"pid": "fs-id1984077",
+"label": "23.3 The Esophagus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus"
+}
+],
+"stomach": [
+{
+"text": "The cardia (or cardiac region) is the point where the esophagus connects to the stomach and through which food passes into the stomach.",
+"pid": "fs-id2052808",
+"label": "23.4 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach"
+},
+{
+"text": "Located inferior to the diaphragm, above and to the left of the cardia, is the dome-shaped fundus.",
+"pid": "fs-id2052808",
+"label": "23.4 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach"
+},
+{
+"text": "Below the fundus is the body, the main part of the stomach.",
+"pid": "fs-id2052808",
+"label": "23.4 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach"
+},
+{
+"text": "The funnel-shaped pylorus connects the stomach to the duodenum.",
+"pid": "fs-id2052808",
+"label": "23.4 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach"
+},
+{
+"text": "The convex lateral surface of the stomach is called the greater curvature; the concave medial border is the lesser curvature.",
+"pid": "fs-id1386858",
+"label": "23.4 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach"
+}
+],
+"duodenum": [
+{
+"text": "The shortest region is the 25.4-cm (10-in) duodenum, which begins at the pyloric sphincter.",
+"pid": "fs-id2271264",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "Just past the pyloric sphincter, it bends posteriorly behind the peritoneum, becoming retroperitoneal, and then makes a C-shaped curve around the head of the pancreas before ascending anteriorly again to return to the peritoneal cavity and join the jejunum.",
+"pid": "fs-id2271264",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"jejunum": [
+{
+"text": "The jejunum is about 0.9 meters (3 feet) long (in life) and runs from the duodenum to the ileum.",
+"pid": "fs-id2311182",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "No clear demarcation exists between the jejunum and the final segment of the small intestine, the ileum.",
+"pid": "fs-id2311182",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"ileum": [
+{
+"text": "The ileum is the longest part of the small intestine, measuring about 1.8 meters (6 feet) in length.",
+"pid": "fs-id1921294",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "It is thicker, more vascular, and has more developed mucosal folds than the jejunum.",
+"pid": "fs-id1921294",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "The ileum joins the cecum, the first portion of the large intestine, at the ileocecal sphincter (or valve).",
+"pid": "fs-id1921294",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"ileocecal": [
+{
+"text": "The ileocecal valve, located at the opening between the ileum and the large intestine, controls the flow of chyme from the small intestine to the large intestine.",
+"pid": "fs-id1422467",
+"label": "23.5 Subdivisions",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "The ileum joins the cecum, the first portion of the large intestine, at the ileocecal sphincter (or valve).",
+"pid": "fs-id1921294",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"appendix": [
+{
+"text": "The appendix (or vermiform appendix) is a winding tube that attaches to the cecum.",
+"pid": "fs-id2020835",
+"label": "23.5 Cecum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"mesoappendix": [
+{
+"text": "The mesoappendix, the mesentery of the appendix, tethers it to the mesentery of the ileum.",
+"pid": "fs-id2020835",
+"label": "23.5 Cecum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"ascending": [
+{
+"text": "Upon entering the colon, the food residue first travels up the ascending colon on the right side of the abdomen.",
+"pid": "fs-id1583646",
+"label": "23.5 Colon",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "At the inferior surface of the liver, the colon bends to form the right colic flexure (hepatic flexure) and becomes the transverse colon.",
+"pid": "fs-id1583646",
+"label": "23.5 Colon",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"transverse": [
+{
+"text": "At the inferior surface of the liver, the colon bends to form the right colic flexure (hepatic flexure) and becomes the transverse colon.",
+"pid": "fs-id1583646",
+"label": "23.5 Colon",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "Food residue passing through the transverse colon travels across to the left side of the abdomen, where the colon angles sharply immediately inferior to the spleen, at the left colic flexure (splenic flexure).",
+"pid": "fs-id1583646",
+"label": "23.5 Colon",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"descending": [
+{
+"text": "From there, food residue passes through the descending colon, which runs down the left side of the posterior abdominal wall.",
+"pid": "fs-id1583646",
+"label": "23.5 Colon",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "The ascending and descending colon, and the rectum (discussed next) are located in the retroperitoneum.",
+"pid": "fs-id1583646",
+"label": "23.5 Colon",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"mesocolon": [
+{
+"text": "The transverse and sigmoid colon are tethered to the posterior abdominal wall by the mesocolon.",
+"pid": "fs-id1583646",
+"label": "23.5 Colon",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"rectum": [
+{
+"text": "Food residue leaving the sigmoid colon enters the rectum in the pelvis, near the third sacral vertebra.",
+"pid": "fs-id1247327",
+"label": "23.5 Rectum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "The final 20.3 cm (8 in) of the alimentary canal, the rectum extends anterior to the sacrum and coccyx.",
+"pid": "fs-id1247327",
+"label": "23.5 Rectum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"teniae": [
+{
+"text": "The teniae coli are three bands of smooth muscle that make up the longitudinal muscle layer of the muscularis of the large intestine, except at its terminal end.",
+"pid": "fs-id789222",
+"label": "23.5 Anatomy",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "Tonic contractions of the teniae coli bunch up the colon into a succession of pouches called haustra (singular = haustrum), which are responsible for the wrinkled appearance of the colon.",
+"pid": "fs-id789222",
+"label": "23.5 Anatomy",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"mesentery": [
+{
+"text": "The jejunum and ileum are tethered to the posterior abdominal wall by the mesentery.",
+"pid": "fs-id1921294",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"context": []
+},
+"meshTopic": {
+"FJ2563": {
+"topic": "esophagus",
+"note": null
+},
+"FJ2564": {
+"topic": "stomach",
+"note": null
+},
+"FJ2573": {
+"topic": "duodenum",
+"note": null
+},
+"FJ2606": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2607": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2608": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2609": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2610": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2611": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2612": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2613": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2614": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2615": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2616": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2617": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2618": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2619": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2620": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2621": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2622": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2623": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2624": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2625": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2626": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2627": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2628": {
+"topic": "jejunum",
+"note": null
+},
+"FJ2574": {
+"topic": "ileum",
+"note": null
+},
+"FJ2575": {
+"topic": "ileum",
+"note": null
+},
+"FJ2576": {
+"topic": "ileum",
+"note": null
+},
+"FJ2577": {
+"topic": "ileum",
+"note": null
+},
+"FJ2578": {
+"topic": "ileum",
+"note": null
+},
+"FJ2579": {
+"topic": "ileum",
+"note": null
+},
+"FJ2580": {
+"topic": "ileum",
+"note": null
+},
+"FJ2581": {
+"topic": "ileum",
+"note": null
+},
+"FJ2582": {
+"topic": "ileum",
+"note": null
+},
+"FJ2583": {
+"topic": "ileum",
+"note": null
+},
+"FJ2584": {
+"topic": "ileum",
+"note": null
+},
+"FJ2585": {
+"topic": "ileum",
+"note": null
+},
+"FJ2586": {
+"topic": "ileum",
+"note": null
+},
+"FJ2587": {
+"topic": "ileum",
+"note": null
+},
+"FJ2588": {
+"topic": "ileum",
+"note": null
+},
+"FJ2589": {
+"topic": "ileum",
+"note": null
+},
+"FJ2590": {
+"topic": "ileum",
+"note": null
+},
+"FJ2591": {
+"topic": "ileum",
+"note": null
+},
+"FJ2592": {
+"topic": "ileum",
+"note": null
+},
+"FJ2593": {
+"topic": "ileum",
+"note": null
+},
+"FJ2594": {
+"topic": "ileum",
+"note": null
+},
+"FJ2595": {
+"topic": "ileum",
+"note": null
+},
+"FJ2596": {
+"topic": "ileum",
+"note": null
+},
+"FJ2597": {
+"topic": "ileum",
+"note": null
+},
+"FJ2598": {
+"topic": "ileum",
+"note": null
+},
+"FJ2600": {
+"topic": "ileum",
+"note": null
+},
+"FJ2601": {
+"topic": "ileum",
+"note": null
+},
+"FJ2602": {
+"topic": "ileum",
+"note": null
+},
+"FJ2603": {
+"topic": "ileum",
+"note": null
+},
+"FJ2604": {
+"topic": "ileum",
+"note": null
+},
+"FJ2605": {
+"topic": "ileum",
+"note": null
+},
+"FJ2599": {
+"topic": "ileocecal",
+"note": null
+},
+"FJ2565": {
+"topic": "appendix",
+"note": null
+},
+"FJ2566": {
+"topic": "ascending",
+"note": null
+},
+"FJ2572": {
+"topic": "transverse",
+"note": null
+},
+"FJ2567": {
+"topic": "descending",
+"note": null
+},
+"FJ2571": {
+"topic": "rectum",
+"note": null
+},
+"FJ2568": {
+"topic": "teniae",
+"note": null
+},
+"FJ2569": {
+"topic": "teniae",
+"note": null
+},
+"FJ2570": {
+"topic": "teniae",
+"note": null
+},
+"FJ3397": {
+"topic": "mesoappendix",
+"note": null
+},
+"FJ3396": {
+"topic": "mesentery",
+"note": null
+},
+"FJ3398": {
+"topic": "mesocolon",
+"note": null
+},
+"FJ2816": {
+"topic": "context",
+"note": "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."
+},
+"FJ2818": {
+"topic": "context",
+"note": "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."
+},
+"FJ2819": {
+"topic": "context",
+"note": "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."
+},
+"FJ2820": {
+"topic": "context",
+"note": "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."
+},
+"FJ2821": {
+"topic": "context",
+"note": "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."
+},
+"FJ2822": {
+"topic": "context",
+"note": "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."
+},
+"FJ2409": {
+"topic": "context",
+"note": "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."
+},
+"FJ2823": {
+"topic": "context",
+"note": "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."
+},
+"FJ2824": {
+"topic": "context",
+"note": "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."
+},
+"FJ1858": {
+"topic": "context",
+"note": "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."
+},
+"FJ1895": {
+"topic": "context",
+"note": "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."
+},
+"FJ2817": {
+"topic": "context",
+"note": "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."
+},
+"FJ2561": {
+"topic": "context",
+"note": "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."
+}
+},
+"flow": [
+{
+"title": "Esophagus",
+"passage": {
+"text": "To enter the abdomen, the esophagus penetrates the diaphragm through an opening called the esophageal hiatus.",
+"pid": "fs-id1984077",
+"label": "23.3 The Esophagus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-3-the-mouth-pharynx-and-esophagus"
+},
+"groups": [
+"esophagus"
+]
+},
+{
+"title": "Stomach",
+"passage": {
+"text": "The cardia (or cardiac region) is the point where the esophagus connects to the stomach and through which food passes into the stomach.",
+"pid": "fs-id2052808",
+"label": "23.4 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach"
+},
+"groups": [
+"stomach"
+]
+},
+{
+"title": "Duodenum",
+"passage": {
+"text": "The funnel-shaped pylorus connects the stomach to the duodenum.",
+"pid": "fs-id2052808",
+"label": "23.4 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-4-the-stomach"
+},
+"groups": [
+"duodenum"
+]
+},
+{
+"title": "Jejunum",
+"passage": {
+"text": "The jejunum is about 0.9 meters (3 feet) long (in life) and runs from the duodenum to the ileum.",
+"pid": "fs-id2311182",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+"groups": [
+"jejunum"
+]
+},
+{
+"title": "Ileum",
+"passage": {
+"text": "The ileum joins the cecum, the first portion of the large intestine, at the ileocecal sphincter (or valve).",
+"pid": "fs-id1921294",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+"groups": [
+"ileum"
+]
+},
+{
+"title": "Ileocecal junction",
+"passage": {
+"text": "The ileocecal valve, located at the opening between the ileum and the large intestine, controls the flow of chyme from the small intestine to the large intestine.",
+"pid": "fs-id1422467",
+"label": "23.5 Subdivisions",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+"parts": [
+"Ileocecal junction"
+]
+},
+{
+"title": "Ascending colon",
+"passage": {
+"text": "Upon entering the colon, the food residue first travels up the ascending colon on the right side of the abdomen.",
+"pid": "fs-id1583646",
+"label": "23.5 Colon",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+"parts": [
+"Ascending colon"
+]
+},
+{
+"title": "Transverse colon",
+"passage": {
+"text": "Food residue passing through the transverse colon travels across to the left side of the abdomen, where the colon angles sharply immediately inferior to the spleen, at the left colic flexure (splenic flexure).",
+"pid": "fs-id1583646",
+"label": "23.5 Colon",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+"parts": [
+"Transverse colon"
+]
+},
+{
+"title": "Descending colon",
+"passage": {
+"text": "From there, food residue passes through the descending colon, which runs down the left side of the posterior abdominal wall.",
+"pid": "fs-id1583646",
+"label": "23.5 Colon",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+"parts": [
+"Descending colon"
+]
+},
+{
+"title": "Rectum",
+"passage": {
+"text": "Food residue leaving the sigmoid colon enters the rectum in the pelvis, near the third sacral vertebra.",
+"pid": "fs-id1247327",
+"label": "23.5 Rectum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+"parts": [
+"Rectum"
+]
+}
+],
+"gaps": [
+"The dataset has no mesh for the cecum, the sigmoid colon or the anal canal, so the tour goes from the descending colon to the rectum."
+]
+}

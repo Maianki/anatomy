@@ -160,7 +160,7 @@ h2{font:650 20px/1.2 var(--display);margin:0 0 6px;text-wrap:balance}
     <div class="ctx">
       <div class="ctxStage">
         <canvas id="ctxCanvas" aria-label="The organ in the chest. Turns with the main view."></canvas>
-        <div class="lbl">In the chest</div>
+        <div class="lbl" id="ctxLabel">In the chest</div>
       </div>
       <div class="card">
         <div class="eyebrow">View</div>
@@ -225,10 +225,10 @@ h2{font:650 20px/1.2 var(--display);margin:0 0 6px;text-wrap:balance}
         <div class="chips" id="partGroups"></div>
       </div>
       <div class="card" id="lobeCard" hidden>
-        <div class="eyebrow">Lobes</div>
+        <div class="eyebrow" id="lobeTitle">Lobes</div>
         <div class="chips" id="lobeChips"></div>
         <div style="margin-top:10px" class="seg" role="group" aria-label="Colour parts by">
-          <button class="btn" data-color="lobe" aria-pressed="true" type="button">Colour by lobe</button>
+          <button class="btn" data-color="lobe" aria-pressed="true" type="button">Colour by region</button>
           <button class="btn" data-color="structure" aria-pressed="false" type="button">Colour by structure</button>
         </div>
       </div>
@@ -258,21 +258,39 @@ document.querySelectorAll('[data-foot]').forEach(e=>e.innerHTML=FOOT);
 
 // ---------- organ workstations ----------
 const ORGANS={
-  heart:{label:'Heart',scene:'heart2',content:'content-heart.json',ctx:'heart',tour:'Blood flow',bodyKeys:['heart'],
+  heart:{label:'Heart',ctxScene:'thorax',seeGroups:['walls'],scene:'heart2',content:'content-heart.json',ctx:'heart',tour:'Blood flow',bodyKeys:['heart'],
     tools:{see:true,vessels:true},startHidden:['cavities'],
     meta:[['FMA ID','FMA7088'],['Named parts','84 heart + 15 great-vessel meshes'],['Detail','Full source resolution'],['Great vessels','Cut short near the heart']],
     labeled:['Wall of left atrium','Wall of right atrium','Wall of ventricle','Ascending aorta','Arch of aorta','Pulmonary trunk','Superior vena cava','Inferior vena cava',
       'Left pulmonary artery','Right pulmonary artery','Trunk of left coronary artery','Trunk of right coronary artery','Circumflex branch of left coronary artery',
       'Trunk of anterior interventricular branch of left coronary artery','Coronary sinus','Great cardiac vein','Cavity of left atrium','Cavity of right atrium',
       'Cavity of left ventricle','Cavity of right ventricle']},
-  lungs:{label:'Lungs',scene:'lungs',content:'content-lungs.json',ctx:'lungs',tour:'Air and blood',bodyKeys:['left-lung','right-lung'],
+  lungs:{label:'Lungs',ctxScene:'thorax',lobeTitle:'Lobes',lobeWord:'Lobe',scene:'lungs',content:'content-lungs.json',ctx:'lungs',tour:'Air and blood',bodyKeys:['left-lung','right-lung','trachea'],
     tools:{see:false,vessels:false},startHidden:[],
     meta:[['FMA IDs','FMA7309 right, FMA7310 left'],['Meshes','291 shown'],['Segments','10 right, 10 left'],['Detail','Full source resolution']],
     gap:'BodyParts3D has no meshes for the lung surfaces, fissures or pleura, so they are not shown. Each lobe is shown through the airways and vessels that the dataset assigns to it.',
-    labeled:['Trachea','Right main bronchus proper','Left main bronchus','Pulmonary trunk','Left pulmonary artery','Right pulmonary artery']}
+    labeled:['Trachea','Right main bronchus proper','Left main bronchus','Pulmonary trunk','Left pulmonary artery','Right pulmonary artery']},
+  liver:{label:'Liver, gallbladder and pancreas',short:'liver',scene:'liver',content:'content-liver.json',ctxScene:'abdomen',ctx:'liver',tour:'Blood and bile',
+    bodyKeys:['liver','gallbladder','pancreas'],tools:{see:false,vessels:false},startHidden:['pancreas-parenchyma','pduct'],lobeTitle:'Liver segments',lobeWord:'Segment',
+    meta:[['FMA IDs','FMA7197 liver, FMA7202 gallbladder, FMA7198 pancreas'],['Meshes','86'],['Detail','Full source resolution']],
+    gap:'Two pairs of meshes in the dataset share nearly the same surface: Pancreas and Parenchyma of pancreas, and Pancreatic duct and Pancreatic duct tree. One of each pair starts hidden so they do not flicker through each other.',
+    labeled:['Hepatic portal vein','Hepatic artery proper','Common hepatic duct','Gallbladder','Cystic duct','Pancreas','Duodenum','Left hepatic vein','Right hepatic vein','Middle hepatic vein','Caudate lobe of liver']},
+  gut:{label:'Digestive tract',short:'digestive tract',scene:'gut',content:'content-gut.json',ctxScene:'abdomen',ctx:'gut',tour:'Path of food',
+    bodyKeys:['esophagus','stomach','small-intestine','large-intestine'],tools:{see:false,vessels:false},startHidden:['accessory'],
+    meta:[['FMA IDs','FMA7131 esophagus, FMA7148 stomach, FMA7200 small intestine, FMA7201 large intestine'],['Meshes','82'],['Detail','Full source resolution']],
+    labeled:['Esophagus','Stomach','Duodenum','Ascending colon','Transverse colon','Descending colon','Rectum','Appendix','Ileocecal junction']},
+  urinary:{label:'Urinary system',short:'urinary system',scene:'urinary',content:'content-urinary.json',ctxScene:'abdomen',ctx:'urinary',tour:'Path of urine',
+    bodyKeys:['kidney','urinary-bladder'],tools:{see:false,vessels:false},startHidden:[],
+    meta:[['FMA IDs','FMA7203 kidney, FMA15900 urinary bladder'],['Meshes','54'],['Detail','Full source resolution']],
+    labeled:['Left kidney','Right kidney','Left ureter','Right ureter','Urinary bladder','Urethra','Abdominal aorta','Left renal artery','Left adrenal gland','Right adrenal gland','Prostate']},
+  brain:{label:'Brain',short:'brain',scene:'brain',content:'content-brain.json',ctxScene:'head',ctx:'brain',tour:'Path of CSF',bodyKeys:['brain'],
+    tools:{see:true,vessels:false},seeGroups:['cortex','white'],startHidden:['context'],
+    meta:[['FMA ID','FMA50801'],['Meshes','107'],['Detail','Full source resolution']],
+    labeled:['Left precentral gyrus','Left postcentral gyrus','Left superior frontal gyrus','Left occipital lobe','Left insula','Cerebellum','Pons','Medulla oblongata',
+      'Midbrain','Corpus callosum','Left thalamus','Left lateral ventricle','Third ventricle','Fourth ventricle','Left caudate nucleus','Left hippocampus']}
 };
 const BODY_TO_ORGAN={};Object.entries(ORGANS).forEach(([k,o])=>o.bodyKeys.forEach(b=>BODY_TO_ORGAN[b]=k));
-const CONTENT={};
+const CONTENT={};let BODYTEXT={};
 
 function lights(scene){
   scene.add(new THREE.HemisphereLight(0xf4f1ff,0x20262e,0.75));
@@ -392,14 +410,15 @@ function bodyInfo(){
   document.querySelectorAll('#organList .row').forEach(r=>r.setAttribute('aria-current',String(r.dataset.key===k)));
   if(!k){
     el.innerHTML='<div class="eyebrow">Whole body</div><h2>Choose an organ</h2><p>Tap an organ in the model or the list. Turn layers on and off to look under the skin. Organs marked Workstation open in their own study view.</p>'+
-      '<dl class="meta"><dt>Source</dt><dd>BodyParts3D 4.0</dd><dt>Body</dt><dd>Adult male reference</dd><dt>Meshes</dt><dd>2,090 shown</dd></dl>';
+      '<dl class="meta"><dt>Source</dt><dd>BodyParts3D 4.0</dd><dt>Body</dt><dd>Adult male reference</dd><dt>Meshes</dt><dd>2,088 shown</dd></dl>';
     return;
   }
   const o=body.groups[k],org=BODY_TO_ORGAN[k];
   el.innerHTML='<div class="eyebrow"><span class="sw" style="background:'+hex(o.g.color)+'"></span> Organ</div><h2>'+esc(cap(o.g.label))+'</h2>'+
     '<dl class="meta"><dt>FMA ID</dt><dd>'+esc(o.g.fma)+'</dd><dt>Meshes</dt><dd>'+o.parts+' in body view</dd></dl>'+
-    (org&&CONTENT[org]?quotes(CONTENT[org].topics.overview.slice(0,1))+'<p style="margin-top:12px"><button class="btn primary" id="openOrgan" type="button">Open '+ORGANS[org].label.toLowerCase()+' workstation</button></p>'
-      :'<div class="pending">No sourced text yet. This organ gets its own workstation in a later step.</div>');
+    (org&&CONTENT[org]?quotes(CONTENT[org].topics.overview.slice(0,1))+'<p style="margin-top:12px"><button class="btn primary" id="openOrgan" type="button">Open '+esc(ORGANS[org].short||ORGANS[org].label.toLowerCase())+' workstation</button></p>'
+      :(BODYTEXT.text&&BODYTEXT.text[k]?quotes(BODYTEXT.text[k])+(BODYTEXT.notes[k]?'<div class="gap"><b>About this model</b>'+esc(BODYTEXT.notes[k])+'</div>':'')+'<div class="gap"><b>No workstation</b>This organ is a single mesh in the dataset, with no named parts to study.</div>'
+        :'<div class="pending">No sourced text yet.</div>'));
   const b=$('openOrgan');if(b)b.onclick=()=>go(org);
 }
 function selectOrgan(k,focus){
@@ -449,25 +468,24 @@ const ui={labels:innerWidth>700,see:false,cut:'off',cutPos:0.55,explode:0,mode:'
 const cCanvas=$('ctxCanvas');
 const cRenderer=makeRenderer(cCanvas);
 const cCam=new THREE.PerspectiveCamera(30,1,0.01,10);
-const C={scene:new THREE.Scene(),groups:{},ready:false,center:new THREE.Vector3()};
-lights(C.scene);
-const CTX_BASE={bones:0.5,lungs:0.16,airway:0.35,diaphragm:0.25,heart:1};
-async function buildContext(){
-  if(C.ready)return;
-  const th=await getScene('thorax');
+const CTXS={};let C={center:new THREE.Vector3(),dist:1};
+const CTX_BASE={bones:0.5,lungs:0.16,airway:0.35,diaphragm:0.25,heart:1,liver:0.5,gut:0.3,urinary:0.6,spleen:0.6,brain:0.4};
+async function buildContext(name){
+  if(CTXS[name])return;
+  const C={scene:new THREE.Scene(),groups:{},center:new THREE.Vector3(),dist:1};lights(C.scene);CTXS[name]=C;
+  const th=await getScene(name);
   const byGroup={};th.meta.meshes.forEach(m=>(byGroup[m.group]=byGroup[m.group]||[]).push(m));
   th.meta.groups.forEach(g=>{
     const ms=byGroup[g.key]||[];if(!ms.length)return;
     const mesh=mergedMesh(th.meta,th.buf,ms,material(g.color,{opacity:CTX_BASE[g.key],depthWrite:false}));
     C.scene.add(mesh);C.groups[g.key]=mesh;
   });
-  C.ready=true;
 }
 function contextFor(org){
-  const hi=ORGANS[org].ctx;
+  const hi=ORGANS[org].ctx;C=CTXS[ORGANS[org].ctxScene];
   Object.entries(C.groups).forEach(([k,m])=>{
     const focus=k===hi||(hi==='lungs'&&k==='airway');
-    m.material.opacity=focus?1:(k==='heart'&&hi!=='heart'?0.15:CTX_BASE[k]);
+    m.material.opacity=focus?1:(k==='heart'&&hi!=='heart'?0.15:k==='bones'?(hi==='brain'?0.15:CTX_BASE[k]):Math.min(0.2,CTX_BASE[k]));
     m.material.depthWrite=focus;m.renderOrder=focus?-1:0;
     m.material.emissive.setHex(focus?0x2a0a0a:0);
   });
@@ -487,8 +505,8 @@ cubeScene.add(cube);
 
 async function buildOrgan(org){
   const cfg=ORGANS[org];
-  const [{meta,buf}]=await Promise.all([getScene(cfg.scene),buildContext()]);
-  const W={org,cfg,meta,content:CONTENT[org],scene:new THREE.Scene(),meshes:[],groupOn:{},lobeOn:{},colorBy:'lobe',selected:null,selSet:null,
+  const [{meta,buf}]=await Promise.all([getScene(cfg.scene),buildContext(cfg.ctxScene)]);
+  const W={org,cfg,meta,content:CONTENT[org],scene:new THREE.Scene(),meshes:[],groupOn:{},lobeOn:{},colorBy:meta.lobes?'lobe':'structure',selected:null,selSet:null,
     flowSet:null,step:0,box:new THREE.Box3(),center:new THREE.Vector3(),radius:0.1,labeled:new Set(cfg.labeled)};
   lights(W.scene);
   const lobeColor={};(meta.lobes||[]).forEach(l=>{lobeColor[l.key]=l.color;W.lobeOn[l.key]=true;});
@@ -527,7 +545,8 @@ function panels(){
     b.onclick=()=>{W.groupOn[g.key]=!W.groupOn[g.key];syncChips();};
     gb.appendChild(b);
   });
-  const lc=$('lobeCard');lc.hidden=!W.meta.lobes;
+  $('ctxLabel').textContent={abdomen:'In the abdomen',head:'In the head'}[cfg.ctxScene]||'In the chest';
+  const lc=$('lobeCard');lc.hidden=!W.meta.lobes;$('lobeTitle').textContent=cfg.lobeTitle||'Lobes';
   if(W.meta.lobes){
     const box=$('lobeChips');box.innerHTML='';
     W.meta.lobes.forEach(l=>{
@@ -580,7 +599,7 @@ function hInfo(){
   document.querySelectorAll('#partList .row').forEach(r=>r.setAttribute('aria-current',String(!!x&&r.dataset.id===x.userData.m.id)));
   if(!x){
     el.innerHTML='<div class="eyebrow">Organ</div><h2>'+esc(W.cfg.label)+'</h2><dl class="meta">'+W.cfg.meta.map(([k,v])=>'<dt>'+esc(k)+'</dt><dd>'+esc(v)+'</dd>').join('')+'</dl>'+
-      (W.cfg.gap?'<div class="gap"><b>Not in this model</b>'+esc(W.cfg.gap)+'</div>':'')+excludedNote(W)+quotes(W.content.topics.overview);
+      [].concat(W.content.gaps||[]).map(g=>'<div class="gap"><b>Not in this model</b>'+esc(g)+'</div>').join('')+[].concat(W.cfg.gap||[],W.content.notes||[]).map(g=>'<div class="gap"><b>About this model</b>'+esc(g)+'</div>').join('')+excludedNote(W)+quotes(W.content.topics.overview);
     return;
   }
   const u=x.userData,t=u.topic;
@@ -590,21 +609,21 @@ function hInfo(){
     const count=k=>mem.filter(y=>y.userData.grp.key===k).length;
     const kinds=[['bronchi','bronchial tree'],['arteries','artery'],['veins','vein']];
     const missing=kinds.filter(([k])=>!count(k)).map(([,n])=>n);
-    seg='<dl class="meta"><dt>Lobe</dt><dd>'+esc(lobeLabel(u.m.lobe))+'</dd><dt>Segment</dt><dd>'+esc(cap(u.m.seg))+'</dd></dl>'+
+    seg='<dl class="meta"><dt>'+(W.cfg.lobeWord||'Lobe')+'</dt><dd>'+esc(lobeLabel(u.m.lobe))+'</dd><dt>Segment</dt><dd>'+esc(cap(u.m.seg))+'</dd></dl>'+
       '<p style="font-size:13px;margin:6px 0 0">Highlighted: every mesh the dataset names for this segment.</p><ul class="members">'+kinds.map(([k,n])=>'<li>'+count(k)+' '+n+' mesh'+(count(k)===1?'':'es')+'</li>').join('')+'</ul>'+
       (missing.length?'<div class="gap"><b>Not in this model</b>BodyParts3D has no segmental '+missing.join(' or ')+' mesh for this segment.</div>':'');
-  }else if(u.m.lobe){seg='<dl class="meta"><dt>Lobe</dt><dd>'+esc(lobeLabel(u.m.lobe))+'</dd></dl>';}
+  }else if(u.m.lobe){seg='<dl class="meta"><dt>'+(W.cfg.lobeWord||'Lobe')+'</dt><dd>'+esc(lobeLabel(u.m.lobe))+'</dd></dl>';}
   el.innerHTML='<div class="eyebrow"><span class="sw" style="background:'+hex(u.grp.color)+'"></span>'+esc(u.grp.label)+'</div><h2>'+esc(u.m.name)+'</h2>'+
     '<dl class="meta"><dt>FMA ID</dt><dd>'+esc(u.m.fma)+'</dd><dt>Mesh ID</dt><dd>'+esc(u.m.id)+'</dd></dl>'+seg+
     (t?(t.note?'<div class="note">'+esc(t.note)+'</div>':'')+quotes((u.m.seg&&W.content.topics.segment?W.content.topics.segment:[]).concat(W.content.topics[t.topic])):'<div class="pending">No sourced passage yet.</div>')+
-    '<p style="margin-top:12px"><button class="btn" id="clearSel" type="button">Back to '+esc(W.cfg.label.toLowerCase())+' overview</button></p>';
+    '<p style="margin-top:12px"><button class="btn" id="clearSel" type="button">Back to '+esc(W.cfg.short||W.cfg.label.toLowerCase())+' overview</button></p>';
   $('clearSel').onclick=()=>selectPart(null);
 }
 function excludedNote(W){
   const ex=W.meta.excluded||[];if(!ex.length)return '';
-  const by={};ex.forEach(e=>{const k=e.name+' ('+e.fma+')';by[k]=(by[k]||0)+1;});
-  return '<div class="gap"><b>Left out of this model</b>'+Object.entries(by).map(([k,n])=>n+' mesh'+(n>1?'es':'')+' named '+esc(k)).join('; ')+
-    ' sit below the diaphragm, outside the lungs. This looks like a placement error in the source data, so they are not shown.</div>';
+  const by=new Map();ex.forEach(e=>{const k=e.name+'|'+e.fma+'|'+e.why;by.set(k,(by.get(k)||0)+1);});
+  return '<div class="gap"><b>Left out of this model</b>'+[...by].map(([k,n])=>{const [name,f,why]=k.split('|');
+    return n+' mesh'+(n>1?'es':'')+' named '+esc(name)+' ('+esc(f)+'): '+(n>1?'each ':'')+esc(why)+'.';}).join('<br>')+'</div>';
 }
 function selectPart(x){
   const W=H;W.selected=x;
@@ -674,7 +693,7 @@ function animateOrgan(){
     if(flow){t=flow.has(x)?1:(gk==='walls'?0.07:0.14);}
     else{
       const on=W.groupOn[gk]&&(!u.m.lobe||W.lobeOn[u.m.lobe]);t=on?1:0;
-      if(on&&gk==='walls'&&ui.see)t=0.16;
+      if(on&&ui.see&&(W.cfg.seeGroups||[]).includes(gk))t=0.16;
       if(on&&gk==='cavities')t=Math.min(t,0.55);
       if(on&&sel&&!sel.has(x))t=Math.min(t,0.1);
       if(sel&&sel.has(x))t=1;
@@ -704,9 +723,12 @@ function updateLabels(){
       tmpV.copy(best).add(x.position);
       if(ui.cut!=='off'&&clip.distanceToPoint(tmpV)<0)return;
       tmpV.project(hCam);if(tmpV.z>1)return;
-      show.push({x,name,px:(tmpV.x+1)/2*Wd,py:(1-tmpV.y)/2*Hh});
+      show.push({x,name,px:(tmpV.x+1)/2*Wd,py:(1-tmpV.y)/2*Hh,z:tmpV.z});
     });
   }
+  // left and right halves of a midline structure share one name: keep one label, the half nearer the viewer
+  const byName=new Map();show.forEach(s=>{const o=byName.get(s.name);if(!o||s.z<o.z)byName.set(s.name,s);});
+  show.length=0;byName.forEach(s=>show.push(s));
   const keep=new Set(show.map(s=>s.name));
   for(const [k,el] of labEls)if(!keep.has(k)){el.remove();labEls.delete(k);}
   const sides={L:[],R:[]};
@@ -811,6 +833,7 @@ function tick(){
     const keys=Object.keys(ORGANS);
     const [cts]=await Promise.all([Promise.all(keys.map(k=>fetch('data/'+ORGANS[k].content).then(r=>r.json()))),buildBody()]);
     keys.forEach((k,i)=>CONTENT[k]=cts[i]);
+    try{BODYTEXT=await fetch('data/content-body.json').then(r=>r.json());}catch(e){BODYTEXT={};}
     bodyLayers();bodyList();bodyInfo();
     load.style.opacity=0;
     camera.position.set(2.6,1.9,5.2);controls.target.set(0,0.95,0);

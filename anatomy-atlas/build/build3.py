@@ -58,7 +58,8 @@ for g in groups:
             keep.append(i)
         else:
             excluded.append({"id": i, "name": parts[i]["name"], "fma": parts[i]["conceptId"],
-                             "yRange": [round(float(lo[1]), 3), round(float(hi[1]), 3)]})
+                             "yRange": [round(float(lo[1]), 3), round(float(hi[1]), 3)],
+                             "why": "lies below the diaphragm, outside the lungs, which looks like a placement error in the source data"})
     g["ids"] = keep
 print("excluded:", excluded)
 write_scene("lungs", groups)
