@@ -3,14 +3,19 @@ Usage: content_sources.py <site data dir> <@dagno/anatomy-model package dir>"""
 import glob, json, os, re, sys
 OUT, PKG = sys.argv[1], sys.argv[2]
 VER = sys.argv[3] if len(sys.argv) > 3 else None
+XCHECK = sys.argv[4] if len(sys.argv) > 4 else None  # sources/crosscheck/webmd.json
 TITLES = {  # OpenStax A&P 2e section titles, as passed to contentlib.slug in the content builders
     "13.2": "The Central Nervous System", "13.3": "Circulation and the Central Nervous System", "19.1": "Heart Anatomy",
     "21.1": "Anatomy of the Lymphatic and Immune Systems", "22.1": "Organs and Structures of the Respiratory System",
     "22.2": "The Lungs", "23.3": "The Mouth, Pharynx, and Esophagus", "23.4": "The Stomach", "23.5": "The Small and Large Intestines",
     "23.6": "Accessory Organs in Digestion: The Liver, Pancreas, and Gallbladder", "25.2": "Gross Anatomy of Urine Transport",
-    "25.3": "Gross Anatomy of the Kidney", "Ch. 19": "Chapter Review"}
+    "25.3": "Gross Anatomy of the Kidney", "Ch. 19": "Chapter Review",
+    "7.1": "Divisions of the Skeletal System", "7.2": "The Skull", "7.3": "The Vertebral Column", "7.4": "The Thoracic Cage",
+    "8.1": "The Pectoral Girdle", "8.2": "Bones of the Upper Limb", "8.3": "The Pelvic Girdle and Pelvis", "8.4": "Bones of the Lower Limb"}
 NAMES = {"heart": "Heart", "lungs": "Lungs", "liver": "Liver, gallbladder and pancreas", "gut": "Digestive tract",
-         "urinary": "Urinary system", "brain": "Brain", "body": "Whole body (spleen, diaphragm)"}
+         "urinary": "Urinary system", "brain": "Brain", "body": "Whole body (spleen, diaphragm)",
+         "bones-skull": "Skull", "bones-spine": "Vertebral column", "bones-thorax": "Thoracic cage", "bones-upper": "Upper limbs",
+         "bones-pelvis": "Pelvis", "bones-lower": "Lower limbs"}
 sections = {}
 
 
@@ -60,10 +65,13 @@ if VER:
         "items": [
             f"All {o['quotes']} quotes were found word for word on the live openstax.org pages, and all {o['pages']} section links open the right page and paragraph.",
             f"All {b['matched']:,} meshes in the dataset exist in the official archive, and every name and FMA ID matches the official tables.",
-            "The 3D geometry is read straight from the official archive (isa_BP3D_4.0_obj_99.zip). In every organ workstation, every vertex of the original lies within "
+            "The 3D geometry is read straight from the official archive (isa_BP3D_4.0_obj_99.zip). In every organ and bone workstation, every vertex of the original lies within "
             f"{max(v['max_mm'] for v in g.values()):.1f} mm of what you see.",
             "The data errors listed in each organ's Notes tab (two misplaced lung arteries, two brain structures named for the wrong side) are present in the official archive itself.",
+            "The official archive has five pairs of meshes with the same FMA ID and identical geometry (hyoid bone FJ2772/FJ3201, cricoid cartilage FJ2440/FJ2769, celiac artery FJ1846/FJ2013, hepatic artery FJ1916/FJ2386 and FJ1924/FJ2394). Only the first mesh of each pair is shown.",
         ]}
+if XCHECK:
+    data["crosscheck"] = json.load(open(XCHECK))
 json.dump(data, open(f"{OUT}/sources.json", "w"), indent=1)
 print(len(sections), "sections,", sum(len(s["quotes"]) for s in sections.values()), "distinct quotes")
 for s in data["text"]["sections"]: print(" ", s["number"], s["quotes"], s["used"])

@@ -1,0 +1,344 @@
+{
+"topics": {
+"Sternum|xiphoid": [
+{
+"text": "The sternum is the elongated bony structure that anchors the anterior thoracic cage.",
+"pid": "fs-id1989589",
+"label": "7.4 Sternum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+},
+{
+"text": "It consists of three parts: the manubrium, body, and xiphoid process.",
+"pid": "fs-id1989589",
+"label": "7.4 Sternum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+}
+],
+"Sternum|body": [
+{
+"text": "The sternum is the elongated bony structure that anchors the anterior thoracic cage.",
+"pid": "fs-id1989589",
+"label": "7.4 Sternum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+},
+{
+"text": "It consists of three parts: the manubrium, body, and xiphoid process.",
+"pid": "fs-id1989589",
+"label": "7.4 Sternum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+},
+{
+"text": "The manubrium and body join together at the sternal angle, so called because the junction between these two components is not flat, but forms a slight bend.",
+"pid": "fs-id1392096",
+"label": "7.4 Sternum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+}
+],
+"Sternum|manubrium": [
+{
+"text": "The sternum is the elongated bony structure that anchors the anterior thoracic cage.",
+"pid": "fs-id1989589",
+"label": "7.4 Sternum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+},
+{
+"text": "It consists of three parts: the manubrium, body, and xiphoid process.",
+"pid": "fs-id1989589",
+"label": "7.4 Sternum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+},
+{
+"text": "The manubrium is the wider, superior portion of the sternum.",
+"pid": "fs-id1989589",
+"label": "7.4 Sternum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+}
+],
+"Ribs|": [
+{
+"text": "Each rib is a curved, flattened bone that contributes to the wall of the thorax.",
+"pid": "fs-id1910417",
+"label": "7.4 Ribs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+},
+{
+"text": "The ribs articulate posteriorly with the T1\u2013T12 thoracic vertebrae, and most attach anteriorly via their costal cartilages to the sternum.",
+"pid": "fs-id1910417",
+"label": "7.4 Ribs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+}
+],
+"Rib Classifications|costal cartilage": [
+{
+"text": "The bony ribs do not extend anteriorly completely around to the sternum.",
+"pid": "fs-id2237365",
+"label": "7.4 Rib Classifications",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+},
+{
+"text": "Instead, each rib ends in a costal cartilage.",
+"pid": "fs-id2237365",
+"label": "7.4 Rib Classifications",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+},
+{
+"text": "The costal cartilage from each of these ribs attaches directly to the sternum.",
+"pid": "fs-id1879764",
+"label": "7.4 Rib Classifications",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+}
+],
+"overview": [
+{
+"text": "The thoracic cage (rib cage) forms the thorax (chest) portion of the body.",
+"pid": "fs-id2464619",
+"label": "7.4 The Thoracic Cage",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+},
+{
+"text": "The ribs are anchored posteriorly to the 12 thoracic vertebrae (T1\u2013T12).",
+"pid": "fs-id2464619",
+"label": "7.4 The Thoracic Cage",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+},
+{
+"text": "The thoracic cage protects the heart and lungs.",
+"pid": "fs-id2464619",
+"label": "7.4 The Thoracic Cage",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+}
+],
+"group:sternum": [
+{
+"text": "The sternum is the elongated bony structure that anchors the anterior thoracic cage.",
+"pid": "fs-id1989589",
+"label": "7.4 Sternum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+}
+],
+"group:ribs": [
+{
+"text": "Each rib is a curved, flattened bone that contributes to the wall of the thorax.",
+"pid": "fs-id1910417",
+"label": "7.4 Ribs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+}
+],
+"group:cartilage": [
+{
+"text": "The bony ribs do not extend anteriorly completely around to the sternum.",
+"pid": "fs-id2237365",
+"label": "7.4 Rib Classifications",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+}
+]
+},
+"meshTopic": {
+"FJ3153": {
+"topic": "Sternum|xiphoid",
+"note": null
+},
+"FJ3178": {
+"topic": "Sternum|body",
+"note": null
+},
+"FJ3290": {
+"topic": "Sternum|manubrium",
+"note": null
+},
+"FJ3225": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3226": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3227": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3228": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3229": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3230": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3231": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3232": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3233": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3234": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3235": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3236": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3330": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3331": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3332": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3334": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3336": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3338": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3340": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3342": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3344": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3346": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3347": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3348": {
+"topic": "Ribs|",
+"note": null
+},
+"FJ3239": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+},
+"FJ3242": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+},
+"FJ3245": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+},
+"FJ3248": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+},
+"FJ3251": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+},
+"FJ3254": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+},
+"FJ3255": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+},
+"FJ3333": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+},
+"FJ3335": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+},
+"FJ3337": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+},
+"FJ3339": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+},
+"FJ3341": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+},
+"FJ3343": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+},
+"FJ3345": {
+"topic": "Rib Classifications|costal cartilage",
+"note": null
+}
+},
+"flow": [
+{
+"title": "Sternum",
+"groups": [
+"sternum"
+],
+"passage": {
+"text": "The sternum is the elongated bony structure that anchors the anterior thoracic cage.",
+"pid": "fs-id1989589",
+"label": "7.4 Sternum",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+}
+},
+{
+"title": "Ribs",
+"groups": [
+"ribs"
+],
+"passage": {
+"text": "Each rib is a curved, flattened bone that contributes to the wall of the thorax.",
+"pid": "fs-id1910417",
+"label": "7.4 Ribs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+}
+},
+{
+"title": "Costal cartilages",
+"groups": [
+"cartilage"
+],
+"passage": {
+"text": "The bony ribs do not extend anteriorly completely around to the sternum.",
+"pid": "fs-id2237365",
+"label": "7.4 Rib Classifications",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage"
+}
+}
+],
+"gaps": [
+"The dataset has costal cartilage meshes for ribs 1 to 7 only."
+],
+"notes": []
+}

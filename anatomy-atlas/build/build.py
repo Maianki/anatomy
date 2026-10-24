@@ -33,13 +33,26 @@ for key, cname, col in ORGANS:
     organ_groups.append({"key": key, "label": cname, "fma": c["id"], "layer": "organs", "color": col,
                          "ids": ids, "keep": 0.17, "clickable": True})
 
+# Bones: the regions from build6.py (dataset FMA concepts). Muscles the dataset files as skeletal (FMA: muscle organ)
+# go to the muscles layer.
+_sk = json.loads((OUT / "skeleton-regions.json").read_text())
+SKEL = set(_sk["skeleton"])
+MUSCLE_ORGAN = {e for c in atlas["concepts"] if c["name"] == "muscle organ" for e in c["elements"]}
+REGION_FMA = {"skull": ["skull"], "spine": ["vertebral column"], "thorax": ["rib cage"], "upper": ["left upper limb", "right upper limb"],
+              "pelvis": ["bony pelvis"], "lower": ["left lower limb", "right lower limb"]}  # the concepts build6.py builds each region from
+BONE_GROUPS = []
+for key, label in _sk["regions"].items():
+    ids = [i for i, r in _sk["region_of"].items() if r == key and i not in used]
+    BONE_GROUPS.append({"key": "bones-" + key, "label": label, "fma": ", ".join(concepts[n]["id"] for n in REGION_FMA[key]), "layer": "skeleton", "color": 0xe8e0cf,
+                        "ids": ids, "keep": 0.08, "bone": True})
 body = [
     {"key": "skin", "label": "Skin", "fma": concepts["skin"]["id"], "layer": "skin", "color": 0xc9a48c,
      "ids": elements("skin"), "keep": 0.17},
-    {"key": "skeleton", "label": "Skeletal system", "layer": "skeleton", "color": 0xe8e0cf,
-     "ids": [i for i in sysids("skeletal") if i not in used], "keep": 0.08},
+] + BONE_GROUPS + [
+    {"key": "skeleton-other", "label": "Other meshes the dataset files under the skeletal system", "layer": "skeleton", "color": 0xe8e0cf,
+     "ids": [i for i in sysids("skeletal") if i not in used and i not in SKEL and i not in MUSCLE_ORGAN], "keep": 0.08},
     {"key": "muscles", "label": "Muscles", "layer": "muscles", "color": 0xa8474a,
-     "ids": [i for i in sysids("muscular") if i not in used], "keep": 0.04},
+     "ids": [i for i in sysids("muscular") + [j for j in sysids("skeletal") if j in MUSCLE_ORGAN] if i not in used], "keep": 0.04},
     {"key": "arteries", "label": "Arteries", "layer": "vessels", "color": 0xc62f36,
      "ids": [i for i in sysids("arterial") if i not in used], "keep": 0.1},
     {"key": "veins", "label": "Veins", "layer": "vessels", "color": 0x3d5fa8,

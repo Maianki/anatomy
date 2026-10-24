@@ -1,8 +1,10 @@
 # Anatomy Atlas (design demo)
 
-An interactive 3D atlas for students learning organs. The whole body opens first. Organs marked
-"Workstation" open a study view with the organ in its body region, labels with leader lines,
-section cuts, an exploded view, an orientation cube, a guided tour, and text quoted from a textbook.
+An interactive 3D atlas for students learning organs and bones. The whole body opens first, with a
+switch between **Organs** and **Bones** so only one kind is clickable at a time. Organs and bone
+regions marked "Workstation" open a study view with the structure in its body region, labels with
+leader lines, section cuts, an exploded view, see-through and vessel views (organs), an orientation
+cube, a guided tour with Play, and text quoted from a textbook.
 
 | Workstation | Body view organs that open it | Guided tour |
 | --- | --- | --- |
@@ -12,6 +14,12 @@ section cuts, an exploded view, an orientation cube, a guided tour, and text quo
 | Digestive tract | Esophagus, stomach, small intestine, large intestine | Path of food (10 steps) |
 | Urinary system | Kidney, urinary bladder | Path of urine (5 steps) |
 | Brain | Brain | Path of CSF (7 steps) |
+| Skull | Skull (bones mode) | Bone by bone (3 steps) |
+| Vertebral column | Vertebral column | Bone by bone (5 steps) |
+| Thoracic cage | Thoracic cage | Bone by bone (3 steps) |
+| Upper limbs | Upper limbs | Bone by bone (8 steps) |
+| Pelvis | Pelvis | Bone by bone (2 steps) |
+| Lower limbs | Lower limbs | Bone by bone (8 steps) |
 
 The spleen and diaphragm are single meshes with no named parts, so they have no workstation. The
 body view shows quoted text for them.
@@ -34,7 +42,8 @@ Accuracy rules this project follows:
 | --- | --- | --- |
 | 3D geometry | BodyParts3D 4.0, official archive `isa_BP3D_4.0_obj_99.zip`. Credit: "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International" | CC BY 4.0 |
 | Names, FMA IDs, concept groups | `@dagno/anatomy-model@0.1.2` (BodyParts3D tables prepared by Human Atlas), checked identical to the official tables | CC BY 4.0 |
-| Quoted text | OpenStax, *Anatomy and Physiology 2e*, © Rice University (`sources/openstax`, from github.com/openstax/osbooks-anatomy-physiology): sections 13.2, 13.3, 19.1, 21.1, 22.1, 22.2, 23.3–23.6, 25.2, 25.3 | CC BY-NC-SA 4.0 |
+| Quoted text | OpenStax, *Anatomy and Physiology 2e*, © Rice University (`sources/openstax`, from github.com/openstax/osbooks-anatomy-physiology): sections 7.2–7.4, 8.1–8.4, 13.2, 13.3, 19.1, 21.1, 22.1, 22.2, 23.3–23.6, 25.2, 25.3 | CC BY-NC-SA 4.0 |
+| Fact cross-check (no content copied) | WebMD pages listed in `sources/crosscheck/webmd.json`, summarised in our own words | n/a |
 | 3D library | three.js r128, loaded from cdnjs and jsDelivr | MIT |
 
 The OpenStax licence is **non-commercial and share-alike**. A paid product would need different text.
@@ -51,7 +60,8 @@ build/                    pipeline that produces site/data
 sources/openstax/         the OpenStax modules the text is quoted from, plus the book's collection file
 sources/bodyparts3d/      official BodyParts3D name and part-of tables, and the licence page
 sources/verification/     results of the checks against the original sources
-test/screenshots.mjs      headless-browser screenshots of a workstation
+sources/crosscheck/       facts cross-checked with WebMD (links, reviewer, date, result)
+test/                     headless-browser checks: ui.mjs (screens), play.mjs (tour Play), tools.mjs (see-through, vessels), screenshots.mjs
 ```
 
 Geometry is stored as base64 text of gzipped binary (`.gz.txt`) because the artifact host does not
@@ -72,12 +82,15 @@ from the npm package, which was checked to match the official tables exactly. `a
 
 1. `build3.py`: lungs. Finds meshes placed outside the lungs and records them as `excluded`.
 2. `build5.py`: brain and head context. Records non-brain meshes and meshes whose left/right name contradicts their position.
-3. `build.py`: whole body. Leaves out the meshes with data errors found in steps 1 and 2.
-4. `build2.py`: heart (with great vessels cut short near the heart) and thorax context.
-5. `build4.py`: liver/gallbladder/pancreas, digestive tract, urinary system, and abdomen context.
-6. `content_*.py`: quoted text, the mapping from each mesh to a passage, the guided tours, and the Sources page data.
+3. `build6.py`: six bone workstations and the skeleton context, from the dataset's FMA concepts for each region.
+4. `build.py`: whole body. Leaves out the meshes with data errors found in steps 1 and 2.
+5. `build2.py`: heart (with great vessels cut short near the heart) and thorax context.
+6. `build4.py`: liver/gallbladder/pancreas, digestive tract, urinary system, and abdomen context.
+7. `content_*.py`: quoted text, the mapping from each mesh to a passage, the guided tours, and the Sources page data.
 
-Organ workstation meshes are simplified only as far as keeps every original vertex within 1 mm (`common.py`).
+Organ and bone workstation meshes are simplified only as far as keeps every original vertex within 1 mm (`common.py`).
+Where the archive has two meshes with the same FMA ID and identical geometry, only the first is used and the other is
+listed in the scene file (`duplicates`).
 `measure.py` prints the longest-axis lengths used in the size notes.
 
 The output is deterministic: a rebuild matches the committed files once decompressed. Only the gzip
@@ -101,7 +114,8 @@ deviations that led to reading geometry from the official archive instead.
 
 ```sh
 cd site && python3 -m http.server 8765
-# open http://127.0.0.1:8765/anatomy-atlas.html  (or #heart, #lungs, #liver, #gut, #urinary, #brain)
+# open http://127.0.0.1:8765/anatomy-atlas.html  (or #heart, #lungs, #liver, #gut, #urinary, #brain,
+#   #bones-skull, #bones-spine, #bones-thorax, #bones-upper, #bones-pelvis, #bones-lower, #sources)
 ```
 
 ## Decisions, data findings and open checks

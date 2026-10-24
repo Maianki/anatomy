@@ -64,6 +64,11 @@ T = {
  "canal": [S(CIR, "fs-id1136775", "The fourth ventricle then narrows")],
  "choroid": [S(CIR, "fs-id1187632", "In some of these spaces, CSF is produced"), S(CIR, "fs-id1298119", "The choroid plexuses are found in all four")],
  "pituitary": [S(CNS, "fs-id1490316", "The hypothalamus is the executive region")],
+ "ica": [S(CIR, "fs-id1828457", "The next branches give rise to the common carotid"), S(CIR, "fs-id1333836", "The internal carotid artery enters the cranium")],
+ "vert": [S(CIR, "fs-id1333836", "A second set of vessels that supply the CNS"), S(CIR, "fs-id1333836", "The vertebral arteries enter the cranium")],
+ "basilar": [S(CIR, "fs-id1333836", "The two vertebral arteries then merge")],
+ "spinal": [S(CIR, "fs-id1333836", "Branches off the left and right vertebral arteries merge")],
+ "willis": [S(CIR, "fs-id1966794", "The circle of Willis is a specialized arrangement")],
  "none": [],
 }
 topics = {k: [m.sent(p, s) for m, p, s in v] for k, v in T.items()}
@@ -81,8 +86,33 @@ def evidence(m):
     return out
 
 
+WILLIS = {f for f, cs in _pc.items() if "cerebral arterial circle" in cs}
+TREES = ["left internal carotid artery", "right internal carotid artery", "left vertebral artery", "right vertebral artery",
+         "branch of middle cerebral artery", "branch of anterior cerebral artery", "zone of middle cerebral artery"]
+_tree = {}
+for c in atlas["concepts"]:
+    if c["name"] in TREES:
+        for e in c["elements"]:
+            _tree.setdefault(e, []).append(c["name"])
+
+
+def artery_note(m):
+    t = [x for x in _tree.get(m["id"], []) if x != m["name"].lower()]
+    out = "This source does not describe this artery by name."
+    if t:
+        out += " The dataset lists it under: " + ", ".join(sorted(set(t))) + "."
+    return out
+
+
 def topic_for(m):
     n, g = re.sub(r"^(Left|Right) ", "", m["name"]), m["group"]
+    if g == "arteries":
+        if n == "internal carotid artery": return "ica", "The lower part of this artery, below the brain, is cut short in this view."
+        if n == "vertebral artery": return "vert", "The lower part of this artery, below the brain, is cut short in this view."
+        if n == "Basilar artery": return "basilar", None
+        if n == "Anterior spinal artery" or n == "anterior spinal artery": return "spinal", None
+        if m["id"] in WILLIS: return "willis", "The official BodyParts3D part-of tree lists this artery as part of the cerebral arterial circle (circle of Willis). " + artery_note(m)
+        return "none", artery_note(m)
     rules = [
         (n == "precentral gyrus", "precentral", None), (n == "postcentral gyrus", "postcentral", None),
         (n == "occipital lobe", "occipital", None),
@@ -129,7 +159,7 @@ for f in flow:
     for n in f["parts"]:
         assert n in names, n
 json.dump({"topics": topics, "meshTopic": mt, "flow": flow,
-           "gaps": ["This workstation shows the brain only. The meninges, the brain's blood vessels and the spinal cord itself (apart from its central canal) are not included."],
+           "gaps": ["The meninges and the spinal cord itself (apart from its central canal) are not included.", "Of the brain's blood vessels, only the internal carotid and vertebral artery branches are shown (the Arteries button). Veins are not shown."],
            "notes": ["The dataset's own brain concept leaves out many brain structures, so this workstation groups meshes by quoted textbook sentences where they exist and by each mesh's FMA concept otherwise. Structures neither source places in a region are listed under Other."]},
           open(f"{OUT}/content-brain.json", "w"), indent=0)
 nameless = sum(1 for v in mt.values() if v["note"] and v["note"].startswith(NAMELESS))

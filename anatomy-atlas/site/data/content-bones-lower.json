@@ -1,0 +1,646 @@
+{
+"topics": {
+"Femur|": [
+{
+"text": "It is the longest and strongest bone of the body, and accounts for approximately one-quarter of a person\u2019s total height.",
+"pid": "fs-id2005017",
+"label": "8.4 Femur",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "The rounded, proximal end is the head of the femur, which articulates with the acetabulum of the hip bone to form the hip joint.",
+"pid": "fs-id2005017",
+"label": "8.4 Femur",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"Patella|": [
+{
+"text": "A sesamoid bone is a bone that is incorporated into the tendon of a muscle where that tendon crosses a joint.",
+"pid": "fs-id1635956",
+"label": "8.4 Patella",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "The sesamoid bone articulates with the underlying bones to prevent damage to the muscle tendon due to rubbing against the bones during movements of the joint.",
+"pid": "fs-id1635956",
+"label": "8.4 Patella",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"Tibia|": [
+{
+"text": "The tibia is the main weight-bearing bone of the lower leg and the second longest bone of the body, after the femur.",
+"pid": "fs-id1719935",
+"label": "8.4 Tibia",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "The medial side of the tibia is located immediately under the skin, allowing it to be easily palpated down the entire length of the medial leg.",
+"pid": "fs-id1719935",
+"label": "8.4 Tibia",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"Fibula|": [
+{
+"text": "The fibula does not bear weight.",
+"pid": "fs-id1865887",
+"label": "8.4 Fibula",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "It serves primarily for muscle attachments and thus is largely surrounded by muscles.",
+"pid": "fs-id1865887",
+"label": "8.4 Fibula",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"Tarsal Bones|calcaneus": [
+{
+"text": "The most superior bone is the talus.",
+"pid": "fs-id1469365",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "This has a relatively square-shaped, upper surface that articulates with the tibia and fibula to form the ankle joint.",
+"pid": "fs-id1469365",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "The medial calcaneus has a prominent bony extension called the sustentaculum tali (\u201csupport for the talus\u201d) that supports the medial side of the talus bone.",
+"pid": "fs-id1469365",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"Tarsal Bones|cuboid": [
+{
+"text": "The most superior bone is the talus.",
+"pid": "fs-id1469365",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "This has a relatively square-shaped, upper surface that articulates with the tibia and fibula to form the ankle joint.",
+"pid": "fs-id1469365",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "The cuboid bone articulates with the anterior end of the calcaneus bone.",
+"pid": "fs-id1401595",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"Tarsal Bones|cuneiform": [
+{
+"text": "The most superior bone is the talus.",
+"pid": "fs-id1469365",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "This has a relatively square-shaped, upper surface that articulates with the tibia and fibula to form the ankle joint.",
+"pid": "fs-id1469365",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "The talus bone articulates anteriorly with the navicular bone, which in turn articulates anteriorly with the three cuneiform (\u201cwedge-shaped\u201d) bones.",
+"pid": "fs-id1401595",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"Tarsal Bones|talus": [
+{
+"text": "The most superior bone is the talus.",
+"pid": "fs-id1469365",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "This has a relatively square-shaped, upper surface that articulates with the tibia and fibula to form the ankle joint.",
+"pid": "fs-id1469365",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "The talus bone articulates anteriorly with the navicular bone, which in turn articulates anteriorly with the three cuneiform (\u201cwedge-shaped\u201d) bones.",
+"pid": "fs-id1401595",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"Tarsal Bones|Navicular": [
+{
+"text": "The most superior bone is the talus.",
+"pid": "fs-id1469365",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "This has a relatively square-shaped, upper surface that articulates with the tibia and fibula to form the ankle joint.",
+"pid": "fs-id1469365",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "The navicular and lateral cuneiform bones also articulate with the medial side of the cuboid bone.",
+"pid": "fs-id1401595",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"Metatarsal Bones|": [
+{
+"text": "These elongated bones are numbered 1\u20135, starting with the medial side of the foot.",
+"pid": "fs-id2649587",
+"label": "8.4 Metatarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "The first metatarsal bone is shorter and thicker than the others.",
+"pid": "fs-id2649587",
+"label": "8.4 Metatarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"Phalanges|": [
+{
+"text": "The toes are numbered 1\u20135, starting with the big toe (hallux).",
+"pid": "fs-id2480580",
+"label": "8.4 Phalanges",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "The big toe has two phalanx bones, the proximal and distal phalanges.",
+"pid": "fs-id2480580",
+"label": "8.4 Phalanges",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"Patella|sesamoid": [
+{
+"text": "A sesamoid bone is a bone that is incorporated into the tendon of a muscle where that tendon crosses a joint.",
+"pid": "fs-id1635956",
+"label": "8.4 Patella",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "The sesamoid bone articulates with the underlying bones to prevent damage to the muscle tendon due to rubbing against the bones during movements of the joint.",
+"pid": "fs-id1635956",
+"label": "8.4 Patella",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"overview": [
+{
+"text": "Like the upper limb, the lower limb is divided into three regions.",
+"pid": "fs-id2242359",
+"label": "8.4 Bones of the Lower Limb",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "The thigh is that portion of the lower limb located between the hip joint and knee joint.",
+"pid": "fs-id2242359",
+"label": "8.4 Bones of the Lower Limb",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+},
+{
+"text": "The leg is specifically the region between the knee joint and the ankle joint.",
+"pid": "fs-id2242359",
+"label": "8.4 Bones of the Lower Limb",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"group:femur": [
+{
+"text": "It is the longest and strongest bone of the body, and accounts for approximately one-quarter of a person\u2019s total height.",
+"pid": "fs-id2005017",
+"label": "8.4 Femur",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"group:patella": [
+{
+"text": "A sesamoid bone is a bone that is incorporated into the tendon of a muscle where that tendon crosses a joint.",
+"pid": "fs-id1635956",
+"label": "8.4 Patella",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"group:tibia": [
+{
+"text": "The tibia is the main weight-bearing bone of the lower leg and the second longest bone of the body, after the femur.",
+"pid": "fs-id1719935",
+"label": "8.4 Tibia",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"group:fibula": [
+{
+"text": "The fibula does not bear weight.",
+"pid": "fs-id1865887",
+"label": "8.4 Fibula",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"group:tarsal": [
+{
+"text": "The most superior bone is the talus.",
+"pid": "fs-id1469365",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"group:metatarsal": [
+{
+"text": "These elongated bones are numbered 1\u20135, starting with the medial side of the foot.",
+"pid": "fs-id2649587",
+"label": "8.4 Metatarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"group:phalanges": [
+{
+"text": "The toes are numbered 1\u20135, starting with the big toe (hallux).",
+"pid": "fs-id2480580",
+"label": "8.4 Phalanges",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+],
+"group:sesamoid": [
+{
+"text": "A sesamoid bone is a bone that is incorporated into the tendon of a muscle where that tendon crosses a joint.",
+"pid": "fs-id1635956",
+"label": "8.4 Patella",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+]
+},
+"meshTopic": {
+"FJ3259": {
+"topic": "Femur|",
+"note": null
+},
+"FJ3365": {
+"topic": "Femur|",
+"note": null
+},
+"FJ3275": {
+"topic": "Patella|",
+"note": null
+},
+"FJ3381": {
+"topic": "Patella|",
+"note": null
+},
+"FJ3282": {
+"topic": "Tibia|",
+"note": null
+},
+"FJ3387": {
+"topic": "Tibia|",
+"note": null
+},
+"FJ3260": {
+"topic": "Fibula|",
+"note": null
+},
+"FJ3366": {
+"topic": "Fibula|",
+"note": null
+},
+"FJ3256": {
+"topic": "Tarsal Bones|calcaneus",
+"note": null
+},
+"FJ3258": {
+"topic": "Tarsal Bones|cuboid",
+"note": null
+},
+"FJ3264": {
+"topic": "Tarsal Bones|cuneiform",
+"note": null
+},
+"FJ3267": {
+"topic": "Tarsal Bones|cuneiform",
+"note": null
+},
+"FJ3271": {
+"topic": "Tarsal Bones|cuneiform",
+"note": null
+},
+"FJ3280": {
+"topic": "Tarsal Bones|talus",
+"note": null
+},
+"FJ3307": {
+"topic": "Tarsal Bones|Navicular",
+"note": null
+},
+"FJ3308": {
+"topic": "Tarsal Bones|Navicular",
+"note": null
+},
+"FJ3360": {
+"topic": "Tarsal Bones|calcaneus",
+"note": null
+},
+"FJ3364": {
+"topic": "Tarsal Bones|cuboid",
+"note": null
+},
+"FJ3370": {
+"topic": "Tarsal Bones|cuneiform",
+"note": null
+},
+"FJ3373": {
+"topic": "Tarsal Bones|cuneiform",
+"note": null
+},
+"FJ3377": {
+"topic": "Tarsal Bones|cuneiform",
+"note": null
+},
+"FJ3385": {
+"topic": "Tarsal Bones|talus",
+"note": null
+},
+"FJ3241": {
+"topic": "Metatarsal Bones|",
+"note": null
+},
+"FJ3244": {
+"topic": "Metatarsal Bones|",
+"note": null
+},
+"FJ3247": {
+"topic": "Metatarsal Bones|",
+"note": null
+},
+"FJ3250": {
+"topic": "Metatarsal Bones|",
+"note": null
+},
+"FJ3253": {
+"topic": "Metatarsal Bones|",
+"note": null
+},
+"FJ3351": {
+"topic": "Metatarsal Bones|",
+"note": null
+},
+"FJ3353": {
+"topic": "Metatarsal Bones|",
+"note": null
+},
+"FJ3355": {
+"topic": "Metatarsal Bones|",
+"note": null
+},
+"FJ3357": {
+"topic": "Metatarsal Bones|",
+"note": null
+},
+"FJ3359": {
+"topic": "Metatarsal Bones|",
+"note": null
+},
+"FJ3179": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3180": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3181": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3182": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3185": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3189": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3190": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3191": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3192": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3195": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3293": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3294": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3295": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3298": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3300": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3301": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3302": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3305": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3310": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3311": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3312": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3315": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3319": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3320": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3321": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3324": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3328": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3329": {
+"topic": "Phalanges|",
+"note": null
+},
+"FJ3266": {
+"topic": "Patella|sesamoid",
+"note": "The source describes sesamoid bones in general, in its section on the patella. It does not describe the sesamoid bones of the foot by name."
+},
+"FJ3270": {
+"topic": "Patella|sesamoid",
+"note": "The source describes sesamoid bones in general, in its section on the patella. It does not describe the sesamoid bones of the foot by name."
+},
+"FJ3372": {
+"topic": "Patella|sesamoid",
+"note": "The source describes sesamoid bones in general, in its section on the patella. It does not describe the sesamoid bones of the foot by name."
+},
+"FJ3376": {
+"topic": "Patella|sesamoid",
+"note": "The source describes sesamoid bones in general, in its section on the patella. It does not describe the sesamoid bones of the foot by name."
+}
+},
+"flow": [
+{
+"title": "Femur",
+"groups": [
+"femur"
+],
+"passage": {
+"text": "It is the longest and strongest bone of the body, and accounts for approximately one-quarter of a person\u2019s total height.",
+"pid": "fs-id2005017",
+"label": "8.4 Femur",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+},
+{
+"title": "Patella",
+"groups": [
+"patella"
+],
+"passage": {
+"text": "A sesamoid bone is a bone that is incorporated into the tendon of a muscle where that tendon crosses a joint.",
+"pid": "fs-id1635956",
+"label": "8.4 Patella",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+},
+{
+"title": "Tibia",
+"groups": [
+"tibia"
+],
+"passage": {
+"text": "The tibia is the main weight-bearing bone of the lower leg and the second longest bone of the body, after the femur.",
+"pid": "fs-id1719935",
+"label": "8.4 Tibia",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+},
+{
+"title": "Fibula",
+"groups": [
+"fibula"
+],
+"passage": {
+"text": "The fibula does not bear weight.",
+"pid": "fs-id1865887",
+"label": "8.4 Fibula",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+},
+{
+"title": "Tarsal Bones",
+"groups": [
+"tarsal"
+],
+"passage": {
+"text": "The most superior bone is the talus.",
+"pid": "fs-id1469365",
+"label": "8.4 Tarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+},
+{
+"title": "Metatarsal Bones",
+"groups": [
+"metatarsal"
+],
+"passage": {
+"text": "These elongated bones are numbered 1\u20135, starting with the medial side of the foot.",
+"pid": "fs-id2649587",
+"label": "8.4 Metatarsal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+},
+{
+"title": "Phalanges",
+"groups": [
+"phalanges"
+],
+"passage": {
+"text": "The toes are numbered 1\u20135, starting with the big toe (hallux).",
+"pid": "fs-id2480580",
+"label": "8.4 Phalanges",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+},
+{
+"title": "Sesamoid bones of the foot",
+"groups": [
+"sesamoid"
+],
+"passage": {
+"text": "A sesamoid bone is a bone that is incorporated into the tendon of a muscle where that tendon crosses a joint.",
+"pid": "fs-id1635956",
+"label": "8.4 Patella",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb"
+}
+}
+],
+"gaps": [],
+"notes": [
+"The hip bones are shown in the pelvis workstation, as in OpenStax section 8.3."
+]
+}

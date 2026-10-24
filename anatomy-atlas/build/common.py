@@ -5,7 +5,7 @@ official.py). Names, FMA IDs and the concept hierarchy come from @dagno/anatomy-
 verify_bp3d.py showed to match the official tables exactly. Output: <name>.json manifest + <name>.bin.gz with uint16
 quantized positions and uint16/uint32 indices. Normals are recomputed in the browser.
 """
-import gzip, json, os, struct, sys
+import hashlib, gzip, json, os, struct, sys
 from pathlib import Path
 import numpy as np
 import fast_simplification
@@ -64,10 +64,16 @@ def elements(name):
 
 def write_scene(name, groups):
     """groups: list of dicts {key,label,layer,color,ids,keep,clickable,fma}"""
-    meshes = []
+    meshes, seen, dups = [], {}, []
     for g in groups:
         for pid in g["ids"]:
             o, oi = geom(pid)
+            # the official data has a few pairs of meshes with the same FMA ID and identical geometry; show one of each
+            h = (parts[pid]["conceptId"], hashlib.sha1(o.tobytes() + oi.tobytes()).hexdigest())
+            if h in seen:
+                dups.append({"id": pid, "sameAs": seen[h], "name": parts[pid]["name"]})
+                continue
+            seen[h] = pid
             pos, idx = simplify(o, oi, g.get("keep", 1))
             if g.get("keep", 1) == "auto" or g.get("keep", 1) >= 1:
                 deviation[pid] = 0.0 if pos is o else max_dev(o, pos, idx)
@@ -95,10 +101,13 @@ def write_scene(name, groups):
     devs = [deviation[m[1]] for m in meshes if m[0].get("keep", 1) == "auto" or m[0].get("keep", 1) >= 1]
     meta = {"origin": lo.tolist(), "scale": float(scale), "meshes": out,
             "geometry": "BodyParts3D 4.0 isa_BP3D_4.0_obj_99.zip",
+            "duplicates": dups,
             "maxDeviationMm": round(max(devs) * 1000, 3) if devs else None,
             "groups": [{k: g[k] for k in g if k != "ids"} for g in groups]}
     (OUT / f"{name}.json").write_text(json.dumps(meta, separators=(",", ":")))
     tris = sum(m[3].shape[0] for m in meshes)
+    if dups:
+        print(name, "identical duplicate meshes left out:", [(d["id"], d["sameAs"]) for d in dups])
     print(name, len(out), "meshes", tris, "tris", (OUT / f"{name}.bin.gz").stat().st_size // 1024, "KB",
           "max deviation %.2f mm" % (max(devs) * 1000) if devs else "")
 

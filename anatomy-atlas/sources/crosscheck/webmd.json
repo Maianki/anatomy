@@ -1,0 +1,33 @@
+{
+ "name": "WebMD",
+ "url": "https://www.webmd.com/",
+ "checkedOn": "2026-10-24",
+ "use": "Used only to cross-check facts. No WebMD text, image or model is copied into the app; the summaries below are our own words.",
+ "items": [
+  {"topic": "Heart: four chambers", "organ": "heart", "ours": "The human heart consists of four chambers: The left side and the right side each have one atrium and one ventricle.", "oursFrom": "OpenStax 19.1",
+   "page": {"title": "Heart Anatomy, Function, and Blood Circulation", "url": "https://www.webmd.com/heart/picture-of-the-heart", "reviewedBy": "Shruthi N, MD", "updated": "2024-08-22"},
+   "result": "agrees", "summary": "WebMD also lists two atria and two ventricles, with a wall (the septum) dividing the left and right sides."},
+  {"topic": "Heart: size", "organ": "heart", "ours": "A typical heart is approximately the size of your fist: 12 cm (5 in) in length, 8 cm (3.5 in) wide, and 6 cm (2.5 in) in thickness.", "oursFrom": "OpenStax 19.1",
+   "page": {"title": "Heart Anatomy, Function, and Blood Circulation", "url": "https://www.webmd.com/heart/picture-of-the-heart", "reviewedBy": "Shruthi N, MD", "updated": "2024-08-22"},
+   "result": "agrees", "summary": "WebMD also describes the heart as fist-sized. It gives no measurements, so the centimetre figures are not cross-checked."},
+  {"topic": "Lungs: lobes", "organ": "lungs", "ours": "The right lung consists of three lobes: the superior, middle, and inferior lobes. The left lung consists of two lobes: the superior and inferior lobes.", "oursFrom": "OpenStax 22.2",
+   "page": {"title": "Lobectomy Lung Surgery: Purpose, Procedure, and Recovery", "url": "https://www.webmd.com/lung-cancer/lobectomy-lung-surgery", "reviewedBy": "Shruthi N, MD", "updated": "2025-03-10"},
+   "result": "agrees", "summary": "WebMD gives five lobes in all: three in the right lung and two in the left."},
+  {"topic": "Small intestine: length", "organ": "gut", "ours": "The longest part of the alimentary canal, the small intestine is about 3.05 meters (10 feet) long in a living person (but about twice as long in a cadaver due to the loss of muscle tone).", "oursFrom": "OpenStax 23.5",
+   "page": {"title": "Digestive System (Anatomy): How It Works", "url": "https://www.webmd.com/digestive-disorders/picture-of-the-intestines", "reviewedBy": "Poonam Sachdev, MD", "updated": "2023-12-05"},
+   "result": "differs", "summary": "WebMD says that, spread out, the small intestine would be more than 20 feet long. That is about twice the OpenStax figure for a living person and close to its figure for a cadaver. The two sources measure different things, so the app keeps the OpenStax sentence, which states both. Both agree that the small intestine has three parts: duodenum, jejunum and ileum."},
+  {"topic": "Gallbladder: position", "organ": "liver", "ours": "The gallbladder is 8–10 cm (~3–4 in) long and is nested in a shallow area on the posterior aspect of the right lobe of the liver.", "oursFrom": "OpenStax 23.6",
+   "page": {"title": "Gall Bladder Pain: Causes, Symptoms, Treatment", "url": "https://www.webmd.com/digestive-disorders/picture-of-the-gallbladder", "reviewedBy": "Sanjay Ponkshe, MD", "updated": "2026-03-22"},
+   "result": "agrees", "summary": "WebMD also places the gallbladder below the liver and describes it as small and pear-shaped. It gives no length."},
+  {"topic": "Brainstem: order of parts", "organ": "brain", "ours": "One of the original regions of the embryonic brain, the midbrain is a small region between the thalamus and pons.", "oursFrom": "OpenStax 13.2",
+   "page": {"title": "Brainstem: Function, Location, Health Problems, and More", "url": "https://www.webmd.com/brain/brainstem-what-to-know", "reviewedBy": "Christopher Melinosky, MD", "updated": "2024-12-03"},
+   "result": "agrees", "summary": "WebMD lists the brainstem from top to bottom as midbrain, pons and medulla oblongata, with the medulla joining the spinal cord."},
+  {"topic": "Skull: which bones", "organ": "bones-skull", "ours": "The skull workstation has 8 brain-case meshes (frontal, occipital, sphenoid, ethmoid, two parietal, two temporal) and 14 facial-bone meshes (two each of maxilla, palatine, zygomatic, nasal, lacrimal and inferior nasal concha, plus the vomer and mandible).", "oursFrom": "BodyParts3D 4.0 meshes in this app",
+   "page": {"title": "The Skull: Function, Composition, Health Problems, and More", "url": "https://www.webmd.com/a-to-z-guides/skull-what-to-know", "reviewedBy": "Lalitha Kadali, MBBS, MD", "updated": "2026-08-27"},
+   "result": "agrees", "summary": "WebMD counts 22 skull bones and names the same 14 facial bones. So the dataset's skull is complete at the level of whole bones: 8 + 14 = 22."}
+ ],
+ "notUsable": [
+  {"url": "https://www.webmd.com/kidney-stones/picture-of-the-kidneys", "why": "This address now opens a kidney disease article with no anatomy facts to compare."},
+  {"url": "https://www.webmd.com/digestive-disorders/picture-of-the-liver", "why": "This address now opens a liver failure article with no anatomy facts to compare."}
+ ]
+}

@@ -110,6 +110,9 @@ build("gut", {
     "teniae": [(INT, "fs-id789222", "The teniae coli are three bands"), (INT, "fs-id789222", "Tonic contractions of the teniae coli")],
     "mesentery": [(INT, "fs-id1921294", "The jejunum and ileum are tethered")],
     "context": [],
+    "sma": [(INT, "fs-id2240902", "The superior mesenteric artery is its main")],
+    "smv": [(INT, "fs-id2240902", "Veins run parallel to the arteries"), (INT, "fs-id2240902", "Nutrient-rich blood from the small intestine")],
+    "none": [],
 }, [
     (grp("esophagus"), "esophagus", None), (grp("stomach"), "stomach", None), (grp("duodenum"), "duodenum", None),
     (grp("jejunum"), "jejunum", None), (grp("ileum"), "ileum", None),
@@ -118,6 +121,9 @@ build("gut", {
     (name("Descending colon"), "descending", None), (name("Transverse mesocolon"), "mesocolon", None), (name("Rectum"), "rectum", None),
     (grp("teniae"), "teniae", None), (name("Mesentery of small intestine"), "mesentery", None),
     (grp("accessory"), "context", "Shown for context only. Open the liver, gallbladder and pancreas workstation for these organs."),
+    (name("Superior mesenteric artery", "Trunk of superior mesenteric artery"), "sma", "The quoted sentence describes the blood supply of the small intestine."),
+    (name("Superior mesenteric vein"), "smv", None),
+    (grp("gut-arteries", "gut-veins"), "none", "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."),
 ], [
     ("Esophagus", {"groups": ["esophagus"]}, (ESO, "fs-id1984077", "To enter the abdomen")),
     ("Stomach", {"groups": ["stomach"]}, (STO, "fs-id2052808", "The cardia (or cardiac region)")),

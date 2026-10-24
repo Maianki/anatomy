@@ -6,7 +6,7 @@ from scipy.spatial import cKDTree
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import official
 DATA, ZIP = sys.argv[1], sys.argv[2]
-scenes = sys.argv[3:] or ["heart2", "lungs", "liver", "gut", "urinary", "brain"]
+scenes = sys.argv[3:] or ["heart2", "lungs", "liver", "gut", "urinary", "brain"] + ["bones-" + r for r in ("skull", "spine", "thorax", "upper", "pelvis", "lower")]
 cache = os.path.join(os.path.dirname(ZIP), "cache")
 report = {}
 for sc in scenes:

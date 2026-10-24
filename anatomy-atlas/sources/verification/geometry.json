@@ -12,12 +12,12 @@
  "liver": {
   "max_mm": 1.0,
   "worst": "Lateral superior segmental tributary of left hepatic vein",
-  "meshes": 83
+  "meshes": 82
  },
  "gut": {
-  "max_mm": 0.01,
-  "worst": "Taenia omentalis",
-  "meshes": 69
+  "max_mm": 1.0,
+  "worst": "Left colic vein",
+  "meshes": 115
  },
  "urinary": {
   "max_mm": 0.98,
@@ -27,6 +27,36 @@
  "brain": {
   "max_mm": 1.0,
   "worst": "Right stria medullaris of thalamus",
-  "meshes": 106
+  "meshes": 238
+ },
+ "bones-skull": {
+  "max_mm": 0.92,
+  "worst": "Left lacrimal bone",
+  "meshes": 23
+ },
+ "bones-spine": {
+  "max_mm": 0.84,
+  "worst": "Intervertebral disk of axis",
+  "meshes": 48
+ },
+ "bones-thorax": {
+  "max_mm": 0.97,
+  "worst": "Xiphoid process",
+  "meshes": 41
+ },
+ "bones-upper": {
+  "max_mm": 1.0,
+  "worst": "Distal phalanx of right index finger",
+  "meshes": 64
+ },
+ "bones-pelvis": {
+  "max_mm": 0.0,
+  "worst": "Right hip bone",
+  "meshes": 3
+ },
+ "bones-lower": {
+  "max_mm": 0.99,
+  "worst": "Middle phalanx of left little toe",
+  "meshes": 64
  }
 }

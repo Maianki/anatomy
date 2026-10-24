@@ -1,0 +1,17 @@
+import { chromium } from 'playwright';
+import { readFileSync } from 'fs';
+const S = process.argv[2], ORG = process.argv[3], OUT = process.argv[4];
+const browser = await chromium.launch({ executablePath: '/opt/pw-browsers/chromium', args: ['--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist'] });
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 }, colorScheme: 'dark' })).newPage();
+page.setDefaultTimeout(180000);
+page.on('pageerror', e => console.log('pageerror:', e.message));
+await page.route('**/three.min.js', r => r.fulfill({ body: readFileSync(S + '/three/package/build/three.min.js'), contentType: 'text/javascript' }));
+await page.route('**/OrbitControls.js', r => r.fulfill({ body: readFileSync(S + '/three/package/examples/js/controls/OrbitControls.js'), contentType: 'text/javascript' }));
+await page.route('https://fonts.**', r => r.abort());
+await page.goto('http://127.0.0.1:8765/anatomy-atlas.html#' + ORG);
+await page.waitForFunction(() => document.getElementById('hLoad').hidden && document.querySelectorAll('#steps .step').length > 0);
+await page.waitForTimeout(3000);
+await page.click('#tSee'); await page.click('#tVessels'); await page.waitForTimeout(3000);
+console.log(ORG, 'see', await page.$eval('#tSee', e => e.getAttribute('aria-pressed')), 'vessels', await page.$eval('#tVessels', e => e.textContent + ' ' + e.getAttribute('aria-pressed')));
+await page.screenshot({ path: `${OUT}/tools-${ORG}.png` });
+await browser.close();

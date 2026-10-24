@@ -1,0 +1,112 @@
+{
+"topics": {
+"Hip Bone|": [
+{
+"text": "The hip bone, or coxal bone, forms the pelvic girdle portion of the pelvis.",
+"pid": "fs-id2654201",
+"label": "8.3 Hip Bone",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
+},
+{
+"text": "The paired hip bones are the large, curved bones that form the lateral and anterior aspects of the pelvis.",
+"pid": "fs-id2654201",
+"label": "8.3 Hip Bone",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
+}
+],
+"Sacrum and Coccyx|sacrum": [
+{
+"text": "It is formed by the fusion of five sacral vertebrae, a process that does not begin until after the age of 20.",
+"pid": "fs-id1861665",
+"label": "7.3 Sacrum and Coccyx",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column"
+},
+{
+"text": "On the anterior surface of the older adult sacrum, the lines of vertebral fusion can be seen as four transverse ridges.",
+"pid": "fs-id1861665",
+"label": "7.3 Sacrum and Coccyx",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column"
+}
+],
+"overview": [
+{
+"text": "The pelvic girdle (hip girdle) is formed by a single bone, the hip bone or coxal bone (coxal = \u201chip\u201d), which serves as the attachment point for each lower limb.",
+"pid": "fs-id2158798",
+"label": "8.3 The Pelvic Girdle and Pelvis",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
+},
+{
+"text": "Each hip bone, in turn, is firmly joined to the axial skeleton via its attachment to the sacrum of the vertebral column.",
+"pid": "fs-id2158798",
+"label": "8.3 The Pelvic Girdle and Pelvis",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
+},
+{
+"text": "The right and left hip bones also converge anteriorly to attach to each other.",
+"pid": "fs-id2158798",
+"label": "8.3 The Pelvic Girdle and Pelvis",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
+}
+],
+"group:hip": [
+{
+"text": "The hip bone, or coxal bone, forms the pelvic girdle portion of the pelvis.",
+"pid": "fs-id2654201",
+"label": "8.3 Hip Bone",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
+}
+],
+"group:sacrum": [
+{
+"text": "It is formed by the fusion of five sacral vertebrae, a process that does not begin until after the age of 20.",
+"pid": "fs-id1861665",
+"label": "7.3 Sacrum and Coccyx",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column"
+}
+]
+},
+"meshTopic": {
+"FJ3152": {
+"topic": "Hip Bone|",
+"note": null
+},
+"FJ3288": {
+"topic": "Hip Bone|",
+"note": null
+},
+"FJ3393": {
+"topic": "Sacrum and Coccyx|sacrum",
+"note": null
+}
+},
+"flow": [
+{
+"title": "Hip Bone",
+"groups": [
+"hip"
+],
+"passage": {
+"text": "The hip bone, or coxal bone, forms the pelvic girdle portion of the pelvis.",
+"pid": "fs-id2654201",
+"label": "8.3 Hip Bone",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis"
+}
+},
+{
+"title": "Sacrum",
+"groups": [
+"sacrum"
+],
+"passage": {
+"text": "It is formed by the fusion of five sacral vertebrae, a process that does not begin until after the age of 20.",
+"pid": "fs-id1861665",
+"label": "7.3 Sacrum and Coccyx",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column"
+}
+}
+],
+"gaps": [],
+"notes": [
+"The sacrum also appears in the vertebral column workstation."
+]
+}

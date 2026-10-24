@@ -27,7 +27,7 @@ def sent(pid, prefix):
     i = p.index(prefix)  # raises if the text is not in the source
     m = re.search(r"\.[\u201d\"\u2019]?(?=\s|$)", p[i:])
     s = p[i:i + m.end()]
-    assert not re.search(r"\(\s*\)|\(see \)|\([a-z]\)| shows | in \.$", s), s  # skip sentences that point at missing figures
+    assert not re.search(r"\(\s*\)|\(\s*(?:(?:and|or|see|also|,|;)\s*)+\)|\(see \)|\([a-z]\)| shows | in \.$", s), s  # skip sentences that point at missing figures
     if section_of[pid] == "Chapter Review":  # on openstax.org these paragraphs live on the chapter's review page
         return {"text": s, "pid": pid, "label": "Ch. 19 Chapter Review",
                 "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-chapter-review"}

@@ -28,6 +28,70 @@
   "repo": "https://github.com/openstax/osbooks-anatomy-physiology",
   "sections": [
    {
+    "number": "7.2",
+    "title": "The Skull",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-2-the-skull",
+    "quotes": 33,
+    "used": [
+     "Skull"
+    ]
+   },
+   {
+    "number": "7.3",
+    "title": "The Vertebral Column",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
+    "quotes": 15,
+    "used": [
+     "Pelvis",
+     "Vertebral column"
+    ]
+   },
+   {
+    "number": "7.4",
+    "title": "The Thoracic Cage",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-4-the-thoracic-cage",
+    "quotes": 12,
+    "used": [
+     "Thoracic cage"
+    ]
+   },
+   {
+    "number": "8.1",
+    "title": "The Pectoral Girdle",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle",
+    "quotes": 4,
+    "used": [
+     "Upper limbs"
+    ]
+   },
+   {
+    "number": "8.2",
+    "title": "Bones of the Upper Limb",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb",
+    "quotes": 19,
+    "used": [
+     "Upper limbs"
+    ]
+   },
+   {
+    "number": "8.3",
+    "title": "The Pelvic Girdle and Pelvis",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis",
+    "quotes": 5,
+    "used": [
+     "Pelvis"
+    ]
+   },
+   {
+    "number": "8.4",
+    "title": "Bones of the Lower Limb",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-4-bones-of-the-lower-limb",
+    "quotes": 21,
+    "used": [
+     "Lower limbs"
+    ]
+   },
+   {
     "number": "13.2",
     "title": "The Central Nervous System",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system",
@@ -40,7 +104,7 @@
     "number": "13.3",
     "title": "Circulation and the Central Nervous System",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system",
-    "quotes": 13,
+    "quotes": 20,
     "used": [
      "Brain"
     ]
@@ -113,7 +177,7 @@
     "number": "23.5",
     "title": "The Small and Large Intestines",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines",
-    "quotes": 25,
+    "quotes": 28,
     "used": [
      "Digestive tract",
      "Liver, gallbladder and pancreas"
@@ -151,10 +215,127 @@
  "verification": {
   "date": "2026-10-24",
   "items": [
-   "All 229 quotes were found word for word on the live openstax.org pages, and all 13 section links open the right page and paragraph.",
+   "All 348 quotes were found word for word on the live openstax.org pages, and all 20 section links open the right page and paragraph.",
    "All 2,234 meshes in the dataset exist in the official archive, and every name and FMA ID matches the official tables.",
-   "The 3D geometry is read straight from the official archive (isa_BP3D_4.0_obj_99.zip). In every organ workstation, every vertex of the original lies within 1.0 mm of what you see.",
-   "The data errors listed in each organ's Notes tab (two misplaced lung arteries, two brain structures named for the wrong side) are present in the official archive itself."
+   "The 3D geometry is read straight from the official archive (isa_BP3D_4.0_obj_99.zip). In every organ and bone workstation, every vertex of the original lies within 1.0 mm of what you see.",
+   "The data errors listed in each organ's Notes tab (two misplaced lung arteries, two brain structures named for the wrong side) are present in the official archive itself.",
+   "The official archive has five pairs of meshes with the same FMA ID and identical geometry (hyoid bone FJ2772/FJ3201, cricoid cartilage FJ2440/FJ2769, celiac artery FJ1846/FJ2013, hepatic artery FJ1916/FJ2386 and FJ1924/FJ2394). Only the first mesh of each pair is shown."
+  ]
+ },
+ "crosscheck": {
+  "name": "WebMD",
+  "url": "https://www.webmd.com/",
+  "checkedOn": "2026-10-24",
+  "use": "Used only to cross-check facts. No WebMD text, image or model is copied into the app; the summaries below are our own words.",
+  "items": [
+   {
+    "topic": "Heart: four chambers",
+    "organ": "heart",
+    "ours": "The human heart consists of four chambers: The left side and the right side each have one atrium and one ventricle.",
+    "oursFrom": "OpenStax 19.1",
+    "page": {
+     "title": "Heart Anatomy, Function, and Blood Circulation",
+     "url": "https://www.webmd.com/heart/picture-of-the-heart",
+     "reviewedBy": "Shruthi N, MD",
+     "updated": "2024-08-22"
+    },
+    "result": "agrees",
+    "summary": "WebMD also lists two atria and two ventricles, with a wall (the septum) dividing the left and right sides."
+   },
+   {
+    "topic": "Heart: size",
+    "organ": "heart",
+    "ours": "A typical heart is approximately the size of your fist: 12 cm (5 in) in length, 8 cm (3.5 in) wide, and 6 cm (2.5 in) in thickness.",
+    "oursFrom": "OpenStax 19.1",
+    "page": {
+     "title": "Heart Anatomy, Function, and Blood Circulation",
+     "url": "https://www.webmd.com/heart/picture-of-the-heart",
+     "reviewedBy": "Shruthi N, MD",
+     "updated": "2024-08-22"
+    },
+    "result": "agrees",
+    "summary": "WebMD also describes the heart as fist-sized. It gives no measurements, so the centimetre figures are not cross-checked."
+   },
+   {
+    "topic": "Lungs: lobes",
+    "organ": "lungs",
+    "ours": "The right lung consists of three lobes: the superior, middle, and inferior lobes. The left lung consists of two lobes: the superior and inferior lobes.",
+    "oursFrom": "OpenStax 22.2",
+    "page": {
+     "title": "Lobectomy Lung Surgery: Purpose, Procedure, and Recovery",
+     "url": "https://www.webmd.com/lung-cancer/lobectomy-lung-surgery",
+     "reviewedBy": "Shruthi N, MD",
+     "updated": "2025-03-10"
+    },
+    "result": "agrees",
+    "summary": "WebMD gives five lobes in all: three in the right lung and two in the left."
+   },
+   {
+    "topic": "Small intestine: length",
+    "organ": "gut",
+    "ours": "The longest part of the alimentary canal, the small intestine is about 3.05 meters (10 feet) long in a living person (but about twice as long in a cadaver due to the loss of muscle tone).",
+    "oursFrom": "OpenStax 23.5",
+    "page": {
+     "title": "Digestive System (Anatomy): How It Works",
+     "url": "https://www.webmd.com/digestive-disorders/picture-of-the-intestines",
+     "reviewedBy": "Poonam Sachdev, MD",
+     "updated": "2023-12-05"
+    },
+    "result": "differs",
+    "summary": "WebMD says that, spread out, the small intestine would be more than 20 feet long. That is about twice the OpenStax figure for a living person and close to its figure for a cadaver. The two sources measure different things, so the app keeps the OpenStax sentence, which states both. Both agree that the small intestine has three parts: duodenum, jejunum and ileum."
+   },
+   {
+    "topic": "Gallbladder: position",
+    "organ": "liver",
+    "ours": "The gallbladder is 8\u201310 cm (~3\u20134 in) long and is nested in a shallow area on the posterior aspect of the right lobe of the liver.",
+    "oursFrom": "OpenStax 23.6",
+    "page": {
+     "title": "Gall Bladder Pain: Causes, Symptoms, Treatment",
+     "url": "https://www.webmd.com/digestive-disorders/picture-of-the-gallbladder",
+     "reviewedBy": "Sanjay Ponkshe, MD",
+     "updated": "2026-03-22"
+    },
+    "result": "agrees",
+    "summary": "WebMD also places the gallbladder below the liver and describes it as small and pear-shaped. It gives no length."
+   },
+   {
+    "topic": "Brainstem: order of parts",
+    "organ": "brain",
+    "ours": "One of the original regions of the embryonic brain, the midbrain is a small region between the thalamus and pons.",
+    "oursFrom": "OpenStax 13.2",
+    "page": {
+     "title": "Brainstem: Function, Location, Health Problems, and More",
+     "url": "https://www.webmd.com/brain/brainstem-what-to-know",
+     "reviewedBy": "Christopher Melinosky, MD",
+     "updated": "2024-12-03"
+    },
+    "result": "agrees",
+    "summary": "WebMD lists the brainstem from top to bottom as midbrain, pons and medulla oblongata, with the medulla joining the spinal cord."
+   },
+   {
+    "topic": "Skull: which bones",
+    "organ": "bones-skull",
+    "ours": "The skull workstation has 8 brain-case meshes (frontal, occipital, sphenoid, ethmoid, two parietal, two temporal) and 14 facial-bone meshes (two each of maxilla, palatine, zygomatic, nasal, lacrimal and inferior nasal concha, plus the vomer and mandible).",
+    "oursFrom": "BodyParts3D 4.0 meshes in this app",
+    "page": {
+     "title": "The Skull: Function, Composition, Health Problems, and More",
+     "url": "https://www.webmd.com/a-to-z-guides/skull-what-to-know",
+     "reviewedBy": "Lalitha Kadali, MBBS, MD",
+     "updated": "2026-08-27"
+    },
+    "result": "agrees",
+    "summary": "WebMD counts 22 skull bones and names the same 14 facial bones. So the dataset's skull is complete at the level of whole bones: 8 + 14 = 22."
+   }
+  ],
+  "notUsable": [
+   {
+    "url": "https://www.webmd.com/kidney-stones/picture-of-the-kidneys",
+    "why": "This address now opens a kidney disease article with no anatomy facts to compare."
+   },
+   {
+    "url": "https://www.webmd.com/digestive-disorders/picture-of-the-liver",
+    "why": "This address now opens a liver failure article with no anatomy facts to compare."
+   }
   ]
  }
 }

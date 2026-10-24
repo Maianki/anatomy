@@ -476,6 +476,58 @@
 "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-2-the-central-nervous-system"
 }
 ],
+"ica": [
+{
+"text": "The next branches give rise to the common carotid arteries, which further branch into the internal carotid arteries.",
+"pid": "fs-id1828457",
+"label": "13.3 Arterial Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+},
+{
+"text": "The internal carotid artery enters the cranium through the carotid canal in the temporal bone.",
+"pid": "fs-id1333836",
+"label": "13.3 Arterial Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+],
+"vert": [
+{
+"text": "A second set of vessels that supply the CNS are the vertebral arteries, which are protected as they pass through the neck region by the transverse foramina of the cervical vertebrae.",
+"pid": "fs-id1333836",
+"label": "13.3 Arterial Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+},
+{
+"text": "The vertebral arteries enter the cranium through the foramen magnum of the occipital bone.",
+"pid": "fs-id1333836",
+"label": "13.3 Arterial Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+],
+"basilar": [
+{
+"text": "The two vertebral arteries then merge into the basilar artery, which gives rise to branches to the brain stem and cerebellum.",
+"pid": "fs-id1333836",
+"label": "13.3 Arterial Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+],
+"spinal": [
+{
+"text": "Branches off the left and right vertebral arteries merge into the anterior spinal artery supplying the anterior aspect of the spinal cord, found along the anterior median fissure.",
+"pid": "fs-id1333836",
+"label": "13.3 Arterial Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+],
+"willis": [
+{
+"text": "The circle of Willis is a specialized arrangement of arteries that ensure constant perfusion of the cerebrum even in the event of a blockage of one of the arteries in the circle.",
+"pid": "fs-id1966794",
+"label": "13.3 Arterial Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/13-3-circulation-and-the-central-nervous-system"
+}
+],
 "none": []
 },
 "meshTopic": {
@@ -867,6 +919,534 @@
 "topic": "none",
 "note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: segment of white matter of neuraxis, white matter of neuraxis."
 },
+"FJ1654M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left internal carotid artery."
+},
+"FJ1655": {
+"topic": "willis",
+"note": "The official BodyParts3D part-of tree lists this artery as part of the cerebral arterial circle (circle of Willis). This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery, left internal carotid artery, right internal carotid artery."
+},
+"FJ1658M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left internal carotid artery."
+},
+"FJ1682M": {
+"topic": "ica",
+"note": "The lower part of this artery, below the brain, is cut short in this view."
+},
+"FJ1695M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left internal carotid artery."
+},
+"FJ1713": {
+"topic": "willis",
+"note": "The official BodyParts3D part-of tree lists this artery as part of the cerebral arterial circle (circle of Willis). This source does not describe this artery by name. The dataset lists it under: left internal carotid artery, right internal carotid artery."
+},
+"FJ1713M": {
+"topic": "willis",
+"note": "The official BodyParts3D part-of tree lists this artery as part of the cerebral arterial circle (circle of Willis). This source does not describe this artery by name. The dataset lists it under: left internal carotid artery, right internal carotid artery."
+},
+"FJ1723": {
+"topic": "willis",
+"note": "The official BodyParts3D part-of tree lists this artery as part of the cerebral arterial circle (circle of Willis). This source does not describe this artery by name. The dataset lists it under: left internal carotid artery, right internal carotid artery."
+},
+"FJ1723M": {
+"topic": "willis",
+"note": "The official BodyParts3D part-of tree lists this artery as part of the cerebral arterial circle (circle of Willis). This source does not describe this artery by name. The dataset lists it under: left internal carotid artery, right internal carotid artery."
+},
+"FJ1654": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right internal carotid artery."
+},
+"FJ1658": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right internal carotid artery."
+},
+"FJ1662": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery, right internal carotid artery."
+},
+"FJ1663": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery, right internal carotid artery."
+},
+"FJ1682": {
+"topic": "ica",
+"note": "The lower part of this artery, below the brain, is cut short in this view."
+},
+"FJ1692": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right internal carotid artery, zone of middle cerebral artery."
+},
+"FJ1695": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right internal carotid artery."
+},
+"FJ1656": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1656M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1657": {
+"topic": "spinal",
+"note": null
+},
+"FJ1661": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1661M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1672": {
+"topic": "basilar",
+"note": null
+},
+"FJ1675": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1675M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1677": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1677M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1678": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1678M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1680": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1680M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1684": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1684M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1687": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1687M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1689": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1689M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1691": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1691M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1700M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery."
+},
+"FJ1701M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery."
+},
+"FJ1702M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery."
+},
+"FJ1703M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery."
+},
+"FJ1704M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery."
+},
+"FJ1705M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery."
+},
+"FJ1706M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery."
+},
+"FJ1707M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery."
+},
+"FJ1708M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery."
+},
+"FJ1709M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery."
+},
+"FJ1710M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery."
+},
+"FJ1711M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery."
+},
+"FJ1715M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery."
+},
+"FJ1720": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1720M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1725M": {
+"topic": "vert",
+"note": "The lower part of this artery, below the brain, is cut short in this view."
+},
+"FJ1726": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1726M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1727": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1727M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: left vertebral artery, right vertebral artery."
+},
+"FJ1844": {
+"topic": "basilar",
+"note": null
+},
+"FJ1700": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right vertebral artery."
+},
+"FJ1701": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right vertebral artery."
+},
+"FJ1702": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right vertebral artery."
+},
+"FJ1703": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right vertebral artery."
+},
+"FJ1704": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right vertebral artery."
+},
+"FJ1705": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right vertebral artery."
+},
+"FJ1706": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right vertebral artery."
+},
+"FJ1707": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right vertebral artery."
+},
+"FJ1708": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right vertebral artery."
+},
+"FJ1709": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right vertebral artery."
+},
+"FJ1710": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right vertebral artery."
+},
+"FJ1711": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right vertebral artery."
+},
+"FJ1715": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: right vertebral artery."
+},
+"FJ1725": {
+"topic": "vert",
+"note": "The lower part of this artery, below the brain, is cut short in this view."
+},
+"FJ1659": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1659M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1662M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1663M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1664": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1664M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1665": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1665M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1666": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1666M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1667": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1667M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1668": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1668M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1669": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1669M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1670": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1670M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1673": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1673M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1685": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1685M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1686": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1686M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1693": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1693M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1712": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1712M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1716": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1716M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1717": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1717M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1724": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1724M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1729": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1729M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of middle cerebral artery."
+},
+"FJ1660": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: zone of middle cerebral artery."
+},
+"FJ1660M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: zone of middle cerebral artery."
+},
+"FJ1692M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: zone of middle cerebral artery."
+},
+"FJ1694": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: zone of middle cerebral artery."
+},
+"FJ1694M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: zone of middle cerebral artery."
+},
+"FJ1671": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1671M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1676": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1676M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1681": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1681M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1690": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1690M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1696": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1696M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1697": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1697M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1698": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1698M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1699": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1699M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1722": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
+"FJ1722M": {
+"topic": "none",
+"note": "This source does not describe this artery by name. The dataset lists it under: branch of anterior cerebral artery."
+},
 "FJ1796": {
 "topic": "pituitary",
 "note": "Shown for context. The passage mentions the pituitary gland."
@@ -996,7 +1576,8 @@
 }
 ],
 "gaps": [
-"This workstation shows the brain only. The meninges, the brain's blood vessels and the spinal cord itself (apart from its central canal) are not included."
+"The meninges and the spinal cord itself (apart from its central canal) are not included.",
+"Of the brain's blood vessels, only the internal carotid and vertebral artery branches are shown (the Arteries button). Veins are not shown."
 ],
 "notes": [
 "The dataset's own brain concept leaves out many brain structures, so this workstation groups meshes by quoted textbook sentences where they exist and by each mesh's FMA concept otherwise. Structures neither source places in a region are listed under Other."

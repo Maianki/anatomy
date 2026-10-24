@@ -75,6 +75,23 @@ for i in dict.fromkeys(pool):
     gi[key]["ids"].append(i)
 for g in groups:
     print(g["key"], len(g["ids"]), sorted(set(re.sub(r"^(Left|Right) ", "", parts[i]["name"]) for i in g["ids"]))[:40])
+# Arteries of the brain: the dataset's own branch trees of the internal carotid and vertebral arteries, and its
+# anterior and middle cerebral artery branch concepts. The neck parts of the two trunks are cut short.
+ART_CONCEPTS = ["left internal carotid artery", "right internal carotid artery", "left vertebral artery", "right vertebral artery",
+                "branch of middle cerebral artery", "zone of middle cerebral artery", "branch of anterior cerebral artery"]
+arts = [e for c in ART_CONCEPTS for e in elements(c)]
+arts += [p["id"] for p in atlas["parts"] if p["name"] in ("Left internal carotid artery", "Right internal carotid artery",
+                                                          "Left vertebral artery", "Right vertebral artery")]
+arts = [i for i in dict.fromkeys(arts) if parts[i]["system"] == "arterial"]
+TRUNK_CROP = 1.50
+_geom = geom
+def geom(pid):  # noqa: F811
+    pos, idx = _geom(pid)
+    if parts[pid]["name"] in ("Left internal carotid artery", "Right internal carotid artery", "Left vertebral artery", "Right vertebral artery"):
+        idx = idx[np.all(pos[idx][:, :, 1] >= TRUNK_CROP, axis=1)]
+    return pos, idx
+groups.insert(len(groups) - 2, {"key": "arteries", "label": "Internal carotid and vertebral artery branches", "color": 0xd84a3f, "ids": arts, "keep": "auto"})
+print("brain arteries:", len(arts))
 write_scene("brain", groups)
 meta = json.loads((OUT / "brain.json").read_text())
 meta["excluded"] = left_out

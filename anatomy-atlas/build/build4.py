@@ -74,11 +74,13 @@ meta["lobes"] = [{"key": keys[n], "label": n, "fma": parts[byname[n][0]]["concep
 (OUT / "liver.json").write_text(json.dumps(meta, separators=(",", ":")))
 
 # ---------------- digestive tract ----------------
+GUT_VESSEL_RX = r"mesenteric|\bgastric|gastro-?epiploic|colic|ileocolic|jejunal|ileal|sigmoid|rectal|appendicular|pancreaticoduodenal|esophageal (artery|vein)"
+GUT_VESSELS = like(GUT_VESSEL_RX, "arterial") + like(GUT_VESSEL_RX, "venous")
 gut_pool = named("Esophagus", "Stomach", "Duodenum", "Ileocecal junction", "Appendix", "Mesoappendix", "Ascending colon",
                  "Transverse colon", "Descending colon", "Rectum", "Taenia libera", "Taenia mesocolica", "Taenia omentalis",
-                 "Mesentery of small intestine", "Transverse mesocolon") + like(r"part of (jejunum|ileum)$")
+                 "Mesentery of small intestine", "Transverse mesocolon") + like(r"part of (jejunum|ileum)$") + GUT_VESSELS
 gut_groups = assign(gut_pool, [
-    ({"key": "esophagus", "label": "Esophagus", "color": 0xc77b6b}, nm("Esophagus")),
+    ({"key": "esophagus", "label": "Esophagus", "color": 0xc77b6b}, lambda p: p["name"] == "Esophagus"),
     ({"key": "stomach", "label": "Stomach", "color": 0xd08a6a}, nm("Stomach")),
     ({"key": "duodenum", "label": "Duodenum", "color": 0xe6b48f}, nm("Duodenum")),
     ({"key": "jejunum", "label": "Jejunum", "color": 0xe9a07e}, nm("jejunum")),
@@ -86,6 +88,8 @@ gut_groups = assign(gut_pool, [
     ({"key": "large", "label": "Large intestine", "color": 0xb98a5e}, lambda p: p["name"] in ("Ascending colon", "Transverse colon", "Descending colon", "Rectum", "Appendix", "Ileocecal junction")),
     ({"key": "teniae", "label": "Teniae coli", "color": 0xf0dfb8}, nm("Taenia")),
     ({"key": "mesenteries", "label": "Mesenteries", "color": 0xe8d6a0}, nm("Mesentery", "mesocolon", "Mesoappendix")),
+    ({"key": "gut-arteries", "label": "Arteries of the digestive tract", "color": 0xd84a3f}, lambda p: p["id"] in GUT_VESSELS and p["system"] == "arterial"),
+    ({"key": "gut-veins", "label": "Veins of the digestive tract", "color": 0x4f78c8}, lambda p: p["id"] in GUT_VESSELS and p["system"] == "venous"),
 ])
 for g in gut_groups:
     g["keep"] = "auto"

@@ -248,7 +248,30 @@
 "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
 }
 ],
-"context": []
+"context": [],
+"sma": [
+{
+"text": "The superior mesenteric artery is its main arterial supply.",
+"pid": "fs-id2240902",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"smv": [
+{
+"text": "Veins run parallel to the arteries and drain into the superior mesenteric vein.",
+"pid": "fs-id2240902",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+},
+{
+"text": "Nutrient-rich blood from the small intestine is then carried to the liver via the hepatic portal vein.",
+"pid": "fs-id2240902",
+"label": "23.5 Structure",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/23-5-the-small-and-large-intestines"
+}
+],
+"none": []
 },
 "meshTopic": {
 "FJ2563": {
@@ -526,6 +549,190 @@
 "FJ3398": {
 "topic": "mesocolon",
 "note": null
+},
+"FJ1928": {
+"topic": "sma",
+"note": "The quoted sentence describes the blood supply of the small intestine."
+},
+"FJ1934": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ2011": {
+"topic": "sma",
+"note": "The quoted sentence describes the blood supply of the small intestine."
+},
+"FJ2025": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ2034": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3399": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3401": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3409": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3410": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3414": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3428": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3437": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3439": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3442": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3446": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3494": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3499": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3501": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3542": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3546": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3557": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3590": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3594": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3596": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3638": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3644": {
+"topic": "sma",
+"note": "The quoted sentence describes the blood supply of the small intestine."
+},
+"FJ3656": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3400": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3415": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3429": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3438": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3440": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3443": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3495": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3500": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3502": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3543": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3545": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3591": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3595": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3597": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3639": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3646": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3647": {
+"topic": "smv",
+"note": null
+},
+"FJ3655": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
+},
+"FJ3657": {
+"topic": "none",
+"note": "This source does not describe this vessel by name. Its name and FMA ID come from the BodyParts3D dataset."
 },
 "FJ2816": {
 "topic": "context",

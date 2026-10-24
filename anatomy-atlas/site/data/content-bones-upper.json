@@ -1,0 +1,698 @@
+{
+"topics": {
+"Clavicle|": [
+{
+"text": "The clavicle has several important functions.",
+"pid": "fs-id1192235",
+"label": "8.1 Clavicle",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle"
+},
+{
+"text": "First, anchored by muscles from above, it serves as a strut that extends laterally to support the scapula.",
+"pid": "fs-id1192235",
+"label": "8.1 Clavicle",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle"
+}
+],
+"Scapula|": [
+{
+"text": "The scapula is also part of the pectoral girdle and thus plays an important role in anchoring the upper limb to the body.",
+"pid": "fs-id1968095",
+"label": "8.1 Scapula",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle"
+},
+{
+"text": "The scapula is located on the posterior side of the shoulder.",
+"pid": "fs-id1968095",
+"label": "8.1 Scapula",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle"
+}
+],
+"Humerus|": [
+{
+"text": "At its proximal end is the head of the humerus.",
+"pid": "fs-id2110691",
+"label": "8.2 Humerus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "This is the large, round, smooth region that faces medially.",
+"pid": "fs-id2110691",
+"label": "8.2 Humerus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"Ulna|": [
+{
+"text": "The ulna is the medial bone of the forearm.",
+"pid": "fs-id2080518",
+"label": "8.2 Ulna",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The proximal end of the ulna resembles a crescent wrench with its large, C-shaped trochlear notch.",
+"pid": "fs-id2080518",
+"label": "8.2 Ulna",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"Radius|": [
+{
+"text": "The head of the radius is a disc-shaped structure that forms the proximal end.",
+"pid": "fs-id1411842",
+"label": "8.2 Radius",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The small depression on the surface of the head articulates with the capitulum of the humerus as part of the elbow joint, whereas the smooth, outer margin of the head articulates with the radial notch of the ulna at the proximal radioulnar joint.",
+"pid": "fs-id1411842",
+"label": "8.2 Radius",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"Carpal Bones|capitate": [
+{
+"text": "The carpal bones are arranged in two rows, forming a proximal row of four carpal bones and a distal row of four carpal bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The bones in the proximal row, running from the lateral (thumb) side to the medial side, are the scaphoid (\u201cboat-shaped\u201d), lunate (\u201cmoon-shaped\u201d), triquetrum (\u201cthree-cornered\u201d), and pisiform (\u201cpea-shaped\u201d) bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The distal bones (lateral to medial) are the trapezium (\u201ctable\u201d), trapezoid (\u201cresembles a table\u201d), capitate (\u201chead-shaped\u201d), and hamate (\u201chooked bone\u201d) bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"Carpal Bones|hamate": [
+{
+"text": "The carpal bones are arranged in two rows, forming a proximal row of four carpal bones and a distal row of four carpal bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The bones in the proximal row, running from the lateral (thumb) side to the medial side, are the scaphoid (\u201cboat-shaped\u201d), lunate (\u201cmoon-shaped\u201d), triquetrum (\u201cthree-cornered\u201d), and pisiform (\u201cpea-shaped\u201d) bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The hamate bone is characterized by a prominent bony extension on its anterior side called the hook of the hamate bone.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"Carpal Bones|lunate": [
+{
+"text": "The carpal bones are arranged in two rows, forming a proximal row of four carpal bones and a distal row of four carpal bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The bones in the proximal row, running from the lateral (thumb) side to the medial side, are the scaphoid (\u201cboat-shaped\u201d), lunate (\u201cmoon-shaped\u201d), triquetrum (\u201cthree-cornered\u201d), and pisiform (\u201cpea-shaped\u201d) bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The scaphoid and lunate bones articulate directly with the distal end of the radius, whereas the triquetrum bone articulates with a fibrocartilaginous pad that spans the radius and styloid process of the ulna.",
+"pid": "fs-id1882937",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"Carpal Bones|pisiform": [
+{
+"text": "The carpal bones are arranged in two rows, forming a proximal row of four carpal bones and a distal row of four carpal bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The bones in the proximal row, running from the lateral (thumb) side to the medial side, are the scaphoid (\u201cboat-shaped\u201d), lunate (\u201cmoon-shaped\u201d), triquetrum (\u201cthree-cornered\u201d), and pisiform (\u201cpea-shaped\u201d) bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The pisiform thus projects anteriorly, where it forms the bony bump that can be felt at the medial base of your hand.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"Carpal Bones|scaphoid": [
+{
+"text": "The carpal bones are arranged in two rows, forming a proximal row of four carpal bones and a distal row of four carpal bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The bones in the proximal row, running from the lateral (thumb) side to the medial side, are the scaphoid (\u201cboat-shaped\u201d), lunate (\u201cmoon-shaped\u201d), triquetrum (\u201cthree-cornered\u201d), and pisiform (\u201cpea-shaped\u201d) bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The scaphoid and lunate bones articulate directly with the distal end of the radius, whereas the triquetrum bone articulates with a fibrocartilaginous pad that spans the radius and styloid process of the ulna.",
+"pid": "fs-id1882937",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"Carpal Bones|trapezium": [
+{
+"text": "The carpal bones are arranged in two rows, forming a proximal row of four carpal bones and a distal row of four carpal bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The bones in the proximal row, running from the lateral (thumb) side to the medial side, are the scaphoid (\u201cboat-shaped\u201d), lunate (\u201cmoon-shaped\u201d), triquetrum (\u201cthree-cornered\u201d), and pisiform (\u201cpea-shaped\u201d) bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The distal bones (lateral to medial) are the trapezium (\u201ctable\u201d), trapezoid (\u201cresembles a table\u201d), capitate (\u201chead-shaped\u201d), and hamate (\u201chooked bone\u201d) bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"Carpal Bones|trapezoid": [
+{
+"text": "The carpal bones are arranged in two rows, forming a proximal row of four carpal bones and a distal row of four carpal bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The bones in the proximal row, running from the lateral (thumb) side to the medial side, are the scaphoid (\u201cboat-shaped\u201d), lunate (\u201cmoon-shaped\u201d), triquetrum (\u201cthree-cornered\u201d), and pisiform (\u201cpea-shaped\u201d) bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The distal bones (lateral to medial) are the trapezium (\u201ctable\u201d), trapezoid (\u201cresembles a table\u201d), capitate (\u201chead-shaped\u201d), and hamate (\u201chooked bone\u201d) bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"Carpal Bones|triquetrum": [
+{
+"text": "The carpal bones are arranged in two rows, forming a proximal row of four carpal bones and a distal row of four carpal bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The bones in the proximal row, running from the lateral (thumb) side to the medial side, are the scaphoid (\u201cboat-shaped\u201d), lunate (\u201cmoon-shaped\u201d), triquetrum (\u201cthree-cornered\u201d), and pisiform (\u201cpea-shaped\u201d) bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"Metacarpal Bones|": [
+{
+"text": "The palm of the hand contains five elongated metacarpal bones.",
+"pid": "fs-id1242304",
+"label": "8.2 Metacarpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The proximal end of each metacarpal bone articulates with one of the distal carpal bones.",
+"pid": "fs-id1242304",
+"label": "8.2 Metacarpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"Phalanx Bones|": [
+{
+"text": "The fingers and thumb contain 14 bones, each of which is called a phalanx bone (plural = phalanges), named after the ancient Greek phalanx (a rectangular block of soldiers).",
+"pid": "fs-id2002490",
+"label": "8.2 Phalanx Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "Digits 2 (index finger) through 5 (little finger) have three phalanges each, called the proximal, middle, and distal phalanx bones.",
+"pid": "fs-id2002490",
+"label": "8.2 Phalanx Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"overview": [
+{
+"text": "The upper limb is divided into three regions.",
+"pid": "fs-id1415448",
+"label": "8.2 Bones of the Upper Limb",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "These consist of the arm, located between the shoulder and elbow joints; the forearm, which is between the elbow and wrist joints; and the hand, which is located distal to the wrist.",
+"pid": "fs-id1415448",
+"label": "8.2 Bones of the Upper Limb",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+},
+{
+"text": "The humerus is the single bone of the upper arm, and the ulna (medially) and the radius (laterally) are the paired bones of the forearm.",
+"pid": "fs-id1415448",
+"label": "8.2 Bones of the Upper Limb",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"group:clavicle": [
+{
+"text": "The clavicle has several important functions.",
+"pid": "fs-id1192235",
+"label": "8.1 Clavicle",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle"
+}
+],
+"group:scapula": [
+{
+"text": "The scapula is also part of the pectoral girdle and thus plays an important role in anchoring the upper limb to the body.",
+"pid": "fs-id1968095",
+"label": "8.1 Scapula",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle"
+}
+],
+"group:humerus": [
+{
+"text": "At its proximal end is the head of the humerus.",
+"pid": "fs-id2110691",
+"label": "8.2 Humerus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"group:ulna": [
+{
+"text": "The ulna is the medial bone of the forearm.",
+"pid": "fs-id2080518",
+"label": "8.2 Ulna",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"group:radius": [
+{
+"text": "The head of the radius is a disc-shaped structure that forms the proximal end.",
+"pid": "fs-id1411842",
+"label": "8.2 Radius",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"group:carpal": [
+{
+"text": "The carpal bones are arranged in two rows, forming a proximal row of four carpal bones and a distal row of four carpal bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"group:metacarpal": [
+{
+"text": "The palm of the hand contains five elongated metacarpal bones.",
+"pid": "fs-id1242304",
+"label": "8.2 Metacarpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+],
+"group:phalanx": [
+{
+"text": "The fingers and thumb contain 14 bones, each of which is called a phalanx bone (plural = phalanges), named after the ancient Greek phalanx (a rectangular block of soldiers).",
+"pid": "fs-id2002490",
+"label": "8.2 Phalanx Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+]
+},
+"meshTopic": {
+"FJ3237": {
+"topic": "Clavicle|",
+"note": null
+},
+"FJ3362": {
+"topic": "Clavicle|",
+"note": null
+},
+"FJ3279": {
+"topic": "Scapula|",
+"note": null
+},
+"FJ3384": {
+"topic": "Scapula|",
+"note": null
+},
+"FJ3262": {
+"topic": "Humerus|",
+"note": null
+},
+"FJ3368": {
+"topic": "Humerus|",
+"note": null
+},
+"FJ3286": {
+"topic": "Ulna|",
+"note": null
+},
+"FJ3391": {
+"topic": "Ulna|",
+"note": null
+},
+"FJ3277": {
+"topic": "Radius|",
+"note": null
+},
+"FJ3349": {
+"topic": "Radius|",
+"note": null
+},
+"FJ3257": {
+"topic": "Carpal Bones|capitate",
+"note": null
+},
+"FJ3261": {
+"topic": "Carpal Bones|hamate",
+"note": null
+},
+"FJ3268": {
+"topic": "Carpal Bones|lunate",
+"note": null
+},
+"FJ3276": {
+"topic": "Carpal Bones|pisiform",
+"note": null
+},
+"FJ3278": {
+"topic": "Carpal Bones|scaphoid",
+"note": null
+},
+"FJ3283": {
+"topic": "Carpal Bones|trapezium",
+"note": null
+},
+"FJ3284": {
+"topic": "Carpal Bones|trapezoid",
+"note": null
+},
+"FJ3285": {
+"topic": "Carpal Bones|triquetrum",
+"note": "The dataset calls this bone the triquetral; the textbook calls it the triquetrum."
+},
+"FJ3361": {
+"topic": "Carpal Bones|capitate",
+"note": null
+},
+"FJ3367": {
+"topic": "Carpal Bones|hamate",
+"note": null
+},
+"FJ3374": {
+"topic": "Carpal Bones|lunate",
+"note": null
+},
+"FJ3382": {
+"topic": "Carpal Bones|pisiform",
+"note": null
+},
+"FJ3383": {
+"topic": "Carpal Bones|scaphoid",
+"note": null
+},
+"FJ3388": {
+"topic": "Carpal Bones|trapezium",
+"note": null
+},
+"FJ3389": {
+"topic": "Carpal Bones|trapezoid",
+"note": null
+},
+"FJ3390": {
+"topic": "Carpal Bones|triquetrum",
+"note": "The dataset calls this bone the triquetral; the textbook calls it the triquetrum."
+},
+"FJ3240": {
+"topic": "Metacarpal Bones|",
+"note": null
+},
+"FJ3243": {
+"topic": "Metacarpal Bones|",
+"note": null
+},
+"FJ3246": {
+"topic": "Metacarpal Bones|",
+"note": null
+},
+"FJ3249": {
+"topic": "Metacarpal Bones|",
+"note": null
+},
+"FJ3252": {
+"topic": "Metacarpal Bones|",
+"note": null
+},
+"FJ3350": {
+"topic": "Metacarpal Bones|",
+"note": null
+},
+"FJ3352": {
+"topic": "Metacarpal Bones|",
+"note": null
+},
+"FJ3354": {
+"topic": "Metacarpal Bones|",
+"note": null
+},
+"FJ3356": {
+"topic": "Metacarpal Bones|",
+"note": null
+},
+"FJ3358": {
+"topic": "Metacarpal Bones|",
+"note": null
+},
+"FJ3183": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3184": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3186": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3187": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3188": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3193": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3194": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3196": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3197": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3198": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3291": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3292": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3296": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3297": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3299": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3303": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3304": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3306": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3313": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3314": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3316": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3317": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3318": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3322": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3323": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3325": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3326": {
+"topic": "Phalanx Bones|",
+"note": null
+},
+"FJ3327": {
+"topic": "Phalanx Bones|",
+"note": null
+}
+},
+"flow": [
+{
+"title": "Clavicle",
+"groups": [
+"clavicle"
+],
+"passage": {
+"text": "The clavicle has several important functions.",
+"pid": "fs-id1192235",
+"label": "8.1 Clavicle",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle"
+}
+},
+{
+"title": "Scapula",
+"groups": [
+"scapula"
+],
+"passage": {
+"text": "The scapula is also part of the pectoral girdle and thus plays an important role in anchoring the upper limb to the body.",
+"pid": "fs-id1968095",
+"label": "8.1 Scapula",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-1-the-pectoral-girdle"
+}
+},
+{
+"title": "Humerus",
+"groups": [
+"humerus"
+],
+"passage": {
+"text": "At its proximal end is the head of the humerus.",
+"pid": "fs-id2110691",
+"label": "8.2 Humerus",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+},
+{
+"title": "Ulna",
+"groups": [
+"ulna"
+],
+"passage": {
+"text": "The ulna is the medial bone of the forearm.",
+"pid": "fs-id2080518",
+"label": "8.2 Ulna",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+},
+{
+"title": "Radius",
+"groups": [
+"radius"
+],
+"passage": {
+"text": "The head of the radius is a disc-shaped structure that forms the proximal end.",
+"pid": "fs-id1411842",
+"label": "8.2 Radius",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+},
+{
+"title": "Carpal Bones",
+"groups": [
+"carpal"
+],
+"passage": {
+"text": "The carpal bones are arranged in two rows, forming a proximal row of four carpal bones and a distal row of four carpal bones.",
+"pid": "fs-id1977414",
+"label": "8.2 Carpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+},
+{
+"title": "Metacarpal Bones",
+"groups": [
+"metacarpal"
+],
+"passage": {
+"text": "The palm of the hand contains five elongated metacarpal bones.",
+"pid": "fs-id1242304",
+"label": "8.2 Metacarpal Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+},
+{
+"title": "Phalanx Bones",
+"groups": [
+"phalanx"
+],
+"passage": {
+"text": "The fingers and thumb contain 14 bones, each of which is called a phalanx bone (plural = phalanges), named after the ancient Greek phalanx (a rectangular block of soldiers).",
+"pid": "fs-id2002490",
+"label": "8.2 Phalanx Bones",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-2-bones-of-the-upper-limb"
+}
+}
+],
+"gaps": [],
+"notes": []
+}
