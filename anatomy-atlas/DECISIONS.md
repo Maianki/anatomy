@@ -3,7 +3,7 @@
 The single reference for what we are building, what has been decided and why, what the data is
 missing, and what still needs checking. Update it whenever a decision changes or a check is done.
 
-Last updated: 2026-10-24 (sources page and redesign added).
+Last updated: 2026-10-24 (verified against the official BodyParts3D archive and the live OpenStax site).
 
 ## 1. What we are building
 
@@ -22,7 +22,7 @@ Last updated: 2026-10-24 (sources page and redesign added).
 | --- | --- | --- |
 | D1 | Build a **web app**, not a native app. It can be wrapped for app stores later (for example with Capacitor). | One codebase for phones, tablets and laptops, opened from a link, with no app-store review. |
 | D2 | **No hand-made geometry.** All 3D models come from a scan-based anatomy dataset. | The first hand-built heart demo was rejected; hand modelling can't be accurate enough for teaching. |
-| D3 | 3D source: **BodyParts3D 4.0** (Database Center for Life Science, CC BY 4.0), via the npm package `@dagno/anatomy-model@0.1.2`. | Built from MRI scans, separate named meshes, FMA IDs, free with credit. The original site and NIH 3D were blocked by this environment's network settings; the npm copy was reachable and credits the original. |
+| D3 | 3D source: **BodyParts3D 4.0** (Database Center for Life Science, CC BY 4.0). **Geometry is read straight from the official archive** `isa_BP3D_4.0_obj_99.zip`; names, FMA IDs and concept groups come from the npm package `@dagno/anatomy-model@0.1.2`, checked identical to the official tables. | Built from MRI scans, separate named meshes, FMA IDs, free with credit. At first only the npm copy was reachable; once the official site was allowed, the copy's own simplification was found to move parts of long vessels by up to about 7 mm, so geometry was switched to the official files. |
 | D4 | Text source: **OpenStax Anatomy and Physiology 2e**, quoted **word for word**, each quote linked to its section. Taken from OpenStax's official GitHub repository. | Peer-reviewed textbook for students. Quoting unchanged avoids errors in paraphrase. |
 | D5 | **WebMD is not used for text.** It may be used only as a reference to cross-check facts. | WebMD's text is copyrighted. |
 | D6 | OpenStax is **CC BY-NC-SA 4.0** (non-commercial, share-alike), not CC BY as first stated. | Corrected after reading the licence file. A paid product would need different text. |
@@ -43,3 +43,130 @@ Last updated: 2026-10-24 (sources page and redesign added).
 | D21 | Work is saved to GitHub `Maianki/anatomy`, branch `claude/new-session-oqwx8r`, folder `anatomy-atlas/`. | The cloud container is temporary. |
 | D22 | A **Sources page** lists the 3D dataset (publisher, licence, paper, download, how the data reaches the app), the textbook (publisher, licence, source files), every OpenStax section quoted with its quote count and where it is used, FMA IDs, software, and the review status. It is built from what the app actually uses (`build/content_sources.py`). OpenStax authors are not typed in; the page links to OpenStax's contributor list. | Shows students and reviewers where everything comes from. Avoids writing citation details from memory. |
 | D23 | **Redesign**: Poppins for the interface, Source Serif 4 only for quoted textbook passages; light and dark themes; 3D views always on a dark stage; organ pages use tabs (Learn, Parts, Tour, Notes) with the region view as a picture-in-picture; organ cards with search on the body page. | The first UI was hard to use. Serif quotes make it obvious which words are from the textbook. |
+| D24 | Organ workstation meshes are simplified **only as far as keeps every original vertex within 1 mm** of the displayed surface (`common.py`, `MAX_DEV`). The whole-body view and the small region views are simplified further, as overviews. | Accuracy of what students study, with files small enough for phones. |
+| D25 | **Verification is part of the build record**: `verify_openstax.py` (every quote and link against the live site), `verify_bp3d.py` (names, FMA IDs and positions against the official archive), `verify_output.py` (the files the app loads against the official meshes). Results are kept in `sources/verification/` and shown on the Sources page with the date. | Anyone can see what was checked and when. |
+| D26 | Quotes from a section's "Chapter Review" paragraph link to the chapter's review page on openstax.org. | On the live site those paragraphs are not on the section page, so the link would not land on the quote. |
+| D27 | The app shows BodyParts3D's **required credit line** word for word: "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International". | Required by the licence page (updated 2025-02-27). |
+
+## 3. What is built
+
+| Workstation | Opened from body view | Tour | Text (OpenStax sections) |
+| --- | --- | --- | --- |
+| Heart | Heart | Blood flow, 12 steps | 19.1 |
+| Lungs | Left lung, right lung, trachea | Air and blood, 6 steps | 22.1, 22.2 |
+| Liver, gallbladder and pancreas | Liver, gallbladder, pancreas | Blood and bile, 7 steps | 23.5, 23.6 |
+| Digestive tract | Esophagus, stomach, small and large intestine | Path of food, 10 steps | 23.3, 23.4, 23.5 |
+| Urinary system | Kidney, urinary bladder | Path of urine, 5 steps | 25.2, 25.3 |
+| Brain | Brain | Path of CSF, 7 steps | 13.2, 13.3 |
+| (body view only) | Spleen, diaphragm | none | 21.1, 22.2 |
+
+Quoted sections also include the Chapter 19 Chapter Review page (one heart quote).
+
+Live demo: https://claude.ai/artifact/Scn9ufkjgswd4MQXWQj1HK (private until shared).
+
+## 4. Data findings
+
+### Errors in the source data (left out everywhere)
+
+| Mesh | Problem |
+| --- | --- |
+| Right anterior segmental artery (FJ2041, FJ2044, FMA8620) | Sits 22–26 cm below the rest of its lung segment, at liver level. **Confirmed in the official archive.** |
+| Brachium of left superior colliculus (FJ1735, FMA73462) | Lies on the right side of the body. |
+| Brachium of right superior colliculus (FJ1736, FMA73461) | Lies on the left side. The colliculi themselves are on the correct sides, so the two names look swapped. **Confirmed in the official archive.** |
+
+### Left out of a workstation for other reasons (still in the body view)
+
+- Interpeduncular fossa (a space) and tentorium cerebelli (dura mater): not brain tissue.
+
+### Gaps (not in the dataset)
+
+- **Lungs:** surfaces, fissures, pleura. No artery for right lower lobe medial basal; no veins for
+  left lower lobe superior and medial basal.
+- **Liver:** common bile duct, hepatopancreatic ampulla, ligaments. "Hepatovenous segment IX" exists
+  but is not in the dataset's liver concept (included, with a note).
+- **Digestive tract:** cecum, sigmoid colon, anal canal.
+- **Kidneys:** single outer surfaces (no cortex, medulla, pyramids). The ureter meshes branch inside
+  each kidney; the branches are not named, so they are not labelled as renal pelvis or calyces.
+- **Brain:** meninges, brain vessels, spinal cord (apart from its central canal). The dataset's brain
+  concept omits the corpus callosum, thalamus, basal nuclei, amygdala and others.
+
+### Gaps in the text (OpenStax)
+
+- Does not describe individual bronchopulmonary segments by name.
+- Describes the liver by lobes, not the numbered segments the model uses.
+- Does not name 50 of 107 brain meshes (mostly individual gyri and tracts).
+- Some small heart vessels have no passage of their own; the group's passage is shown with a note.
+
+### Sizes compared with the text (longest axis, `build/measure.py`)
+
+| Organ | Model | OpenStax |
+| --- | --- | --- |
+| Kidney | 10.8 cm (left), 10.6 cm (right) | 11–14 cm |
+| Spleen | 10.7 cm | about 12 cm |
+| Gallbladder | 6.0 cm | 8–10 cm |
+
+The right kidney sits about 2 cm lower than the left, as the text says.
+
+### Verification against the original sources (2026-10-24)
+
+- **OpenStax:** all 229 quotes found word for word on the live openstax.org pages; all 13 links open the right page
+  and land on the quoted paragraph (`sources/verification/openstax.json`).
+- **BodyParts3D names:** all 2,234 meshes exist in the official archive; every name and FMA ID matches the official
+  tables (`sources/verification/bodyparts3d.json`).
+- **BodyParts3D positions:** with one fixed conversion (mm to m, Z-up to Y-up, feet at origin), every mesh centre in
+  the npm copy matches the official archive to 0.00 mm.
+- **Geometry shown:** in every organ workstation, every original vertex lies within 1.0 mm of the displayed surface
+  (`sources/verification/geometry.json`).
+- **Licence:** the current licence page says CC BY 4.0 (updated 2025-02-27). The OBJ files still carry an older
+  CC BY-SA 2.1 Japan notice, which the licence page replaces.
+- **Brain grouping:** for the 59 brain meshes the official BodyParts3D part-of tree covers, it agrees with the groups
+  used (cortex in the telencephalon, brain stem parts in the midbrain, pons or medulla, and so on). This evidence is
+  now shown in the brain notes.
+
+### Checks that pass
+
+- Every quote found word for word; no quote points at a missing figure.
+- 10 bronchopulmonary segments per lung; each lung mesh in exactly one lobe; segment heights in
+  anatomical order.
+- Every heart mesh within 3 cm of the heart walls.
+- No left/right mismatches in lungs, digestive tract, urinary system, abdomen. Heart "right"
+  structures lie up to 3 cm left of the midline, matching the text ("the right side of the heart is
+  deflected anteriorly"). A few "left" liver vessels lie within 2 cm right of the midline.
+- A clean rebuild reproduces every data file exactly.
+
+### Corrections made during the project
+
+- OpenStax licence corrected from CC BY to CC BY-NC-SA (D6).
+- The liver was first missing its main tissue because vessel meshes were excluded; fixed by selecting
+  organs by FMA concept (D9).
+- "Renal pelvis not modelled" was wrong; replaced with the accurate description of the ureter meshes.
+- A sentence splitter bug joined two heart sentences in one quote; fixed and all text rebuilt.
+- "Brachium of … colliculus" was briefly grouped with the brain stem by a loose name rule; it now
+  follows its FMA white-matter concept.
+- The npm copy's simplification moved parts of long vessels (aorta, inferior vena cava, oesophagus) by up to about
+  7 mm; geometry now comes from the official archive (D3, D24).
+- The heart's chapter-review quote linked to a page that doesn't contain it on the live site; it now links to the
+  chapter review page (D26).
+- The body view's brain used the dataset's incomplete brain concept (59 meshes); it now uses the same 106 brain
+  meshes as the brain workstation.
+- An edit to this file on 2026-10-24 accidentally dropped sections 3 to 6; they were restored from the previous commit.
+
+## 5. Needs checking (open items)
+
+- [ ] **Educator review** of structure names, the brain grouping, the quoted passages, and every item in section 4.
+- [x] **Check the repackaged data against the original** BodyParts3D archive. Done 2026-10-24; geometry now comes from the official archive.
+- [x] **Confirm the brachium name swap** and the misplaced lung arteries against the original archive. Both are in the official data. Consider reporting them to DBCLS.
+- [x] **Open every OpenStax section link.** Done 2026-10-24: all 13 pages and all 229 quotes verified on the live site.
+- [ ] **Decide on commercial use.** If the app will be paid, replace the OpenStax text (D6).
+- [ ] **Find a verified female body source** (D12).
+- [ ] **Decide whether lungs need surfaces** from a second source, which would need its own checks (D15).
+- [ ] **Test on real phones, tablets and laptops** with a GPU. So far tested only in headless Chromium with software rendering.
+- [ ] **Review naming differences** between dataset and textbook (papillary muscles, "pineal body" vs "pineal gland", "superior temporal gyrus" vs "superior temporal lobe", older segment names).
+- [x] **Network access:** `dbarchive.biosciencedbc.jp`, `openstax.org`, `3d.nih.gov` and `www.webmd.com` are reachable (2026-10-24).
+- [ ] **NIH 3D and WebMD are reachable but not yet used.** Decide whether to use them for cross-checks (WebMD text can't be quoted; NIH 3D models each have their own licence).
+- [x] **Body-view brain now matches the brain workstation** (106 brain meshes; the pituitary context mesh is not counted).
+
+## 6. Next steps
+
+- Version 1: educator review, real-device testing, then any further organs the data supports.
+- Version 2: diseases, using the disease passages already identified in the same OpenStax sections.

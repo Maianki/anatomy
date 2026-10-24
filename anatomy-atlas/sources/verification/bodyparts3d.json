@@ -1,0 +1,104 @@
+{
+ "name_fma_mismatches": 0,
+ "original_meshes": 2234,
+ "matched": 2234,
+ "median_mm": 6.591949208711867e-14,
+ "max_mm": 4.443195430789018e-13,
+ "moved_over_5mm": [],
+ "checks": {
+  "FJ2041": {
+   "name": "Right anterior segmental artery",
+   "original_centre_in_our_axes": [
+    -0.071,
+    1.118,
+    -0.02
+   ],
+   "our_centre": [
+    -0.071,
+    1.118,
+    -0.02
+   ]
+  },
+  "FJ2044": {
+   "name": "Right anterior segmental artery",
+   "original_centre_in_our_axes": [
+    -0.078,
+    1.103,
+    -0.016
+   ],
+   "our_centre": [
+    -0.078,
+    1.103,
+    -0.016
+   ]
+  },
+  "FJ1735": {
+   "name": "Brachium of left superior colliculus",
+   "original_centre_in_our_axes": [
+    -0.011,
+    1.618,
+    -0.029
+   ],
+   "our_centre": [
+    -0.011,
+    1.618,
+    -0.029
+   ]
+  },
+  "FJ1736": {
+   "name": "Brachium of right superior colliculus",
+   "original_centre_in_our_axes": [
+    0.01,
+    1.619,
+    -0.029
+   ],
+   "our_centre": [
+    0.01,
+    1.619,
+    -0.029
+   ]
+  },
+  "FJ1779": {
+   "name": "Left superior colliculus",
+   "original_centre_in_our_axes": [
+    0.003,
+    1.618,
+    -0.029
+   ],
+   "our_centre": [
+    0.003,
+    1.618,
+    -0.029
+   ]
+  },
+  "FJ1826": {
+   "name": "Right superior colliculus",
+   "original_centre_in_our_axes": [
+    -0.005,
+    1.618,
+    -0.029
+   ],
+   "our_centre": [
+    -0.005,
+    1.618,
+    -0.029
+   ]
+  }
+ },
+ "obj_header": [
+  "#",
+  "# The license for this database is specified in the Creative Commons Attribution-Share Alike 2.1 Japan. If you use data from this database, please be sure attribute this database as follows: \"BodyParts3D, (c)  The Database Center for Life Science licensed under CC Attribution-Share Alike 2.1 Japan\".",
+  "# http://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html",
+  "#",
+  "#",
+  "# Compatibility version : 4.0",
+  "# File ID : FJ1252",
+  "# Representation ID : BP5633",
+  "# Build-up logic : FMA 3.0 is_a",
+  "# Concept ID : FMA59763",
+  "# English name : Gingiva of upper jaw",
+  "# Bounds(mm): (-35.461100,-181.682000,1461.347400)-(34.135000,-127.714200,1479.842700)",
+  "# Volume(cm3): 21.758500",
+  "#"
+ ]
+}

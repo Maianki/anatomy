@@ -1,10 +1,11 @@
-"""Build compact scene files for the anatomy design demo from @dagno/anatomy-model (BodyParts3D 4.0).
+"""Build compact scene files for the anatomy atlas.
 
-Chunk layout per part (inferred, verified by offsets): float32 xyz positions, int16 xyz normals
-(padded to 4 bytes), uint32 indices. Output: <name>.json manifest + <name>.bin.gz with uint16
+Geometry comes straight from the official BodyParts3D 4.0 archive (env BP3D_ZIP = isa_BP3D_4.0_obj_99.zip, see
+official.py). Names, FMA IDs and the concept hierarchy come from @dagno/anatomy-model's atlas.json, which
+verify_bp3d.py showed to match the official tables exactly. Output: <name>.json manifest + <name>.bin.gz with uint16
 quantized positions and uint16/uint32 indices. Normals are recomputed in the browser.
 """
-import gzip, json, struct, sys
+import gzip, json, os, struct, sys
 from pathlib import Path
 import numpy as np
 import fast_simplification
@@ -18,24 +19,34 @@ parts = {p["id"]: p for p in atlas["parts"]}
 concepts = {}
 for c in atlas["concepts"]:
     concepts.setdefault(c["name"], c)
-chunks = {}
-
-
-def chunk(i):
-    if i not in chunks:
-        chunks[i] = gzip.decompress((SRC / atlas["chunks"][i]["gzip"]).read_bytes())
-    return chunks[i]
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import official
+from scipy.spatial import cKDTree
+BP3D_ZIP = os.environ["BP3D_ZIP"]
+BP3D_CACHE = os.environ.get("BP3D_CACHE", os.path.join(os.path.dirname(BP3D_ZIP), "cache"))
+MAX_DEV = 0.001  # organ workstations: every original vertex within 1 mm of the displayed surface
+deviation = {}   # pid -> max deviation (m) of the original from what is written
 
 
 def geom(pid):
-    p = parts[pid]
-    b = chunk(p["chunk"])
-    pos = np.frombuffer(b, np.float32, p["vertexCount"] * 3, p["positions"]).reshape(-1, 3)
-    idx = np.frombuffer(b, np.uint32, p["indexCount"], p["indices"]).reshape(-1, 3)
-    return pos.copy(), idx.copy()
+    return official.mesh(BP3D_ZIP, pid, BP3D_CACHE)
+
+
+def max_dev(orig, pos, idx):
+    tri = pos[idx]
+    samp = np.vstack([pos, tri.mean(1), (tri[:, 0] + tri[:, 1]) / 2, (tri[:, 1] + tri[:, 2]) / 2, (tri[:, 0] + tri[:, 2]) / 2])
+    return float(cKDTree(samp).query(orig)[0].max())
 
 
 def simplify(pos, idx, keep):
+    if keep == "auto":  # least triangles that keep every original vertex within MAX_DEV
+        if len(idx) < 200:
+            return pos, idx
+        for k in (0.25, 0.4, 0.6, 0.8):
+            p2, i2 = simplify(pos, idx, k)
+            if len(i2) >= 20 and max_dev(pos, p2, i2) <= MAX_DEV:
+                return p2, i2
+        return pos, idx
     if keep >= 1 or len(idx) < 200:
         return pos, idx
     try:
@@ -56,7 +67,10 @@ def write_scene(name, groups):
     meshes = []
     for g in groups:
         for pid in g["ids"]:
-            pos, idx = simplify(*geom(pid), g.get("keep", 1))
+            o, oi = geom(pid)
+            pos, idx = simplify(o, oi, g.get("keep", 1))
+            if g.get("keep", 1) == "auto" or g.get("keep", 1) >= 1:
+                deviation[pid] = 0.0 if pos is o else max_dev(o, pos, idx)
             meshes.append((g, pid, pos, idx))
     allpos = np.concatenate([m[2] for m in meshes])
     lo, hi = allpos.min(0), allpos.max(0)
@@ -78,10 +92,14 @@ def write_scene(name, groups):
         out.append({"id": pid, "name": p["name"], "fma": p["conceptId"], "group": g["key"],
                     "p": po, "v": len(pos), "i": io, "n": idx.size, "w": int(wide)})
     (OUT / f"{name}.bin.gz").write_bytes(gzip.compress(bytes(buf), 9))
+    devs = [deviation[m[1]] for m in meshes if m[0].get("keep", 1) == "auto" or m[0].get("keep", 1) >= 1]
     meta = {"origin": lo.tolist(), "scale": float(scale), "meshes": out,
+            "geometry": "BodyParts3D 4.0 isa_BP3D_4.0_obj_99.zip",
+            "maxDeviationMm": round(max(devs) * 1000, 3) if devs else None,
             "groups": [{k: g[k] for k in g if k != "ids"} for g in groups]}
     (OUT / f"{name}.json").write_text(json.dumps(meta, separators=(",", ":")))
     tris = sum(m[3].shape[0] for m in meshes)
-    print(name, len(out), "meshes", tris, "tris", (OUT / f"{name}.bin.gz").stat().st_size // 1024, "KB")
+    print(name, len(out), "meshes", tris, "tris", (OUT / f"{name}.bin.gz").stat().st_size // 1024, "KB",
+          "max deviation %.2f mm" % (max(devs) * 1000) if devs else "")
 
 

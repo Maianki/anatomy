@@ -1,0 +1,32 @@
+{
+ "heart2": {
+  "max_mm": 0.98,
+  "worst": "Anterior leaflet of tricuspid valve",
+  "meshes": 99
+ },
+ "lungs": {
+  "max_mm": 1.0,
+  "worst": "Right superior segmental bronchial tree",
+  "meshes": 291
+ },
+ "liver": {
+  "max_mm": 1.0,
+  "worst": "Lateral superior segmental tributary of left hepatic vein",
+  "meshes": 83
+ },
+ "gut": {
+  "max_mm": 0.01,
+  "worst": "Taenia omentalis",
+  "meshes": 69
+ },
+ "urinary": {
+  "max_mm": 0.98,
+  "worst": "Superior segmental branch of left renal artery",
+  "meshes": 48
+ },
+ "brain": {
+  "max_mm": 1.0,
+  "worst": "Right stria medullaris of thalamus",
+  "meshes": 106
+ }
+}

@@ -62,7 +62,7 @@ liver_groups = assign(liver_pool, [
     ({"key": "ivc", "label": "Inferior vena cava (context)", "color": 0x3d5fa8}, nm("Inferior vena cava")),
 ])
 for g in liver_groups:
-    g["keep"] = 1
+    g["keep"] = "auto"
 write_scene("liver", liver_groups)
 seg_colors = [0xb07a5a, 0x7fb3d5, 0x9fd3a8, 0xe0b06c, 0xc39bd3, 0xe08a7a, 0x8fc7c0, 0xd6c27a, 0xa6a6d9]
 meta = json.loads((OUT / "liver.json").read_text())
@@ -88,9 +88,9 @@ gut_groups = assign(gut_pool, [
     ({"key": "mesenteries", "label": "Mesenteries", "color": 0xe8d6a0}, nm("Mesentery", "mesocolon", "Mesoappendix")),
 ])
 for g in gut_groups:
-    g["keep"] = 1
+    g["keep"] = "auto"
 gut_groups.append({"key": "accessory", "label": "Liver, pancreas, gallbladder, spleen (context)", "color": 0x8a4a3c,
-                   "ids": [i for n in SEGMENTS for i in byname[n]] + named("Pancreas", "Gallbladder", "Spleen"), "keep": 0.5})
+                   "ids": [i for n in SEGMENTS for i in byname[n]] + named("Pancreas", "Gallbladder", "Spleen"), "keep": 0.17})
 write_scene("gut", gut_groups)
 
 # ---------------- urinary system ----------------
@@ -109,7 +109,7 @@ uri_groups = assign(uri_pool, [
     ({"key": "prostate", "label": "Prostate (context)", "color": 0xa98ab0}, nm("Prostate")),
 ])
 for g in uri_groups:
-    g["keep"] = 1
+    g["keep"] = "auto"
 write_scene("urinary", uri_groups)
 
 # ---------------- abdomen context ----------------
@@ -122,13 +122,13 @@ bone_kw = (" rib", "costal cartilage", "Xiphoid", "lumbar vertebra", "thoracic v
 bones = [p["id"] for p in atlas["parts"] if p["system"] == "skeletal" and inband(p["id"], 0.82, 1.3)
          and any(k.lower() in (" " + p["name"]).lower() for k in bone_kw)]
 ctx = [
-    {"key": "bones", "label": "Ribs, spine and pelvis", "color": 0xd9d2c3, "ids": bones, "keep": 0.35},
+    {"key": "bones", "label": "Ribs, spine and pelvis", "color": 0xd9d2c3, "ids": bones, "keep": 0.12},
     {"key": "liver", "label": "Liver, gallbladder, pancreas", "color": 0xa0503f,
-     "ids": [i for n in SEGMENTS for i in byname[n]] + named("Gallbladder", "Pancreas"), "keep": 0.5},
-    {"key": "gut", "label": "Digestive tract", "color": 0xd99a7a, "ids": [i for g in gut_groups[:6] for i in g["ids"]], "keep": 0.3},
+     "ids": [i for n in SEGMENTS for i in byname[n]] + named("Gallbladder", "Pancreas"), "keep": 0.17},
+    {"key": "gut", "label": "Digestive tract", "color": 0xd99a7a, "ids": [i for g in gut_groups[:6] for i in g["ids"]], "keep": 0.1},
     {"key": "urinary", "label": "Urinary system", "color": 0xc9a35a,
-     "ids": named("Left kidney", "Right kidney", "Left ureter", "Right ureter", "Urinary bladder", "Urethra"), "keep": 0.6},
-    {"key": "spleen", "label": "Spleen", "color": 0x7a2f4a, "ids": named("Spleen"), "keep": 0.6},
+     "ids": named("Left kidney", "Right kidney", "Left ureter", "Right ureter", "Urinary bladder", "Urethra"), "keep": 0.2},
+    {"key": "spleen", "label": "Spleen", "color": 0x7a2f4a, "ids": named("Spleen"), "keep": 0.2},
 ]
 write_scene("abdomen", ctx)
 print("abdomen bones:", len(bones), sorted(set(parts[b]["name"] for b in bones))[:10])

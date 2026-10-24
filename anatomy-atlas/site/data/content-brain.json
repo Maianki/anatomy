@@ -613,7 +613,7 @@
 },
 "FJ1743": {
 "topic": "dien",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: zone of diencephalon."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: zone of diencephalon. The official BodyParts3D part-of tree places it in: diencephalon, epithalamus."
 },
 "FJ1760": {
 "topic": "hypothalamus",
@@ -629,7 +629,7 @@
 },
 "FJ1780": {
 "topic": "dien",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: hypothalamus, zone of diencephalon."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: hypothalamus, zone of diencephalon. The official BodyParts3D part-of tree places it in: diencephalon, hypothalamus."
 },
 "FJ1782": {
 "topic": "thalamus",
@@ -657,79 +657,79 @@
 },
 "FJ1828": {
 "topic": "dien",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: hypothalamus, zone of diencephalon."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: hypothalamus, zone of diencephalon. The official BodyParts3D part-of tree places it in: diencephalon, hypothalamus."
 },
 "FJ1732": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1733": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1739": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1740": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1744": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1745": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1746": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1747": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1748": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: lobe of cerebral hemisphere."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: lobe of cerebral hemisphere. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1749": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: lobe of cerebral hemisphere."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: lobe of cerebral hemisphere. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1783": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1784": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1785": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1786": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1787": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1788": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1789": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1790": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1791": {
 "topic": "occipital",
@@ -765,19 +765,19 @@
 },
 "FJ1833": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1834": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1835": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: lobule of cerebral hemisphere."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: lobule of cerebral hemisphere. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1836": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: lobule of cerebral hemisphere."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: lobule of cerebral hemisphere. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1837": {
 "topic": "suptemporal",
@@ -797,11 +797,11 @@
 },
 "FJ1841": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1842": {
 "topic": "cortex",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: gyrus of neuraxis. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1734": {
 "topic": "none",
@@ -817,11 +817,11 @@
 },
 "FJ1750": {
 "topic": "none",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: white matter of neuraxis, white matter of telencephalon."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: white matter of neuraxis, white matter of telencephalon. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1751": {
 "topic": "none",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: white matter of neuraxis, white matter of telencephalon."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: white matter of neuraxis, white matter of telencephalon. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1756": {
 "topic": "none",
@@ -829,7 +829,7 @@
 },
 "FJ1758": {
 "topic": "none",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: white matter of neuraxis, white matter of telencephalon."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: white matter of neuraxis, white matter of telencephalon. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1761": {
 "topic": "none",
@@ -853,7 +853,7 @@
 },
 "FJ1806": {
 "topic": "none",
-"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: white matter of neuraxis, white matter of telencephalon."
+"note": "This source does not describe this structure by name. It is grouped here by its FMA concept in the dataset: white matter of neuraxis, white matter of telencephalon. The official BodyParts3D part-of tree places it in: telencephalon."
 },
 "FJ1809": {
 "topic": "none",

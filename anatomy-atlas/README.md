@@ -32,15 +32,15 @@ Accuracy rules this project follows:
 
 | What | Source | Licence |
 | --- | --- | --- |
-| 3D geometry, names, FMA IDs | BodyParts3D 4.0, © The Database Center for Life Science, via Human Atlas and the npm package `@dagno/anatomy-model@0.1.2` | CC BY 4.0 |
+| 3D geometry | BodyParts3D 4.0, official archive `isa_BP3D_4.0_obj_99.zip`. Credit: "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International" | CC BY 4.0 |
+| Names, FMA IDs, concept groups | `@dagno/anatomy-model@0.1.2` (BodyParts3D tables prepared by Human Atlas), checked identical to the official tables | CC BY 4.0 |
 | Quoted text | OpenStax, *Anatomy and Physiology 2e*, © Rice University (`sources/openstax`, from github.com/openstax/osbooks-anatomy-physiology): sections 13.2, 13.3, 19.1, 21.1, 22.1, 22.2, 23.3–23.6, 25.2, 25.3 | CC BY-NC-SA 4.0 |
 | 3D library | three.js r128, loaded from cdnjs and jsDelivr | MIT |
 
 The OpenStax licence is **non-commercial and share-alike**. A paid product would need different text.
 
 Section numbers were checked against the book's collection file (`sources/openstax/coll.xml`).
-Section page links follow OpenStax's URL pattern (`contentlib.slug`); the build environment could
-not reach openstax.org to open them.
+Every section link and quote was checked against the live openstax.org pages (see below).
 
 ## Layout
 
@@ -49,6 +49,8 @@ site/anatomy-atlas.html   the page (single file; loads data/ at runtime)
 site/data/                built data: <scene>.json manifests, <scene>.gz.txt geometry, content-<organ>.json
 build/                    pipeline that produces site/data
 sources/openstax/         the OpenStax modules the text is quoted from, plus the book's collection file
+sources/bodyparts3d/      official BodyParts3D name and part-of tables, and the licence page
+sources/verification/     results of the checks against the original sources
 test/screenshots.mjs      headless-browser screenshots of a workstation
 ```
 
@@ -59,24 +61,41 @@ are recomputed in the browser.
 ## Rebuild the data
 
 ```sh
-pip install numpy fast-simplification
+pip install numpy scipy fast-simplification
 npm pack @dagno/anatomy-model@0.1.2 && tar xzf dagno-anatomy-model-0.1.2.tgz
-build/all.sh package/model site/data
+curl -LO https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip
+build/all.sh package isa_BP3D_4.0_obj_99.zip site/data
 ```
 
-`all.sh` runs the steps in order:
+Geometry is read from the official BodyParts3D archive (`official.py`). Names, FMA IDs and concept groups come
+from the npm package, which was checked to match the official tables exactly. `all.sh` runs the steps in order:
 
 1. `build3.py`: lungs. Finds meshes placed outside the lungs and records them as `excluded`.
 2. `build5.py`: brain and head context. Records non-brain meshes and meshes whose left/right name contradicts their position.
 3. `build.py`: whole body. Leaves out the meshes with data errors found in steps 1 and 2.
 4. `build2.py`: heart (with great vessels cut short near the heart) and thorax context.
 5. `build4.py`: liver/gallbladder/pancreas, digestive tract, urinary system, and abdomen context.
-6. `content_*.py`: quoted text, the mapping from each mesh to a passage, and the guided tours.
+6. `content_*.py`: quoted text, the mapping from each mesh to a passage, the guided tours, and the Sources page data.
 
-`measure.py` prints longest-axis lengths used in the size notes below.
+Organ workstation meshes are simplified only as far as keeps every original vertex within 1 mm (`common.py`).
+`measure.py` prints the longest-axis lengths used in the size notes.
 
 The output is deterministic: a rebuild matches the committed files once decompressed. Only the gzip
 timestamps differ.
+
+## Verify against the original sources
+
+These need network access to openstax.org and the official archive. Results are kept in `sources/verification/`
+and shown on the Sources page.
+
+```sh
+VERIFY_OUT=sources/verification/openstax.json python3 build/verify_openstax.py site/data /tmp/openstax-pages
+python3 build/verify_bp3d.py isa_BP3D_4.0_obj_99.zip package/model sources/verification/bodyparts3d.json sources/bodyparts3d/isa_element_parts.txt
+VERIFY_OUT=sources/verification/geometry.json python3 build/verify_output.py site/data isa_BP3D_4.0_obj_99.zip
+```
+
+`verify_geometry.py` and `verify_coverage.py` compare the npm copy's own geometry with the original; they found the
+deviations that led to reading geometry from the official archive instead.
 
 ## Run locally
 

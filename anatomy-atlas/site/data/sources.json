@@ -9,12 +9,15 @@
   "doi": "10.1093/nar/gkn613",
   "file": "isa_BP3D_4.0_obj_99.zip",
   "chain": [
-   "BodyParts3D 4.0 (DBCLS)",
-   "Human Atlas, commit f5d5b74 (axes, units, simplification within 0.2% error)",
-   "@dagno/anatomy-model 0.1.2 on npm (manifest only)",
-   "This app (quantised and grouped by organ)"
+   "Geometry: the official BodyParts3D 4.0 archive, isa_BP3D_4.0_obj_99.zip, converted from millimetres and Z-up to metres and Y-up",
+   "Names, FMA IDs and concept groups: @dagno/anatomy-model 0.1.2 on npm (prepared by Human Atlas), checked identical to the official BodyParts3D tables",
+   "Organ workstations: meshes simplified only where every original vertex stays within 1 mm",
+   "Whole-body view: simplified further, as an overview"
   ],
-  "body": "One adult male reference anatomy, based on MRI data with anatomical illustration refinements."
+  "body": "One adult male reference anatomy, based on MRI data with anatomical illustration refinements.",
+  "attribution": "BodyParts3D, \u00a9 The Database Center for Life Science licensed under CC Attribution 4.0 International",
+  "licenseUpdated": "2025-02-27",
+  "note": "The OBJ files still carry an older CC BY-SA 2.1 Japan notice; the database's current licence page (updated 2025-02-27) replaces it with CC BY 4.0."
  },
  "text": {
   "name": "Anatomy and Physiology 2e",
@@ -46,7 +49,16 @@
     "number": "19.1",
     "title": "Heart Anatomy",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-1-heart-anatomy",
-    "quotes": 67,
+    "quotes": 66,
+    "used": [
+     "Heart"
+    ]
+   },
+   {
+    "number": "Ch. 19",
+    "title": "Chapter Review",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/19-chapter-review",
+    "quotes": 1,
     "used": [
      "Heart"
     ]
@@ -134,6 +146,15 @@
      "Urinary system"
     ]
    }
+  ]
+ },
+ "verification": {
+  "date": "2026-10-24",
+  "items": [
+   "All 229 quotes were found word for word on the live openstax.org pages, and all 13 section links open the right page and paragraph.",
+   "All 2,234 meshes in the dataset exist in the official archive, and every name and FMA ID matches the official tables.",
+   "The 3D geometry is read straight from the official archive (isa_BP3D_4.0_obj_99.zip). In every organ workstation, every vertex of the original lies within 1.0 mm of what you see.",
+   "The data errors listed in each organ's Notes tab (two misplaced lung arteries, two brain structures named for the wrong side) are present in the official archive itself."
   ]
  }
 }

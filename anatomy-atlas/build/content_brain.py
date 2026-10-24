@@ -2,7 +2,15 @@
 import json, re, sys
 sys.path.insert(0, __file__.rsplit("/", 1)[0])
 from contentlib import Module, slug
-OS, OUT, SRC = sys.argv[1], sys.argv[2], sys.argv[3]
+OS, OUT, SRC, PARTOF = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+import csv, collections
+_pc, _pn = collections.defaultdict(set), {}
+for r in csv.reader(open(PARTOF, encoding="utf-8"), delimiter="\t"):  # official BodyParts3D PART-OF tree
+    if len(r) >= 3 and r[2].startswith("FJ"):
+        _pc[r[2]].add(r[1])
+REGIONS = ("telencephalon", "diencephalon", "epithalamus", "hypothalamus", "midbrain", "pons", "medulla oblongata", "metencephalon",
+           "hindbrain", "cerebellum", "brainstem", "ventricular system of brain")
+partof = {f: sorted(c for c in cs if c in REGIONS) for f, cs in _pc.items()}
 CNS = Module(f"{OS}/m46533.cnxml", "13.2", slug("13.2", "The Central Nervous System"), "The Central Nervous System")
 CIR = Module(f"{OS}/m46719.cnxml", "13.3", slug("13.3", "Circulation and the Central Nervous System"), "Circulation and the Central Nervous System")
 atlas = json.load(open(f"{SRC}/atlas.json"))
@@ -66,7 +74,11 @@ def evidence(m):
     keep = [c for c in sorted(small.get(m["id"], ())) if c in ("hypothalamus", "gray matter of hypothalamus", "zone of diencephalon",
             "gyrus of neuraxis", "segment of gyrus of cerebral hemisphere", "lobe of cerebral hemisphere", "lobule of cerebral hemisphere",
             "white matter of neuraxis", "white matter of telencephalon", "segment of white matter of neuraxis", "commissure of neuraxis")]
-    return ("It is grouped here by its FMA concept in the dataset: " + ", ".join(keep) + ".") if keep else ""
+    out = ("It is grouped here by its FMA concept in the dataset: " + ", ".join(keep) + ".") if keep else ""
+    po = partof.get(m["id"])
+    if po:
+        out += (" " if out else "") + "The official BodyParts3D part-of tree places it in: " + ", ".join(po) + "."
+    return out
 
 
 def topic_for(m):
@@ -90,7 +102,7 @@ def topic_for(m):
         (n == "Cerebral aqueduct", "aqueduct", None), (n == "Fourth ventricle", "fourthv", None), (n == "Central canal of spinal cord", "canal", None),
         (n == "Choroid plexus of cerebral hemisphere", "choroid", "The dataset files this mesh under the sensory system."),
         (g == "context", "pituitary", "Shown for context. The passage mentions the pituitary gland."),
-        (g == "other", "none", "Neither this source nor the dataset's concepts say which brain region this structure belongs to, so it is listed on its own."),
+        (g == "other", "none", "Neither this source nor the dataset's concepts say which brain region this structure belongs to, so it is listed on its own. " + evidence(m)),
     ]
     for ok, t, note in rules:
         if ok:

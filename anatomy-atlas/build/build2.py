@@ -38,7 +38,7 @@ groups, left = [], set(hids)
 for key, label, col, f in HEART_GROUPS:
     ids = [i for i in hids if i in left and f(parts[i]["name"])]
     left -= set(ids)
-    groups.append({"key": key, "label": label, "color": col, "ids": ids, "keep": 1})
+    groups.append({"key": key, "label": label, "color": col, "ids": ids, "keep": "auto"})
 assert not left, [parts[i]["name"] for i in left]
 
 ART = ["Ascending aorta", "Arch of aorta", "Descending thoracic aorta", "Pulmonary trunk",
@@ -49,8 +49,8 @@ art = [i for n in ART for i in named(n)]
 ven = [i for n in VEN for i in named(n)] + ["FJ3441"]  # thoracic segment of the inferior vena cava
 CROP["FJ1931"] = (1.22, 9)
 CROP["FJ3441"] = (1.20, 9)
-groups.append({"key": "great-arteries", "label": "Great arteries", "color": 0xd2453f, "ids": art, "keep": 1})
-groups.append({"key": "great-veins", "label": "Great veins", "color": 0x4f6fc0, "ids": ven, "keep": 1})
+groups.append({"key": "great-arteries", "label": "Great arteries", "color": 0xd2453f, "ids": art, "keep": "auto"})
+groups.append({"key": "great-veins", "label": "Great veins", "color": 0x4f6fc0, "ids": ven, "keep": "auto"})
 write_scene("heart2", groups)
 
 # ---- thorax context ----
@@ -65,12 +65,12 @@ bones = [p["id"] for p in atlas["parts"] if p["system"] == "skeletal" and inband
 lungs = [e for e in elements("left lung") + elements("right lung") if parts[e]["system"] == "respiratory"]
 CROP.clear()
 thorax = [
-    {"key": "bones", "label": "Ribs, sternum and spine", "color": 0xd9d2c3, "ids": bones, "keep": 0.35},
-    {"key": "lungs", "label": "Lungs", "color": 0x8fa7c4, "ids": lungs, "keep": 0.3},
-    {"key": "airway", "label": "Trachea", "color": 0xb9c3cc, "ids": elements("trachea"), "keep": 0.5},
-    {"key": "diaphragm", "label": "Diaphragm", "color": 0x9a6058, "ids": elements("diaphragm"), "keep": 0.4},
+    {"key": "bones", "label": "Ribs, sternum and spine", "color": 0xd9d2c3, "ids": bones, "keep": 0.12},
+    {"key": "lungs", "label": "Lungs", "color": 0x8fa7c4, "ids": lungs, "keep": 0.1},
+    {"key": "airway", "label": "Trachea", "color": 0xb9c3cc, "ids": elements("trachea"), "keep": 0.17},
+    {"key": "diaphragm", "label": "Diaphragm", "color": 0x9a6058, "ids": elements("diaphragm"), "keep": 0.13},
     {"key": "heart", "label": "Heart", "color": 0xd8434a,
-     "ids": [i for i in hids if parts[i]["name"].startswith("Wall of")] + art + ven, "keep": 0.5},
+     "ids": [i for i in hids if parts[i]["name"].startswith("Wall of")] + art + ven, "keep": 0.17},
 ]
 CROP["FJ1931"] = (1.22, 9)
 CROP["FJ3441"] = (1.20, 9)

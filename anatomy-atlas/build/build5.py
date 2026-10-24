@@ -68,7 +68,7 @@ ORDER = [  # first matching rule wins; the evidence for each rule is noted
     ("context", "Pituitary gland (context)", 0xc98a5a, N(r"^Pituitary gland$")),
     ("other", "Other named brain structures", 0xa8b4c0, lambda p: True),
 ]
-groups = [{"key": k, "label": l, "color": c, "ids": [], "keep": 1} for k, l, c, _ in ORDER]
+groups = [{"key": k, "label": l, "color": c, "ids": [], "keep": "auto"} for k, l, c, _ in ORDER]
 gi = {g["key"]: g for g in groups}
 for i in dict.fromkeys(pool):
     key = next(k for k, _, _, f in ORDER if f(parts[i]))
@@ -84,7 +84,7 @@ meta["excluded"] = left_out
 bones = [p["id"] for p in atlas["parts"] if p["system"] == "skeletal" and p["bounds"][0][1] > 1.47 and
          not re.search(r"tooth|incisor|canine|molar|premolar|hyoid", p["name"], re.I)]
 write_scene("head", [
-    {"key": "bones", "label": "Skull", "color": 0xd9d2c3, "ids": bones, "keep": 0.3},
-    {"key": "brain", "label": "Brain", "color": 0xd9a7a0, "ids": [i for g in groups if g["key"] != "context" for i in g["ids"]], "keep": 0.4},
+    {"key": "bones", "label": "Skull", "color": 0xd9d2c3, "ids": bones, "keep": 0.1},
+    {"key": "brain", "label": "Brain", "color": 0xd9a7a0, "ids": [i for g in groups if g["key"] != "context" for i in g["ids"]], "keep": 0.13},
 ])
 print("head bones:", len(bones))

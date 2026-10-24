@@ -71,7 +71,7 @@ a{color:var(--accent)}
 .pip{position:absolute;right:12px;top:58px;width:190px;height:190px;border-radius:12px;overflow:hidden;border:1px solid var(--hud-line);
   background:radial-gradient(circle at 50% 40%,#22323f,#0b1218);z-index:2}
 .pip canvas{position:absolute;inset:0;width:100%;height:100%}
-.pip span{position:absolute;left:8px;top:6px;font:500 11px var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--hud-muted)}
+.pip span{position:absolute;left:6px;top:6px;font:500 11px var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--hud-ink);background:#0b1218cc;border-radius:6px;padding:2px 6px}
 .cube{position:absolute;left:12px;bottom:58px;width:68px;height:68px;pointer-events:none;z-index:2}
 .readout{position:absolute;left:86px;bottom:66px;font:500 11px/1.5 var(--ui);color:var(--hud-muted);z-index:2;font-variant-numeric:tabular-nums}
 .readout b{color:var(--hud-ink);font-weight:500}
@@ -264,7 +264,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
         <div id="labels"><svg id="labLines"></svg></div>
         <div class="pip"><canvas id="ctxCanvas" aria-label="Where the organ sits in the body. Turns with the main view."></canvas><span id="ctxLabel">In the chest</span></div>
         <canvas class="cube" id="cube" aria-hidden="true"></canvas>
-        <div class="readout" aria-live="off">Azimuth <b id="roAz">0&deg;</b><br>Elevation <b id="roEl">0&deg;</b></div>
+        <div class="readout" aria-live="off" title="Azimuth 0° faces the front of the body; positive turns toward the body's left">Azimuth <b id="roAz">0&deg;</b><br>Elevation <b id="roEl">0&deg;</b></div>
         <div class="load" id="hLoad" hidden>Loading the organ at full detail…</div>
         <div class="tip" id="hTip" hidden></div>
         <div class="hud top">
@@ -283,13 +283,13 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
           <div class="pill"><label class="hslider" for="explode">Explode <input id="explode" type="range" min="0" max="100" value="0"></label></div>
         </div>
         <div class="hud bottom">
-          <div class="pill" id="views" role="group" aria-label="Standard views">
-            <button class="hb" data-view="anterior" type="button">Front</button>
-            <button class="hb" data-view="posterior" type="button">Back</button>
-            <button class="hb" data-view="right" type="button">Right</button>
-            <button class="hb" data-view="left" type="button">Left</button>
-            <button class="hb" data-view="superior" type="button">Top</button>
-            <button class="hb" data-view="inferior" type="button">Bottom</button>
+          <div class="pill" id="views" role="group" aria-label="Standard views; left and right mean the body's own left and right">
+            <button class="hb" data-view="anterior" type="button" title="View from the front of the body (anterior)">Front</button>
+            <button class="hb" data-view="posterior" type="button" title="View from the back of the body (posterior)">Back</button>
+            <button class="hb" data-view="right" type="button" title="View from the body's right side">Right</button>
+            <button class="hb" data-view="left" type="button" title="View from the body's left side">Left</button>
+            <button class="hb" data-view="superior" type="button" title="View from above (superior)">Top</button>
+            <button class="hb" data-view="inferior" type="button" title="View from below (inferior)">Bottom</button>
           </div>
         </div>
       </div>
@@ -925,6 +925,8 @@ function renderSources(){
       '<div class="card"><div class="kicker">3D anatomy data</div><h2>'+esc(g.name)+'</h2><p class="muted small" style="margin:0">'+esc(g.body)+'</p>'+
         '<dl class="kv"><dt>Publisher</dt><dd>'+esc(g.publisher)+'</dd><dt>Licence</dt><dd>'+link(g.licenseUrl,g.license)+'</dd>'+
         '<dt>Paper</dt><dd>'+esc(g.citation)+' '+link('https://doi.org/'+g.doi,'doi:'+g.doi)+'</dd><dt>Download</dt><dd>'+link(g.url,g.file)+'</dd></dl>'+
+        (g.attribution?'<p class="small" style="margin:12px 0 0"><b>Required credit:</b> \u201c'+esc(g.attribution)+'\u201d</p>':'')+
+        (g.note?'<p class="small muted" style="margin:6px 0 0">'+esc(g.note)+'</p>':'')+
         '<h3 style="margin-top:16px">How the data reaches this app</h3><ol class="chain">'+g.chain.map(c=>'<li>'+esc(c)+'</li>').join('')+'</ol></div>'+
       '<div class="card"><div class="kicker">Quoted text</div><h2>'+esc(t.name)+'</h2><p class="muted small" style="margin:0">'+esc(t.publisher)+'. Free to read online.</p>'+
         '<dl class="kv"><dt>Licence</dt><dd>'+link(t.licenseUrl,t.license)+' (non-commercial, share-alike)</dd><dt>Book</dt><dd>'+link(t.url,'openstax.org')+', where the authors and contributors are listed</dd>'+
@@ -937,6 +939,7 @@ function renderSources(){
     '<div class="card"><div class="kicker">Anatomical terms</div><h2>Foundational Model of Anatomy IDs</h2><p style="margin:0">Each part shows the FMA ID that the 3D dataset assigns to it, so it can be looked up in the Foundational Model of Anatomy, a standard reference vocabulary for human anatomy. Names are shown exactly as the dataset gives them; where the textbook uses a different word, both appear.</p></div>'+
   '</div>'+
   '<aside class="panel">'+
+    (S.verification?'<div class="card"><div class="kicker">Checked on '+esc(S.verification.date)+'</div><ul class="rules small">'+S.verification.items.map(i=>'<li>'+esc(i)+'</li>').join('')+'</ul></div>':'')+
     '<div class="card"><div class="kicker">Review status</div><span class="status">Not yet reviewed by an anatomy educator</span><p class="small muted" style="margin:10px 0 0">This is a design demo. An educator review is planned before students use it.</p></div>'+
     '<div class="card"><div class="kicker">How accuracy is kept</div><ul class="rules small">'+
       '<li>No 3D shape is drawn by hand.</li><li>Every name and FMA ID comes from the dataset.</li>'+

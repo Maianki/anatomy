@@ -34,4 +34,8 @@ class Module:
         s = p[i:i + m.end()]
         assert not re.search(r"\(\s*\)|\(see [a-z]?\s*\)|\([a-z]\)| shows | shown in ,| in \.$| in ,", s), s  # sentence points at a figure we don't show
         sec = self.section[pid]
+        if sec == "Chapter Review":  # on openstax.org these paragraphs live on the chapter's review page
+            ch = self.number.split(".")[0]
+            return {"text": s, "pid": pid, "label": f"Ch. {ch} Chapter Review",
+                    "url": f"https://openstax.org/books/anatomy-and-physiology-2e/pages/{ch}-chapter-review"}
         return {"text": s, "pid": pid, "label": self.number + " " + (sec or self.title), "url": self.url}

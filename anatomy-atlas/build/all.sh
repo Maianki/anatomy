@@ -1,12 +1,17 @@
 #!/bin/sh
 # Rebuild every data file the site loads.
-# Usage: build/all.sh <path to @dagno/anatomy-model package>/model <output dir, e.g. site/data>
+# Usage: build/all.sh <@dagno/anatomy-model package dir> <isa_BP3D_4.0_obj_99.zip> <output dir, e.g. site/data>
+#   Geometry is read from the official BodyParts3D archive; names, FMA IDs and concepts from the npm package
+#   (verified identical to the official tables by verify_bp3d.py).
 # Order matters: build3.py (lungs) and build5.py (brain) record meshes with data errors, which build.py (body) leaves out.
 set -e
 HERE=$(cd "$(dirname "$0")" && pwd)
-SRC=$1
-OUT=$2
+PKG=$1
+export BP3D_ZIP=$2
+OUT=$3
+SRC="$PKG/model"
 OS="$HERE/../sources/openstax"
+BP="$HERE/../sources/bodyparts3d"
 mkdir -p "$OUT"
 python3 -I "$HERE/build3.py" "$SRC" "$OUT"   # lungs
 python3 -I "$HERE/build5.py" "$SRC" "$OUT"   # brain + head context
@@ -16,9 +21,9 @@ python3 -I "$HERE/build4.py" "$SRC" "$OUT"   # liver, digestive tract, urinary +
 python3 -I "$HERE/content_heart.py" "$OS/m46676.cnxml" "$OUT/heart2.json" "$OUT/content-heart.json"
 python3 -I "$HERE/content_lungs.py" "$OS" "$OUT/lungs.json" "$OUT/content-lungs.json"
 python3 -I "$HERE/content_abdomen.py" "$OS" "$OUT"
-python3 -I "$HERE/content_brain.py" "$OS" "$OUT" "$SRC"
+python3 -I "$HERE/content_brain.py" "$OS" "$OUT" "$SRC" "$BP/partof_element_parts.txt"
 python3 -I "$HERE/content_body.py" "$OS" "$OUT"
-python3 -I "$HERE/content_sources.py" "$OUT" "$SRC/.."   # Sources screen: sections and quote counts actually used
+python3 -I "$HERE/content_sources.py" "$OUT" "$PKG" "$HERE/../sources/verification"   # Sources screen: sections and quote counts actually used
 for n in body heart2 thorax lungs liver gut urinary abdomen brain head; do
   base64 < "$OUT/$n.bin.gz" | tr -d '\n' > "$OUT/$n.gz.txt"
   rm "$OUT/$n.bin.gz"
