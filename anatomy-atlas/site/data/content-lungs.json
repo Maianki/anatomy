@@ -1,0 +1,1426 @@
+{
+"topics": {
+"overview": [
+{
+"text": "The lungs are pyramid-shaped, paired organs that are connected to the trachea by the right and left bronchi; on the inferior surface, the lungs are bordered by the diaphragm.",
+"pid": "fs-id2627237",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+},
+{
+"text": "The right lung is shorter and wider than the left lung, and the left lung occupies a smaller volume than the right.",
+"pid": "fs-id2627237",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+},
+{
+"text": "The apex of the lung is the superior region, whereas the base is the opposite region near the diaphragm.",
+"pid": "fs-id2627237",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+},
+{
+"text": "The costal surface of the lung borders the ribs.",
+"pid": "fs-id2627237",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+},
+{
+"text": "The mediastinal surface faces the midline.",
+"pid": "fs-id2627237",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+},
+{
+"text": "The right lung consists of three lobes: the superior, middle, and inferior lobes.",
+"pid": "fs-id2717313",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+},
+{
+"text": "The left lung consists of two lobes: the superior and inferior lobes.",
+"pid": "fs-id2717313",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+}
+],
+"lobes": [
+{
+"text": "Each lung is composed of smaller units called lobes.",
+"pid": "fs-id2717313",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+},
+{
+"text": "Fissures separate these lobes from each other.",
+"pid": "fs-id2717313",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+},
+{
+"text": "The right lung consists of three lobes: the superior, middle, and inferior lobes.",
+"pid": "fs-id2717313",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+},
+{
+"text": "The left lung consists of two lobes: the superior and inferior lobes.",
+"pid": "fs-id2717313",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+}
+],
+"segment": [
+{
+"text": "A bronchopulmonary segment is a division of a lobe, and each lobe houses multiple bronchopulmonary segments.",
+"pid": "fs-id2717313",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+},
+{
+"text": "Each segment receives air from its own tertiary bronchus and is supplied with blood by its own artery.",
+"pid": "fs-id2717313",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+}
+],
+"trachea": [
+{
+"text": "The trachea is formed by 16 to 20 stacked, C-shaped pieces of hyaline cartilage that are connected by dense connective tissue.",
+"pid": "fs-id2058199",
+"label": "22.1 Trachea",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+},
+{
+"text": "The esophagus borders the trachea posteriorly.",
+"pid": "fs-id2058199",
+"label": "22.1 Trachea",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+},
+{
+"text": "The trachea branches into the right and left primary bronchi at the carina.",
+"pid": "fs-id2033350",
+"label": "22.1 Bronchial Tree",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+}
+],
+"mainbronchi": [
+{
+"text": "The trachea branches into the right and left primary bronchi at the carina.",
+"pid": "fs-id2033350",
+"label": "22.1 Bronchial Tree",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+},
+{
+"text": "Rings of cartilage, similar to those of the trachea, support the structure of the bronchi and prevent their collapse.",
+"pid": "fs-id2033350",
+"label": "22.1 Bronchial Tree",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+},
+{
+"text": "The primary bronchi enter the lungs at the hilum, a concave region where blood vessels, lymphatic vessels, and nerves also enter the lungs.",
+"pid": "fs-id2033350",
+"label": "22.1 Bronchial Tree",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+}
+],
+"btree": [
+{
+"text": "The bronchi continue to branch into a bronchial tree.",
+"pid": "fs-id2033350",
+"label": "22.1 Bronchial Tree",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+},
+{
+"text": "A bronchial tree (or respiratory tree) is the collective term used for these multiple-branched bronchi.",
+"pid": "fs-id2033350",
+"label": "22.1 Bronchial Tree",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+},
+{
+"text": "Each segment receives air from its own tertiary bronchus and is supplied with blood by its own artery.",
+"pid": "fs-id2717313",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+}
+],
+"segart": [
+{
+"text": "The pulmonary artery branches multiple times as it follows the bronchi, and each branch becomes progressively smaller in diameter.",
+"pid": "fs-id2144132",
+"label": "22.2 Blood Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+},
+{
+"text": "Each segment receives air from its own tertiary bronchus and is supplied with blood by its own artery.",
+"pid": "fs-id2717313",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+}
+],
+"ptrunk": [
+{
+"text": "The pulmonary artery is an artery that arises from the pulmonary trunk and carries deoxygenated, arterial blood to the alveoli.",
+"pid": "fs-id2144132",
+"label": "22.2 Blood Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+},
+{
+"text": "The pulmonary artery branches multiple times as it follows the bronchi, and each branch becomes progressively smaller in diameter.",
+"pid": "fs-id2144132",
+"label": "22.2 Blood Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+}
+],
+"veins": [
+{
+"text": "Once the blood is oxygenated, it drains from the alveoli by way of multiple pulmonary veins, which exit the lungs through the hilum.",
+"pid": "fs-id2144132",
+"label": "22.2 Blood Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+}
+]
+},
+"meshTopic": {
+"FJ2541": {
+"topic": "trachea",
+"note": null
+},
+"FJ2539": {
+"topic": "mainbronchi",
+"note": null
+},
+"FJ2450": {
+"topic": "mainbronchi",
+"note": null
+},
+"FJ2441": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2442": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2443": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2444": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2445": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2446": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2447": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2448": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2449": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2451": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2452": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2453": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2454": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2455": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2456": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2457": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2458": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2459": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2460": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2461": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2462": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2463": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2464": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2465": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2466": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2467": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2468": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2469": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2470": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2471": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2472": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2473": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2474": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2475": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2476": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2477": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2478": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2479": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2480": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2481": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2482": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2483": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2484": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2485": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2486": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2487": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2488": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2489": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2490": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2491": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2492": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2493": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2494": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2495": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2496": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2497": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2498": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2499": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2500": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2501": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2502": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2503": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2504": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2505": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2506": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2507": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2508": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2509": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2510": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2511": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2512": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2513": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2514": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2515": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2516": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2517": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2518": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2519": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2520": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2521": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2522": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2523": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2524": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2525": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2526": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2527": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2528": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2529": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2530": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2531": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2532": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2533": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2534": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2535": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2536": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2537": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2538": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2540": {
+"topic": "btree",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2881": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2882": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2883": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2884": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2885": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2886": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2887": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2888": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2889": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2890": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2891": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2892": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2893": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2894": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2895": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2896": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2897": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2898": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2899": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2900": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2901": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2902": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2903": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2904": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2905": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2906": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2907": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2908": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2909": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2910": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2911": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2912": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2913": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2914": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2915": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2916": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2917": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2918": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2919": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2920": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2921": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2922": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2923": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2967": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2968": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2969": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2970": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2971": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2972": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2973": {
+"topic": "segart",
+"note": "This source has no passage about this specific vessel. The passage below covers the group it belongs to."
+},
+"FJ2974": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2975": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2976": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2977": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2978": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2979": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2980": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2981": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2982": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2983": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2984": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2985": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2986": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2987": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2988": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2989": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2990": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2991": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2992": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2993": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2994": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2995": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2996": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2997": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2998": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2999": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3000": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3001": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3002": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3003": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3004": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3005": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3006": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3007": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3008": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3009": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3010": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3011": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3012": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3013": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3014": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3015": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3016": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3017": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3018": {
+"topic": "segart",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2926": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2927": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2928": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2929": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2930": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2931": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2932": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2934": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2935": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2936": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2937": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2938": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2939": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2940": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2941": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2942": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2943": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2945": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2946": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2947": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2948": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2949": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2951": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2952": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2953": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2954": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2956": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2957": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2958": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2959": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2960": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2961": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2962": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2963": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2964": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2965": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3021": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3022": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3023": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3024": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3025": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3026": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3027": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3028": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3029": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3030": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3031": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3032": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3033": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3034": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3035": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3036": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3037": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3038": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3039": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3041": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3042": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3043": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3044": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3045": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3046": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3047": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3048": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3049": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3050": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3051": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3052": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3053": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3054": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3055": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3056": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3057": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3058": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3059": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3060": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3061": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3062": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3063": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3064": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3065": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3066": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3067": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3068": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3069": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ3070": {
+"topic": "veins",
+"note": "This source describes bronchopulmonary segments in general. It does not describe individual segments by name."
+},
+"FJ2966": {
+"topic": "ptrunk",
+"note": null
+},
+"FJ2924": {
+"topic": "ptrunk",
+"note": null
+},
+"FJ3019": {
+"topic": "ptrunk",
+"note": null
+},
+"FJ2944": {
+"topic": "veins",
+"note": null
+},
+"FJ2950": {
+"topic": "veins",
+"note": null
+},
+"FJ2955": {
+"topic": "veins",
+"note": null
+},
+"FJ2925": {
+"topic": "veins",
+"note": null
+},
+"FJ2933": {
+"topic": "veins",
+"note": null
+},
+"FJ3040": {
+"topic": "veins",
+"note": null
+},
+"FJ3020": {
+"topic": "veins",
+"note": null
+}
+},
+"flow": [
+{
+"title": "Trachea",
+"parts": [
+"Trachea"
+],
+"passage": {
+"text": "The trachea branches into the right and left primary bronchi at the carina.",
+"pid": "fs-id2033350",
+"label": "22.1 Bronchial Tree",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+}
+},
+{
+"title": "Main bronchi",
+"parts": [
+"Right main bronchus proper",
+"Left main bronchus"
+],
+"passage": {
+"text": "The primary bronchi enter the lungs at the hilum, a concave region where blood vessels, lymphatic vessels, and nerves also enter the lungs.",
+"pid": "fs-id2033350",
+"label": "22.1 Bronchial Tree",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-1-organs-and-structures-of-the-respiratory-system"
+}
+},
+{
+"title": "Segmental bronchial trees",
+"groups": [
+"bronchi"
+],
+"passage": {
+"text": "Each segment receives air from its own tertiary bronchus and is supplied with blood by its own artery.",
+"pid": "fs-id2717313",
+"label": "22.2 Gross Anatomy of the Lungs",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+}
+},
+{
+"title": "Pulmonary trunk and arteries",
+"groups": [
+"hilum-arteries"
+],
+"passage": {
+"text": "The pulmonary artery is an artery that arises from the pulmonary trunk and carries deoxygenated, arterial blood to the alveoli.",
+"pid": "fs-id2144132",
+"label": "22.2 Blood Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+}
+},
+{
+"title": "Segmental pulmonary arteries",
+"groups": [
+"arteries"
+],
+"passage": {
+"text": "The pulmonary artery branches multiple times as it follows the bronchi, and each branch becomes progressively smaller in diameter.",
+"pid": "fs-id2144132",
+"label": "22.2 Blood Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+}
+},
+{
+"title": "Segmental and pulmonary veins",
+"groups": [
+"veins",
+"hilum-veins"
+],
+"passage": {
+"text": "Once the blood is oxygenated, it drains from the alveoli by way of multiple pulmonary veins, which exit the lungs through the hilum.",
+"pid": "fs-id2144132",
+"label": "22.2 Blood Supply",
+"url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/22-2-the-lungs"
+}
+}
+]
+}
