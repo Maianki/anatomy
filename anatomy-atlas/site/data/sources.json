@@ -40,9 +40,10 @@
     "number": "7.3",
     "title": "The Vertebral Column",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/7-3-the-vertebral-column",
-    "quotes": 15,
+    "quotes": 18,
     "used": [
      "Pelvis",
+     "Pelvis (female)",
      "Vertebral column"
     ]
    },
@@ -77,9 +78,10 @@
     "number": "8.3",
     "title": "The Pelvic Girdle and Pelvis",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/8-3-the-pelvic-girdle-and-pelvis",
-    "quotes": 5,
+    "quotes": 19,
     "used": [
-     "Pelvis"
+     "Pelvis",
+     "Pelvis (female)"
     ]
    },
    {
@@ -196,8 +198,9 @@
     "number": "25.2",
     "title": "Gross Anatomy of Urine Transport",
     "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/25-2-gross-anatomy-of-urine-transport",
-    "quotes": 15,
+    "quotes": 16,
     "used": [
+     "Female reproductive system",
      "Male reproductive system",
      "Urinary system"
     ]
@@ -219,18 +222,402 @@
     "used": [
      "Male reproductive system"
     ]
+   },
+   {
+    "number": "27.2",
+    "title": "Anatomy and Physiology of the Ovarian Reproductive System",
+    "url": "https://openstax.org/books/anatomy-and-physiology-2e/pages/27-2-anatomy-and-physiology-of-the-ovarian-reproductive-system",
+    "quotes": 24,
+    "used": [
+     "Female reproductive system"
+    ]
    }
   ]
  },
  "verification": {
   "date": "2026-10-24",
   "items": [
-   "All 376 quotes were found word for word on the live openstax.org pages, and all 21 section links open the right page and paragraph.",
+   "All 418 quotes were found word for word on the live openstax.org pages, and all 22 section links open the right page and paragraph.",
    "All 2,234 meshes in the dataset exist in the official archive, and every name and FMA ID matches the official tables.",
    "The 3D geometry is read straight from the official archive (isa_BP3D_4.0_obj_99.zip). In every organ and bone workstation, every vertex of the original lies within 1.0 mm of what you see.",
    "The data errors listed in each organ's Notes tab (two misplaced lung arteries, two brain structures named for the wrong side) are present in the official archive itself.",
+   "Female body: every Human Reference Atlas model used has a CC BY 4.0 licence and a DOI in its own metadata. In the female reproductive and pelvis workstations, every vertex of the original lies within 0.9 mm of what you see (files pinned by SHA-256, ccf-releases commit b036a91).",
    "The official archive has five pairs of meshes with the same FMA ID and identical geometry (hyoid bone FJ2772/FJ3201, cricoid cartilage FJ2440/FJ2769, celiac artery FJ1846/FJ2013, hepatic artery FJ1916/FJ2386 and FJ1924/FJ2394). Only the first mesh of each pair is shown."
   ]
+ },
+ "hra": {
+  "files": {
+   "VH_F_Skin.glb": {
+    "title": "3D Reference Organ for Skin, Female v1.2",
+    "data": "Skin, Female v1.2",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Skin.glb",
+    "markdown": "v1.2/markdown/ref-organs/skin-female.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.The torso of the skin model was moved up from previous editions to incorporate the clavicles and other anatomy for the breast. It was also adjusted to add space for the triceps surae and the ankle bones for the eventual addition of the triceps surae muscles and landmark organs.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Fiona Ginty",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM254.DVTN.589",
+    "cite": "Kristen Browne; Heidi Schlehlein 2022. 3D Reference Organ for Skin, Female v1.2. https://doi.org/10.48539/HBM254.DVTN.589. Accessed on May 06, 2022."
+   },
+   "VH_F_Pelvis.glb": {
+    "title": "3D Reference Organ for Pelvis, Female v1.2",
+    "data": "Pelvis, Female v1.2",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Pelvis.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-pelvis.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Muzlifah A. Haniffa",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM427.CCRP.887",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Pelvis, Female v1.2. https://doi.org/10.48539/HBM427.CCRP.887. Accessed on May 6, 2022."
+   },
+   "VH_F_Knee_L.glb": {
+    "title": "3D Reference Organ for Knee, Female, Left v1.1",
+    "data": "Knee, Female, Left v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Knee_L.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-knee-l.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "David Rowe",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM445.ZKHR.632",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Knee, Female, Left v1.1. https://doi.org/10.48539/HBM445.ZKHR.632. Accessed on May 6, 2022."
+   },
+   "VH_F_Knee_R.glb": {
+    "title": "3D Reference Organ for Knee, Female, Right v1.1",
+    "data": "Knee, Female, Right v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Knee_R.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-knee-r.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "David Rowe",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM983.RDXQ.667",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Knee, Female, Right v1.1. https://doi.org/10.48539/HBM983.RDXQ.667. Accessed on May 6, 2022."
+   },
+   "VH_F_Heart.glb": {
+    "title": "3D Reference Organ for Heart, Female v1.2",
+    "data": "Heart, Female v1.2",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Heart.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-heart.md",
+    "description": "This reference organ was created using data from the Visible Human Female provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Shin Lin",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM384.VWVH.465",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Heart, Female v1.2. [https://doi.org/10.48539/HBM384.VWVH.465](https://doi.org/10.48539/HBM384.VWVH.465. Accessed on May 6, 2022."
+   },
+   "VH_F_Lung.glb": {
+    "title": "3D Reference Organ for Lung, Female v1.2",
+    "data": "Lung, Female v1.2",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Lung.glb",
+    "markdown": "v1.3/markdown/ref-organs/lung-female.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Gloria Pryhuber",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM733.JCZJ.647",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Lung, Female v1.2. https://doi.org/10.48539/HBM733.JCZJ.647. Accessed on May 6, 2022."
+   },
+   "VH_F_Liver.glb": {
+    "title": "3D Reference Organ for Liver, Female v1.1",
+    "data": "Liver, Female v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Liver.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-liver.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Anna Maria Masci; Tim Kendall; Ayako Suzuki",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM798.JZZM.649",
+    "cite": "Kristen Browne. 2021. 3D Reference Organ for Liver, Female v1.1. https://doi.org/10.48539/HBM798.JZZM.649. Accessed on May 6, 2022."
+   },
+   "VH_F_Pancreas.glb": {
+    "title": "3D Reference Organ for Pancreas, Female v1.1",
+    "data": "Pancreas, Female v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Pancreas.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-pancreas.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Martha Campbell-Thompson",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM338.VKSF.574",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Pancreas, Female v1.1. https://doi.org/10.48539/HBM338.VKSF.574. Accessed on May 6, 2022."
+   },
+   "VH_F_Spleen.glb": {
+    "title": "3D Reference Organ for Spleen, Female v1.2",
+    "data": "Spleen, Female v1.2",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Spleen.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-spleen.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Marda Jorgensen",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM459.JHVH.373",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Spleen, Female v1.2 https://doi.org/10.48539/HBM459.JHVH.373. Accessed on May 6, 2022."
+   },
+   "VH_F_Kidney_L.glb": {
+    "title": "3D Reference Organ for Kidney, Female, Left v1.2",
+    "data": "Kidney, Female, Left v1.2",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Kidney_L.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-kidney-l.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine. Changes include removing the renal calyces and renal papillae and adding them to the ureter model per subject matter expert input.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Jeffrey Spraggins; Sanjay Jain",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM898.QGVV.734",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022.  3D Reference Organ for Kidney, Female, Left v1.2. https://doi.org/10.48539/HBM898.QGVV.734. Accessed on May 6, 2022."
+   },
+   "VH_F_Kidney_R.glb": {
+    "title": "3D Reference Organ for Kidney, Female, Right v1.2",
+    "data": "Kidney, Female, Right v1.2",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Kidney_R.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-kidney-r.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine. Changes include removing the renal calyces and renal papillae and adding them to the ureter model per subject matter expert input.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Jeffrey Spraggins; Sanjay Jain",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM487.ZGCW.688",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Kidney, Female, Right v1.2. https://doi.org/10.48539/HBM487.ZGCW.688.  Accessed on May 6, 2022."
+   },
+   "VH_F_Ureter_L.glb": {
+    "title": "3D Reference Organ for Ureter, Female, Left v1.1",
+    "data": "Ureter, Female, Left v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Ureter_L.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-ureter-l.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine. Changes include adding the renal calyces and renal papillae from the kidney model per subject matter expert  input.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Douglas Strand",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM923.WCQQ.623",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Ureter, Female, Left v1.1. https://doi.org/10.48539/HBM923.WCQQ.623. Accessed on May 6, 2022."
+   },
+   "VH_F_Ureter_R.glb": {
+    "title": "3D Reference Organ for Ureter, Female, Right v1.1",
+    "data": "Ureter, Female, Right v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Ureter_R.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-ureter-r.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine. Changes include adding the renal calyces and renal papillae from the kidney model per subject matter expert  input.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Douglas Strand",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM669.RFNC.442",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Ureter, Female, Right v1.1. https://doi.org/10.48539/HBM669.RFNC.442. Accessed on May 6, 2022."
+   },
+   "VH_F_Urinary_Bladder.glb": {
+    "title": "3D Reference Organ for Urinary Bladder, Female v1.1",
+    "data": "Urinary Bladder, Female v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Urinary_Bladder.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-urinary-bladder.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Douglas Strand",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM235.KQNP.897",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Urinary Bladder, Female v1.1. https://doi.org/10.48539/HBM235.KQNP.897. Accessed on May 6, 2022."
+   },
+   "VH_F_Small_Intestine.glb": {
+    "title": "3D Reference Organ for Small Intestine, Female v1.1",
+    "data": "Small Intestine, Female v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Small_Intestine.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-small-intestine.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine. The small intestines have been updated to include a measurement system. A centerline was made in the center of the intestines, and markers placed along the centerline. The teal discs measure 5 cm along the intestines, the green dashes measure 1 cm. The yellow disc marks the jejunoileal junction. The VHF small intestine total length is 200 cm.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Mark Arends",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM887.PSNL.257",
+    "cite": "Kristen Browne; Heidi Schlehlein 2022. 3D Reference Organ for Small Intestine, Female v1.1. https://doi.org/10.48539/HBM887.PSNL.257. Accessed on May 06, 2022."
+   },
+   "VH_F_Thymus.glb": {
+    "title": "3D Reference Organ for Thymus, Female v1.2",
+    "data": "Thymus, Female v1.2",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Thymus.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-thymus.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Maigan Brusko",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM956.TTND.385",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Thymus, Female v1.2. https://doi.org/10.48539/HBM956.TTND.385. Accessed on May 6, 2022."
+   },
+   "VH_F_Spinal_Cord.glb": {
+    "title": "3D Reference Organ for Spinal Cord, Female, v1.0",
+    "data": "Spinal Cord, Female, v1.0",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Spinal_Cord.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-spinal-cord.md",
+    "description": "This reference organ was created using data from the Visible Human Female (VHF), provided by the National Library of Medicine. The VHF has 6 lumbar verts, and the total length of her spinal column is 60.923 cm. (Frostell et al. 2016) was referenced during model preparation.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Vilas Menon",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM625.LDJN.633",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Spinal Cord, Female, v1.0. https://doi.org/10.48539/HBM625.LDJN.633HBM625.LDJN.633. Accessed on May 06, 2022."
+   },
+   "VH_F_Eye_L.glb": {
+    "title": "3D Reference Organ for Eye, Female, Left v1.1",
+    "data": "Eye, Female, Left v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Eye_L.glb",
+    "markdown": "v1.3/markdown/ref-organs/eye-female-left.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Angela Kruse; Christine Curcio",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM947.QXCK.633",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Eye, Female, Left v1.1. https://doi.org/10.48539/HBM947.QXCK.633. Accessed on May 6, 2022."
+   },
+   "VH_F_Eye_R.glb": {
+    "title": "3D Reference Organ for Eye, Female, Right v1.1",
+    "data": "Eye, Female, Right v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Eye_R.glb",
+    "markdown": "v1.3/markdown/ref-organs/eye-female-right.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Angela Kruse; Christine Curcio",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM276.NWLC.455",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Eye, Female, Right v1.1. https://doi.org/10.48539/HBM276.NWLC.455. Accessed on Accessed on May 6, 2022."
+   },
+   "VH_F_Blood_Vasculature.glb": {
+    "title": "3D Reference Organ for Blood Vasculature, Female v1.2",
+    "data": "Blood Vasculature, Female v1.2",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Blood_Vasculature.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-blood-vasculature.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Marc Halushka; Shin Lin",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM232.FSRK.728",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Blood Vasculature, Female v1.2 https://doi.org/10.48539/HBM232.FSRK.728. Accessed on May 6, 2022."
+   },
+   "VH_F_Uterus.glb": {
+    "title": "3D Reference Organ for Uterus, Female v1.1",
+    "data": "Uterus, Female v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Uterus.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-uterus.md",
+    "description": "This reference organ was created using data from the Visible Human Male, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Alison Pouch; Kathleen O'Neill",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM228.JBNJ.299",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Uterus v1.1. https://doi.org/10.48539/HBM228.JBNJ.299. Accessed on May 6, 2022."
+   },
+   "VH_F_Fallopian_Tube_L.glb": {
+    "title": "3D Reference Organ for Fallopian Tube, Female, Left v1.1",
+    "data": "Fallopian Tube, Female, Left v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Fallopian_Tube_L.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-fallopian-tube-l.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Alison Pouch; Kathleen O'Neill",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM887.HZKB.637",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Fallopian Tube, Female, Left v1.1. https://doi.org/10.48539/HBM887.HZKB.637. Accessed on May 6, 2022."
+   },
+   "VH_F_Fallopian_Tube_R.glb": {
+    "title": "3D Reference Organ for Fallopian Tube, Female, Right v1.1",
+    "data": "Fallopian Tube, Female, Right v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Fallopian_Tube_R.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-fallopian-tube-r.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Alison Pouch; Kathleen O'Neill",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM875.FCDP.878",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Fallopian Tube, Female, Right v1.1. https://doi.org/10.48539/HBM875.FCDP.878. Accessed on May 6, 2022."
+   },
+   "VH_F_Ovary_L.glb": {
+    "title": "3D Reference Organ for Ovary, Female, Left v1.1",
+    "data": "Ovary, Female, Left v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Ovary_L.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-ovary-l.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Alison Pouch; Kathleen O'Neill",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM499.JLMB.357",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Ovary, Female, Left v1.1. https://doi.org/10.48539/HBM499.JLMB.357. Accessed on May 6, 2022."
+   },
+   "VH_F_Ovary_R.glb": {
+    "title": "3D Reference Organ for Ovary, Female, Right v1.1",
+    "data": "Ovary, Female, Right v1.1",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Ovary_R.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-ovary-r.md",
+    "description": "This reference organ was created using data from the Visible Human Female, provided by the National Library of Medicine.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Alison Pouch; Kathleen O'Neill",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM453.QTZX.449",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Ovary, Female, Right v1.1. https://doi.org/10.48539/HBM453.QTZX.449. Accessed on May 6, 2022."
+   }
+  },
+  "leftOut": {
+   "VH_F_Placenta.glb": {
+    "title": "3D Reference Organ for Placenta, Full Term, Female v1.0",
+    "data": "Placenta, Full Term, Female v1.0",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/VH_F_Placenta.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-placenta-full-term.md",
+    "description": "This reference organ The placenta was sculpted partly from MRI data from the Department of Obstetrics, Gynecology, and Reproductive Sciences, Division of Maternal-Fetal Medicine at UC San Diego Health. The atlas \u201cHuman Microscopic Anatomy\u201d (R.V. Krsti\u0107, 1994) and  (Mannelli et al. 2015) were consulted.",
+    "creators": "Heidi Schlehlein",
+    "reviewers": "Ana Rodriguez-Soto; Mana Parast; Louise Laurent; Rebecca Rakow-Penner",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM796.CQJZ.982",
+    "cite": "Heidi Schlehlein 2022. 3D Reference Organ for Placenta, Full Term, Female v1.0 https://doi.org/10.48539/HBM796.CQJZ.982. Accessed on May 06, 2022.",
+    "why": "A full-term placenta belongs to pregnancy; this body is shown as not pregnant."
+   },
+   "SBU_F_Intestine_Large.glb": {
+    "title": "3D Reference Organ for Large Intestine, Female v1.2",
+    "data": "Large Intestine, Female v1.2",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/SBU_F_Intestine_Large.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-vh-f-large-intestine.md",
+    "description": "This reference organ was created using data provided by Arie Kaufman, Stony Brook University as a base for a custom model built using Pixelogic Zbrush.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Yiing Lin",
+    "date": "2022-05-06",
+    "license": "Creative Commons Attribution 4.0 International",
+    "doi": "https://doi.org/10.48539/HBM637.SRWT.828",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Large Intestine, Female v1.2. https://doi.org/10.48539/HBM637.SRWT.828. Accessed on May 6, 2022.",
+    "why": "Made from Stony Brook University data as a custom sculpted model, not from the Visible Human Female."
+   },
+   "Allen_F_Brain.glb": {
+    "title": "3D Reference Organ for Brain, Female v1.2",
+    "data": "Brain, Female v1.2",
+    "url": "https://cdn.humanatlas.io/hra-releases/v1.2/models/Allen_F_Brain.glb",
+    "markdown": "v1.4/markdown/ref-organs/3d-f-brain.md",
+    "description": "This reference organ was created using data from the \"Allen Human Reference Atlas \u2013 3D, 2020\" representing one half of the human brain (Ding et al., 2016). The 141 anatomical structures were mirrored to arrive at a whole human brain (as intended) and resized to fit the Visible Human Male and Female bodies. Note that this organ is not licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). Instead, these terms of use apply: Allen Institute Terms of Use.",
+    "creators": "Kristen Browne; Heidi Schlehlein",
+    "reviewers": "Song-Lin Ding",
+    "date": "2022-05-06",
+    "license": "[Allen Institute Terms of Use](https://alleninstitute.org/legal/terms-use)",
+    "doi": "https://doi.org/10.48539/HBM883.TBLV.838",
+    "cite": "Kristen Browne; Heidi Schlehlein. 2022. 3D Reference Organ for Brain, Female v1.2. https://doi.org/10.48539/HBM883.TBLV.838. Accessed on May 6, 2022.",
+    "why": "Made from the Allen Human Reference Atlas, not from the Visible Human Female."
+   }
+  },
+  "floorShiftM": 0.7948
  },
  "crosscheck": {
   "name": "WebMD",

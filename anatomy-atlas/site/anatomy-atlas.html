@@ -246,6 +246,7 @@ td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
       </div>
     </div>
     <aside class="panel">
+      <div class="seg mode" id="sexSwitch" role="group" aria-label="Which body"><button type="button" data-sex="male" aria-pressed="true">Male</button><button type="button" data-sex="female" aria-pressed="false">Female</button></div>
       <div class="seg mode" id="modeSwitch" role="group" aria-label="What to explore"><button type="button" data-mode="organs" aria-pressed="true">Organs</button><button type="button" data-mode="bones" aria-pressed="false">Bones</button></div>
       <div class="card" id="bodyInfo" aria-live="polite"></div>
       <div class="card">
@@ -361,29 +362,29 @@ const dot=c=>'<span class="dot" style="background:'+hex(c)+'"></span>';
 
 // ---------- organ workstations ----------
 const ORGANS={
-  heart:{label:'Heart',ctxScene:'thorax',seeGroups:['walls'],vesselGroups:['great-arteries','great-veins'],vesselLabel:'Great vessels',scene:'heart2',content:'content-heart.json',ctx:'heart',tour:'Blood flow',bodyKeys:['heart'],
+  heart:{label:'Heart',ctxScene:'thorax',seeGroups:['walls'],vesselGroups:['great-arteries','great-veins'],vesselLabel:'Great vessels',scene:'heart2',content:'content-heart.json',ctx:'heart',tour:'Blood flow',bodyKeys:['heart'],bodyKeysF:['heart'],
     tools:{see:true,vessels:true},startHidden:['cavities'],
     meta:[['FMA ID','FMA7088'],['Parts','84 heart + 15 great vessel'],['Great vessels','cut short near the heart']],
     labeled:['Wall of left atrium','Wall of right atrium','Wall of ventricle','Ascending aorta','Arch of aorta','Pulmonary trunk','Superior vena cava','Inferior vena cava',
       'Left pulmonary artery','Right pulmonary artery','Trunk of left coronary artery','Trunk of right coronary artery','Circumflex branch of left coronary artery',
       'Trunk of anterior interventricular branch of left coronary artery','Coronary sinus','Great cardiac vein','Cavity of left atrium','Cavity of right atrium',
       'Cavity of left ventricle','Cavity of right ventricle']},
-  lungs:{label:'Lungs',ctxScene:'thorax',lobeTitle:'Lobes',lobeWord:'Lobe',scene:'lungs',content:'content-lungs.json',ctx:'lungs',tour:'Air and blood',bodyKeys:['left-lung','right-lung','trachea'],
+  lungs:{label:'Lungs',ctxScene:'thorax',lobeTitle:'Lobes',lobeWord:'Lobe',scene:'lungs',content:'content-lungs.json',ctx:'lungs',tour:'Air and blood',bodyKeys:['left-lung','right-lung','trachea'],bodyKeysF:['left-lung','right-lung','trachea'],
     tools:{see:true,vessels:true},seeGroups:['airway','bronchi'],vesselGroups:['arteries','veins','hilum-arteries','hilum-veins'],vesselLabel:'Vessels',startHidden:[],
     meta:[['FMA IDs','FMA7309, FMA7310'],['Parts','291'],['Segments','10 right, 10 left']],
     gap:'BodyParts3D has no meshes for the lung surfaces, fissures or pleura, so they are not shown. Each lobe is shown through the airways and vessels that the dataset assigns to it.',
     labeled:['Trachea','Right main bronchus proper','Left main bronchus','Pulmonary trunk','Left pulmonary artery','Right pulmonary artery']},
   liver:{label:'Liver, gallbladder and pancreas',short:'liver',scene:'liver',content:'content-liver.json',ctxScene:'abdomen',ctx:'liver',tour:'Blood and bile',
-    bodyKeys:['liver','gallbladder','pancreas'],tools:{see:true,vessels:true},seeGroups:['segments','gallbladder','pancreas','duodenum'],vesselGroups:['portal','arteries','hveins','ivc'],vesselLabel:'Vessels',startHidden:['pancreas-parenchyma','pduct'],lobeTitle:'Liver segments',lobeWord:'Segment',
+    bodyKeys:['liver','gallbladder','pancreas'],bodyKeysF:['liver','pancreas'],tools:{see:true,vessels:true},seeGroups:['segments','gallbladder','pancreas','duodenum'],vesselGroups:['portal','arteries','hveins','ivc'],vesselLabel:'Vessels',startHidden:['pancreas-parenchyma','pduct'],lobeTitle:'Liver segments',lobeWord:'Segment',
     meta:[['FMA IDs','FMA7197, FMA7202, FMA7198'],['Parts','85']],
     gap:'Two pairs of meshes in the dataset share nearly the same surface: Pancreas and Parenchyma of pancreas, and Pancreatic duct and Pancreatic duct tree. One of each pair starts hidden so they do not flicker through each other.',
     labeled:['Hepatic portal vein','Hepatic artery proper','Common hepatic duct','Gallbladder','Cystic duct','Pancreas','Duodenum','Left hepatic vein','Right hepatic vein','Middle hepatic vein','Caudate lobe of liver']},
   gut:{label:'Digestive tract',short:'digestive tract',scene:'gut',content:'content-gut.json',ctxScene:'abdomen',ctx:'gut',tour:'Path of food',
-    bodyKeys:['esophagus','stomach','small-intestine','large-intestine'],tools:{see:true,vessels:true},seeGroups:['esophagus','stomach','duodenum','jejunum','ileum','large','mesenteries'],vesselGroups:['gut-arteries','gut-veins'],vesselLabel:'Vessels',startHidden:['accessory'],
+    bodyKeys:['esophagus','stomach','small-intestine','large-intestine'],bodyKeysF:['small-intestine'],tools:{see:true,vessels:true},seeGroups:['esophagus','stomach','duodenum','jejunum','ileum','large','mesenteries'],vesselGroups:['gut-arteries','gut-veins'],vesselLabel:'Vessels',startHidden:['accessory'],
     meta:[['FMA IDs','FMA7131, FMA7148, FMA7200, FMA7201'],['Parts','128 (82 organ + 46 vessel)']],
     labeled:['Esophagus','Stomach','Duodenum','Ascending colon','Transverse colon','Descending colon','Rectum','Appendix','Ileocecal junction']},
   urinary:{label:'Urinary system',short:'urinary system',scene:'urinary',content:'content-urinary.json',ctxScene:'abdomen',ctx:'urinary',tour:'Path of urine',
-    bodyKeys:['kidney','urinary-bladder','urethra'],tools:{see:true,vessels:true},seeGroups:['kidneys','bladder','adrenal','prostate'],vesselGroups:['renal-arteries','renal-veins','great'],vesselLabel:'Vessels',startHidden:[],
+    bodyKeys:['kidney','urinary-bladder','urethra'],bodyKeysF:['kidney','ureter','urinary-bladder'],tools:{see:true,vessels:true},seeGroups:['kidneys','bladder','adrenal','prostate'],vesselGroups:['renal-arteries','renal-veins','great'],vesselLabel:'Vessels',startHidden:[],
     meta:[['FMA IDs','FMA7203, FMA15900'],['Parts','54']],
     labeled:['Left kidney','Right kidney','Left ureter','Right ureter','Urinary bladder','Urethra','Abdominal aorta','Left renal artery','Left adrenal gland','Right adrenal gland','Prostate']},
   brain:{label:'Brain',short:'brain',scene:'brain',content:'content-brain.json',ctxScene:'head',ctx:'brain',tour:'Path of CSF',bodyKeys:['brain'],
@@ -391,11 +392,21 @@ const ORGANS={
     meta:[['FMA ID','FMA50801'],['Parts','239 (107 brain + 132 artery)']],
     labeled:['Left precentral gyrus','Left postcentral gyrus','Left superior frontal gyrus','Left occipital lobe','Left insula','Cerebellum','Pons','Medulla oblongata',
       'Midbrain','Corpus callosum','Left thalamus','Left lateral ventricle','Third ventricle','Fourth ventricle','Left caudate nucleus','Left hippocampus']},
-  'repro-male':{label:'Male reproductive system',short:'male reproductive system',scene:'repro-male',content:'content-repro-male.json',ctxScene:'pelvis',ctx:'repro-male',tour:'Path of sperm',
+  'repro-male':{maleOnly:true,label:'Male reproductive system',short:'male reproductive system',scene:'repro-male',content:'content-repro-male.json',ctxScene:'pelvis',ctx:'repro-male',tour:'Path of sperm',
     bodyKeys:['testis','epididymis','deferent-duct','seminal-vesicle','prostate','penis'],tools:{see:true,vessels:true},seeGroups:['penis','bladder'],
     vesselGroups:['penile-arteries','penile-veins','great-tarteries','great-tveins'],vesselLabel:'Vessels',startHidden:[],
     meta:[['FMA IDs','FMA7210 testis, FMA9600 prostate'],['Parts','26 (14 organ + 12 vessel)']],
-    labeled:['Left testis','Left epididymis','Left deferent duct','Left seminal vesicle','Prostate','Corpus cavernosum of penis','Corpus spongiosum of penis','Glans penis','Urethra','Urinary bladder']}
+    labeled:['Left testis','Left epididymis','Left deferent duct','Left seminal vesicle','Prostate','Corpus cavernosum of penis','Corpus spongiosum of penis','Glans penis','Urethra','Urinary bladder']},
+  // female-only workstations (Human Reference Atlas, Visible Human Female)
+  'repro-female':{female:true,label:'Female reproductive system',short:'female reproductive system',scene:'repro-female',content:'content-repro-female.json',ctxScene:'pelvis-f',ctx:'repro-female',
+    tour:'Path of the oocyte',bodyKeys:[],bodyKeysF:['uterus','uterine-tube','ovary'],tools:{see:true,vessels:true},seeGroups:['uterus','bladder'],
+    vesselGroups:['great-uarteries','great-uveins'],vesselLabel:'Vessels',startHidden:[],
+    meta:[['FMA IDs','FMA7213, FMA7214 ovaries'],['Parts','30 (26 organ + 4 vessel)'],['Source','Visible Human Female']],
+    labeled:['Fundus of uterus','Body of uterus','Uterine cervix','Left ovary','Right ovary','Ampulla of left uterine tube','Isthmus of left uterine tube','Fimbria of left uterine tube','Infundibulum of right uterine tube','Left uterine artery','Trigone of urinary bladder']},
+  'bones-pelvis-f':{female:true,bone:true,label:'Pelvis (female)',short:'female pelvis',scene:'bones-pelvis-f',content:'content-bones-pelvis-f.json',ctxScene:'pelvis-f',ctx:'bones',
+    tour:'Bone by bone',bodyKeys:[],bodyKeysF:['bones-pelvis'],tools:{see:false,vessels:false},startHidden:['spongy'],
+    meta:[['Parts','14 (8 compact bone, sacrum, coccyx; 6 spongy bone)'],['Source','Visible Human Female']],
+    labeled:['Left ilium (compact bone)','Right ilium (compact bone)','Left ischium (compact bone)','Left pubis (compact bone)','Right pubis (compact bone)','Fused sacrum','Coccyx']}
 };
 // bone workstations: one per skeleton region; meshes, groups and tours come from the data files
 const BONE_WS={
@@ -407,9 +418,21 @@ const BONE_WS={
   lower:{label:'Lower limbs',labeled:['Left femur','Left patella','Left tibia','Left fibula','Left talus','Left calcaneus','Left first metatarsal bone','Proximal phalanx of left big toe']}
 };
 Object.entries(BONE_WS).forEach(([r,b])=>{ORGANS['bones-'+r]={label:b.label,short:b.label.toLowerCase(),bone:true,scene:'bones-'+r,content:'content-bones-'+r+'.json',ctxScene:'skeleton',ctx:r,
-  tour:'Bone by bone',bodyKeys:['bones-'+r],tools:{see:false,vessels:false},startHidden:[],labeled:b.labeled};});
-const BODY_TO_ORGAN={};Object.entries(ORGANS).forEach(([k,o])=>o.bodyKeys.forEach(b=>BODY_TO_ORGAN[b]=k));
-const REGION={thorax:'Chest',abdomen:'Abdomen',head:'Head',skeleton:'Skeleton',pelvis:'Pelvis'};
+  tour:'Bone by bone',bodyKeys:['bones-'+r],bodyKeysF:r==='lower'?['bones-lower']:[],tools:{see:false,vessels:false},startHidden:[],labeled:b.labeled};});
+// which workstation each body-view group opens, separately for the male and the female body
+const BODY_TO_ORGAN={male:{},female:{}};
+Object.entries(ORGANS).forEach(([k,o])=>{o.bodyKeys.forEach(b=>BODY_TO_ORGAN.male[b]=k);(o.bodyKeysF||[]).forEach(b=>BODY_TO_ORGAN.female[b]=k);});
+let SEX='male';
+const b2o=k=>BODY_TO_ORGAN[SEX][k];
+// a female-body card that opens a shared workstation says that workstation uses the male model
+const maleModel=org=>SEX==='female'&&org&&!ORGANS[org].female;
+const REGION={thorax:'Chest',abdomen:'Abdomen',head:'Head',skeleton:'Skeleton',pelvis:'Pelvis','pelvis-f':'Pelvis'};
+const HRA_LICENCE='<a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>';
+function hraCredit(file){
+  const f=SOURCES&&SOURCES.hra&&SOURCES.hra.files[file];
+  return '3D: Human Reference Atlas (HuBMAP), made from the Visible Human Female (National Library of Medicine)'+
+    (f?', '+esc(f.data)+', '+esc(f.creators)+' '+esc(f.date.slice(0,4))+', <a href="'+esc(f.doi)+'" target="_blank" rel="noopener">DOI</a>':'')+', '+HRA_LICENCE;
+}
 const BP3D_CREDIT='3D: BodyParts3D 4.0, \u00a9 The Database Center for Life Science, <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>';
 const CONTENT={};let BODYTEXT={};let SOURCES=null;
 
@@ -489,14 +512,16 @@ const camera=new THREE.PerspectiveCamera(32,1,0.01,50);
 const controls=new THREE.OrbitControls(camera,canvas);
 controls.enableDamping=true;controls.dampingFactor=0.08;controls.autoRotateSpeed=1.2;controls.minDistance=0.25;controls.maxDistance=7;
 const bTween=Tweener(camera,controls);
-const body={scene:new THREE.Scene(),groups:{},layerOn:{skin:true,skeleton:true,muscles:false,vessels:false,nerves:false,organs:true},selected:null,ready:false,mode:'organs'};
-lights(body.scene);
+// two whole bodies: male (BodyParts3D) and female (Human Reference Atlas, Visible Human Female); one is shown at a time
+function makeBody(file){const b={file,scene:new THREE.Scene(),groups:{},layerOn:{skin:true,skeleton:true,muscles:false,vessels:false,nerves:false,organs:true},selected:null,ready:false,mode:'organs'};lights(b.scene);return b;}
+const BODIES={male:makeBody('body'),female:makeBody('body-f')};
+let body=BODIES.male;
 const LAYERS=[['skin','Skin'],['skeleton','Skeleton'],['muscles','Muscles'],['vessels','Vessels'],['nerves','Nerves'],['organs','Organs']];
 const BASE_OPACITY={skin:0.16,skeleton:1,muscles:0.9,vessels:1,nerves:1,organs:1};
 let hoverKey=null;
 
-async function buildBody(){
-  const {meta,buf}=await getScene('body');
+async function buildBody(body){
+  const {meta,buf}=await getScene(body.file);
   const byGroup={};
   meta.meshes.forEach(m=>(byGroup[m.group]=byGroup[m.group]||[]).push(m));
   meta.groups.forEach(g=>{
@@ -507,11 +532,22 @@ async function buildBody(){
     mesh.userData.g=g;body.scene.add(mesh);
     body.groups[g.key]={g,mesh,parts:ms.length,names:ms.map(m=>m.name)};
   });
-  body.total=meta.meshes.length;body.ready=true;
+  body.total=meta.meshes.length;body.ready=true;body.layersAvail=new Set(meta.groups.map(g=>g.layer));
 }
+async function setSex(s){
+  if(SEX===s)return;
+  const prev=body,next=BODIES[s];
+  document.querySelectorAll('#sexSwitch [data-sex]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.sex===s)));
+  if(!next.ready){load.textContent='Loading the '+s+' body…';load.style.opacity=1;await buildBody(next);load.style.opacity=0;}
+  SEX=s;next.mode=prev.mode;Object.assign(next.layerOn,prev.layerOn);next.selected=null;body=next;
+  $('organSearch').value='';bodyLayers();bodyInfo();bodyCam('front');
+  try{history.replaceState(null,'','#'+(s==='female'?'female':'body'));}catch(e){}
+}
+document.querySelectorAll('#sexSwitch [data-sex]').forEach(b=>b.onclick=()=>setSex(b.dataset.sex));
 function bodyLayers(){
   const el=$('layers');el.innerHTML='';
   LAYERS.forEach(([k,label])=>{
+    if(body.layersAvail&&!body.layersAvail.has(k))return; // the female files have no muscle layer
     const b=document.createElement('button');b.type='button';b.className='hb';b.setAttribute('aria-pressed',String(body.layerOn[k]));
     b.textContent=label;
     b.onclick=()=>{body.layerOn[k]=!body.layerOn[k];b.setAttribute('aria-pressed',String(body.layerOn[k]));};
@@ -534,15 +570,19 @@ function bodyList(){
   // a search also finds a group by the names of the parts inside it (typing "femur" finds Lower limbs)
   const hit=o=>q?o.names.filter(n=>n.toLowerCase().includes(q)):[];
   const all=organs().filter(o=>!q||o.g.label.toLowerCase().includes(q)||hit(o).length);
-  const ws=all.filter(o=>BODY_TO_ORGAN[o.g.key]),only=all.filter(o=>!BODY_TO_ORGAN[o.g.key]);
-  const card=o=>{const org=BODY_TO_ORGAN[o.g.key];
+  const ws=all.filter(o=>b2o(o.g.key)),only=all.filter(o=>!b2o(o.g.key));
+  const card=o=>{const org=b2o(o.g.key);
     return '<button class="ocard" type="button" data-key="'+o.g.key+'" aria-current="'+(body.selected===o.g.key)+'"><span class="n">'+dot(o.g.color)+esc(cap(o.g.label))+'</span><span class="s">'+
       (q&&!o.g.label.toLowerCase().includes(q)&&hit(o).length?'Has '+esc(hit(o).slice(0,2).join(', '))+(hit(o).length>2?' and '+(hit(o).length-2)+' more':''):
-       org?esc(ORGANS[org].label===cap(o.g.label)?'Workstation':'In '+ORGANS[org].label.toLowerCase()):'Body view only')+'</span></button>';};
+       org?esc((ORGANS[org].label===cap(o.g.label)?'Workstation':'In '+ORGANS[org].label.toLowerCase())+(maleModel(org)?' (male model)':'')):'Body view only')+'</span></button>';};
+  // female body: workstations with no matching part in the female files, opened from the male model
+  const extra=SEX==='female'?Object.entries(ORGANS).filter(([k,c])=>!c.female&&!c.maleOnly&&!(c.bodyKeysF||[]).length&&!!c.bone===isBones()&&
+    !Object.values(ORGANS).some(f=>f.female&&f.bone&&c.bone&&f.bodyKeysF[0]===c.bodyKeys[0])&&(!q||c.label.toLowerCase().includes(q))):[];
   $('organList').innerHTML=(ws.length?'<div class="ogroup">With a workstation</div><div class="ocards">'+ws.map(card).join('')+'</div>':'')+
     (only.length?'<div class="ogroup">Body view only</div><div class="ocards">'+only.map(card).join('')+'</div>':'')+
-    (!all.length?'<p class="muted small">No '+(isBones()?'bone region':'organ')+' matches “'+esc(q)+'”.</p>':'');
-  $('organList').querySelectorAll('.ocard').forEach(b=>b.onclick=()=>selectOrgan(body.selected===b.dataset.key?null:b.dataset.key,true));
+    (extra.length?'<div class="ogroup">Not in the female files: open the male model</div><div class="ocards">'+extra.map(([k,c])=>'<button class="ocard" type="button" data-org="'+k+'"><span class="n">'+esc(c.label)+'</span><span class="s">Workstation (male model)</span></button>').join('')+'</div>':'')+
+    (!all.length&&!extra.length?'<p class="muted small">No '+(isBones()?'bone region':'organ')+' matches “'+esc(q)+'”.</p>':'');
+  $('organList').querySelectorAll('.ocard').forEach(b=>b.onclick=()=>b.dataset.org?go(b.dataset.org):selectOrgan(body.selected===b.dataset.key?null:b.dataset.key,true));
 }
 $('organSearch').oninput=bodyList;
 function bodyInfo(){
@@ -550,19 +590,22 @@ function bodyInfo(){
   bodyList();
   if(!k){
     if(isBones()){
-      el.innerHTML='<div class="kicker">Whole body · Bones</div><h2>Explore the skeleton</h2><p class="muted">Tap a part of the skeleton or choose a region below. Each region opens a 3D study view with every bone named and labelled, a guided tour and quoted text.</p>'+
-        '<div class="facts"><span class="fact">Source <b>BodyParts3D 4.0</b></span><span class="fact">Regions <b>'+organs().length+'</b></span><span class="fact">Bone meshes <b>'+organs().reduce((a,o)=>a+o.parts,0)+'</b></span></div>';
+      el.innerHTML='<div class="kicker">'+(SEX==='female'?'Female':'Male')+' body · Bones</div><h2>Explore the skeleton</h2><p class="muted">Tap a part of the skeleton or choose a region below. Each region opens a 3D study view with every bone named and labelled, a guided tour and quoted text.</p>'+
+        (SEX==='female'?box('note','About the female skeleton','The female files have only the pelvis and the bones of the thigh and leg. The other regions open the male skeleton.'):'')+
+        '<div class="facts"><span class="fact">Source <b>'+(SEX==='female'?'Human Reference Atlas':'BodyParts3D 4.0')+'</b></span><span class="fact">Regions <b>'+organs().length+'</b></span><span class="fact">Bone meshes <b>'+organs().reduce((a,o)=>a+o.parts,0)+'</b></span></div>';
       return;
     }
-    el.innerHTML='<div class="kicker">Whole body</div><h2>Explore the human body</h2><p class="muted">Tap an organ in the model or choose one below. Turn layers on and off to look under the skin. Organs with a workstation open in their own 3D study view.</p>'+
-      '<div class="facts"><span class="fact">Source <b>BodyParts3D 4.0</b></span><span class="fact">Body <b>adult male reference</b></span><span class="fact">Parts <b>'+(body.total||'').toLocaleString()+'</b></span></div>';
+    el.innerHTML='<div class="kicker">Whole body · '+(SEX==='female'?'Female':'Male')+'</div><h2>Explore the human body</h2><p class="muted">Tap an organ in the model or choose one below. Turn layers on and off to look under the skin. Organs with a workstation open in their own 3D study view.</p>'+
+      (SEX==='female'?box('note','About the female body','Made from the Visible Human Female, a 59-year-old woman (National Library of Medicine), by the Human Reference Atlas. It has fewer organs than the male body: organs that are the same in both open the male workstation, and the reproductive organs and pelvis have their own.'):'')+
+      '<div class="facts"><span class="fact">Source <b>'+(SEX==='female'?'Human Reference Atlas':'BodyParts3D 4.0')+'</b></span><span class="fact">Body <b>'+(SEX==='female'?'adult female (Visible Human Female)':'adult male reference')+'</b></span><span class="fact">Parts <b>'+(body.total||'').toLocaleString()+'</b></span></div>';
     return;
   }
-  const o=body.groups[k],org=BODY_TO_ORGAN[k];
+  const o=body.groups[k],org=b2o(k);
   const text=org&&CONTENT[org]?CONTENT[org].topics.overview.slice(0,1):(BODYTEXT.text&&BODYTEXT.text[k])||[];
-  el.innerHTML='<div class="kicker">'+dot(o.g.color)+(o.g.bone?'Bone region':'Organ')+'</div><h2>'+esc(cap(o.g.label))+'</h2>'+
+  el.innerHTML='<div class="kicker">'+dot(o.g.color)+(o.g.bone?'Bone region':'Organ')+' · '+(SEX==='female'?'female':'male')+' body</div><h2>'+esc(cap(o.g.label))+'</h2>'+
     '<div class="facts">'+(o.g.fma?'<span class="fact">FMA ID'+(o.g.fma.includes(',')?'s':'')+' <b>'+esc(o.g.fma)+'</b></span>':'')+'<span class="fact">Parts in body view <b>'+o.parts+'</b></span></div>'+
-    '<p class="cite" style="margin:8px 0 0">'+BP3D_CREDIT+'</p>'+
+    '<p class="cite" style="margin:8px 0 0">'+(SEX==='female'?hraCredit():BP3D_CREDIT)+'</p>'+
+    (maleModel(org)?box('note','Shared workstation','The workstation for this organ uses the male model (BodyParts3D). This female body shows the female model of the organ.'):'')+
     (o.g.bone&&org&&CONTENT[org]?'<p class="small" style="margin:10px 0 0"><b>Bones in this region:</b> '+esc(CONTENT[org].flow.map(f=>f.title).join(', '))+'</p>':'')+
     (text.length?quotes(text):'<p class="muted small">No quoted text yet.</p>')+
     (org?'<div class="row-actions"><button class="btn primary" id="openOrgan" type="button">Open '+esc(ORGANS[org].short||ORGANS[org].label.toLowerCase())+' workstation<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg></button></div>'
@@ -616,7 +659,7 @@ const cCanvas=$('ctxCanvas');
 const cRenderer=makeRenderer(cCanvas);
 const cCam=new THREE.PerspectiveCamera(30,1,0.01,10);
 const CTXS={};let C={center:new THREE.Vector3(),dist:1};
-const CTX_BASE={bladder:0.4,'repro-male':1,skull:0.3,spine:0.3,thorax:0.3,upper:0.3,pelvis:0.3,lower:0.3,other:0.3,bones:0.5,lungs:0.16,airway:0.35,diaphragm:0.25,heart:1,liver:0.5,gut:0.3,urinary:0.6,spleen:0.6,brain:0.4};
+const CTX_BASE={bladder:0.4,'repro-male':1,'repro-female':1,skull:0.3,spine:0.3,thorax:0.3,upper:0.3,pelvis:0.3,lower:0.3,other:0.3,bones:0.5,lungs:0.16,airway:0.35,diaphragm:0.25,heart:1,liver:0.5,gut:0.3,urinary:0.6,spleen:0.6,brain:0.4};
 async function buildContext(name){
   if(CTXS[name])return;
   const Cx={scene:new THREE.Scene(),groups:{},center:new THREE.Vector3(),dist:1};lights(Cx.scene);CTXS[name]=Cx;
@@ -687,7 +730,7 @@ function panels(){
   $('wsKicker').textContent=cfg.bone?'Bone workstation':'Organ workstation';$('backBody').lastChild.textContent=cfg.bone?'All bones':'All organs';
   $('organSub').textContent=REGION[cfg.ctxScene]+' · '+W.meshes.length+' named parts · Tour: '+cfg.tour+' ('+W.content.flow.length+' steps)';
   $('tabFlow').textContent=cfg.tour;
-  $('ctxLabel').textContent=cfg.bone?'In the skeleton':'In the '+REGION[cfg.ctxScene].toLowerCase();
+  $('ctxLabel').textContent=cfg.ctxScene==='skeleton'?'In the skeleton':'In the '+REGION[cfg.ctxScene].toLowerCase();
   $('tSee').hidden=!cfg.tools.see;$('tVessels').hidden=!cfg.tools.vessels;$('tVessels').textContent=cfg.vesselLabel||'Vessels';ui.see=false;$('tSee').setAttribute('aria-pressed','false');
   const gb=$('partGroups');gb.innerHTML='';
   W.meta.groups.forEach(g=>{
@@ -743,6 +786,8 @@ function renderNotes(){
   const W=H;
   const gaps=[].concat(W.content.gaps||[]).map(g=>box('warn','Not in this model',esc(g)));
   const about=[].concat(W.cfg.gap||[],W.content.notes||[]).map(g=>box('note','About this model',esc(g)));
+  if(maleModel(W.org))about.unshift(box('note','Male model','You opened this from the female body. This workstation uses the male model (BodyParts3D, one adult male). '+
+    ((W.cfg.bodyKeysF||[]).length?'The female body view shows the female model of this organ.':'The female files have no model of this.')));
   const ex=excludedNote(W);
   const n=gaps.length+about.length+(ex?1:0);
   $('notes').innerHTML='<p class="muted small">What this 3D model does not show, and anything in the source data we left out or that differs from the textbook.</p>'+
@@ -774,7 +819,7 @@ function hInfo(){
   const W=H,el=$('hInfo'),x=W.selected;
   document.querySelectorAll('#partList .row').forEach(r=>r.setAttribute('aria-current',String(!!x&&r.dataset.id===x.userData.m.id)));
   if(!x){
-    const bg=body.groups[W.cfg.bodyKeys[0]],meta=W.cfg.meta||[[bg&&bg.g.fma.includes(',')?'FMA IDs':'FMA ID',bg?bg.g.fma:''],['Parts',String(W.meshes.length)]];
+    const bg=BODIES.male.groups[W.cfg.bodyKeys[0]],meta=W.cfg.meta||[[bg&&bg.g.fma.includes(',')?'FMA IDs':'FMA ID',bg?bg.g.fma:''],['Parts',String(W.meshes.length)]];
     el.innerHTML='<div class="kicker">Overview</div><h2>'+esc(W.cfg.label)+'</h2><div class="facts">'+meta.map(([k,v])=>'<span class="fact">'+esc(k)+' <b>'+esc(v)+'</b></span>').join('')+'</div>'+
       '<p class="muted small" style="margin-top:10px">Tap any part in the model, or pick one from the Parts tab.</p>'+quotes(W.content.topics.overview);
     return;
@@ -791,8 +836,8 @@ function hInfo(){
       (missing.length?box('warn','Not in this model','BodyParts3D has no segmental '+missing.join(' or ')+' mesh for this segment.'):'');
   }else if(u.m.lobe){seg='<div class="facts"><span class="fact">'+(W.cfg.lobeWord||'Lobe')+' <b>'+esc(lobeLabel(u.m.lobe))+'</b></span></div>';}
   el.innerHTML='<div class="kicker">'+dot(u.grp.color)+esc(u.grp.label)+'</div><h2>'+esc(u.m.name)+'</h2>'+
-    '<div class="facts"><span class="fact">FMA ID <b>'+esc(u.m.fma)+'</b></span><span class="fact">Mesh <b>'+esc(u.m.id)+'</b></span></div>'+
-    '<p class="cite" style="margin:8px 0 0">'+BP3D_CREDIT+'</p>'+seg+
+    '<div class="facts">'+(u.m.fma?'<span class="fact">'+(u.m.fma.startsWith('UBERON')?'UBERON ID':'FMA ID')+' <b>'+esc(u.m.fma)+'</b></span>':'')+'<span class="fact">Mesh <b>'+esc(u.m.id.replace(/^HRA:/,''))+'</b></span></div>'+
+    '<p class="cite" style="margin:8px 0 0">'+(u.m.src?hraCredit(u.m.src):BP3D_CREDIT)+'</p>'+seg+
     (t?(t.note?box('note','Note',esc(t.note)):'')+quotes((u.m.seg&&W.content.topics.segment?W.content.topics.segment:[]).concat(W.content.topics[t.topic])):'<p class="muted">No quoted passage yet.</p>')+
     '<div class="row-actions"><button class="btn" id="clearSel" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>Back to overview</button></div>';
   $('clearSel').onclick=()=>selectPart(null);
@@ -980,7 +1025,7 @@ function renderSources(){
   const totalQ=t.sections.reduce((a,s)=>a+s.quotes,0);
   $('sourcesBody').innerHTML='<div class="panel">'+
     '<div class="card"><p class="lead" style="margin:0">Every 3D structure in this atlas comes from a published anatomy dataset, and every sentence of explanation is quoted word for word from an open textbook. Nothing is modelled or written by hand.</p>'+
-      '<div class="facts" style="margin-top:14px"><span class="fact">3D parts from <b>'+esc(g.name)+'</b></span><span class="fact">Quoted sentences <b>'+totalQ+'</b></span><span class="fact">Textbook sections <b>'+t.sections.length+'</b></span></div></div>'+
+      '<div class="facts" style="margin-top:14px"><span class="fact">3D parts from <b>'+esc(g.name)+(S.hra?' (male) and the Human Reference Atlas (female)':'')+'</b></span><span class="fact">Quoted sentences <b>'+totalQ+'</b></span><span class="fact">Textbook sections <b>'+t.sections.length+'</b></span></div></div>'+
     '<div class="srcgrid">'+
       '<div class="card"><div class="kicker">3D anatomy data</div><h2>'+esc(g.name)+'</h2><p class="muted small" style="margin:0">'+esc(g.body)+'</p>'+
         '<dl class="kv"><dt>Publisher</dt><dd>'+esc(g.publisher)+'</dd><dt>Licence</dt><dd>'+link(g.licenseUrl,g.license)+'</dd>'+
@@ -992,6 +1037,16 @@ function renderSources(){
         '<dl class="kv"><dt>Licence</dt><dd>'+link(t.licenseUrl,t.license)+' (non-commercial, share-alike)</dd><dt>Book</dt><dd>'+link(t.url,'openstax.org')+', where the authors and contributors are listed</dd>'+
         '<dt>Source files</dt><dd>'+link(t.repo,'OpenStax on GitHub')+'</dd><dt>Use</dt><dd>Quoted unchanged, each with a link to its section</dd></dl></div>'+
     '</div>'+
+    (S.hra?'<div class="card"><div class="kicker">3D anatomy data · female body</div><h2>Human Reference Atlas 3D Reference Object Library</h2>'+
+      '<p class="muted small" style="margin:0">HuBMAP (Human BioMolecular Atlas Program). Models made from the Visible Human Female (National Library of Medicine; the donor was a 59-year-old woman). Used for the female body, the female reproductive workstation and the female pelvis.</p>'+
+      '<dl class="kv"><dt>Licence</dt><dd>'+link('https://creativecommons.org/licenses/by/4.0/','CC BY 4.0')+' (stated in each model\u2019s metadata)</dd>'+
+      '<dt>Files</dt><dd>'+link('https://github.com/hubmapconsortium/ccf-releases','github.com/hubmapconsortium/ccf-releases')+', release v1.2 models, with the v1.3 metadata</dd>'+
+      '<dt>Overall citation</dt><dd>Kristen Browne, Heidi Schlehlein, Bruce W. Herr II, Ellen Quardokus, Andreas Bueckle, Katy B\u00f6rner. 2022. HuBMAP CCF 3D Reference Object Library. '+link('https://humanatlas.io/3d-reference-library','humanatlas.io')+'</dd>'+
+      '<dt>Placement</dt><dd>The organs share one body frame in metres; the only change is a shift of '+esc(S.hra.floorShiftM)+' m upward so the feet are at the floor.</dd></dl>'+
+      '<div class="tbl-wrap"><table><thead><tr><th>Model</th><th>Creators</th><th>Reviewed by</th><th>DOI</th></tr></thead><tbody>'+
+      Object.entries(S.hra.files).map(([k,f])=>'<tr><td>'+esc(f.data)+(/Visible Human Male/.test(f.description)?'<br><span class="small differ">Metadata says “Visible Human Male”; see the Notes tab</span>':'')+'</td><td>'+esc(f.creators)+'</td><td>'+esc(f.reviewers||'not listed')+'</td><td>'+link(f.doi,f.doi.replace('https://doi.org/',''))+'</td></tr>').join('')+
+      '</tbody></table></div>'+
+      '<p class="small muted" style="margin:10px 0 0">Not used: '+Object.values(S.hra.leftOut).map(f=>esc(f.data)+' ('+esc(f.why)+')').join('; ')+'</p></div>':'')+
     '<div class="card"><div class="kicker">Textbook sections used</div><h2>Every section quoted in this atlas</h2>'+
       '<div class="tbl-wrap"><table><thead><tr><th>Section</th><th>Title</th><th>Quotes</th><th>Used in</th></tr></thead><tbody>'+
       t.sections.map(s=>'<tr><td class="num">'+esc(s.number)+'</td><td>'+link(s.url,s.title)+'</td><td class="num">'+s.quotes+'</td><td>'+esc(s.used.join(', '))+'</td></tr>').join('')+
@@ -1027,7 +1082,7 @@ async function go(v){
   $('screenBody').hidden=!isBody;$('screenOrgan').hidden=isBody||isSrc;$('screenSources').hidden=!isSrc;
   $('crumbBody').hidden=isBody;$('crumbSep').hidden=isBody;
   $('navSources').setAttribute('aria-current',isSrc?'page':'false');
-  try{history.replaceState(null,'','#'+v);}catch(e){}
+  try{history.replaceState(null,'','#'+(v==='body'&&SEX==='female'?'female':v));}catch(e){}
   stopPlay();clearLabels();window.scrollTo(0,0);
   if(isSrc){view='sources';$('crumbHere').textContent='Sources';renderSources();return;}
   if(isBody){if(view!=='body'&&H&&ORGANS[view]&&isBones()!==!!ORGANS[view].bone)setMode(ORGANS[view].bone?'bones':'organs');view='body';$('crumbHere').textContent='Whole body';resizeAll();if(body.selected)selectOrgan(body.selected,true);else bodyCam('front');return;}
@@ -1040,7 +1095,7 @@ async function go(v){
   hCtl.minDistance=H.radius*1.4;hCtl.maxDistance=H.radius*12;
   hCam.position.copy(H.center).add(new THREE.Vector3(H.radius*3,H.radius*2,H.radius*10));hCtl.target.copy(H.center);
   C.dist=Math.max(0.85,H.radius*6);C.center.copy(H.center);
-  if(H.cfg.bone){const bb=new THREE.Box3().setFromObject(C.scene);bb.getCenter(C.center);C.dist=bb.getSize(new THREE.Vector3()).y*2.2;}
+  if(H.cfg.ctxScene==='skeleton'){const bb=new THREE.Box3().setFromObject(C.scene);bb.getCenter(C.center);C.dist=bb.getSize(new THREE.Vector3()).y*2.2;}
   view=v;organView('anterior',1400);
 }
 $('crumbBody').onclick=()=>go('body');
@@ -1070,7 +1125,7 @@ function tick(){
 (async()=>{
   try{
     const keys=Object.keys(ORGANS);
-    const [cts]=await Promise.all([Promise.all(keys.map(k=>fetch('data/'+ORGANS[k].content).then(r=>r.json()))),buildBody()]);
+    const [cts]=await Promise.all([Promise.all(keys.map(k=>fetch('data/'+ORGANS[k].content).then(r=>r.json()))),buildBody(BODIES.male)]);
     keys.forEach((k,i)=>CONTENT[k]=cts[i]);
     try{BODYTEXT=await fetch('data/content-body.json').then(r=>r.json());}catch(e){BODYTEXT={};}
     try{SOURCES=await fetch('data/sources.json').then(r=>r.json());}catch(e){SOURCES=null;}
@@ -1079,7 +1134,9 @@ function tick(){
     camera.position.set(2.6,1.9,5.2);controls.target.set(0,0.95,0);
     tick();
     const h=location.hash.slice(1);
-    if(ORGANS[h]||h==='sources')go(h);else bodyCam('front');
+    if(h==='female'){await setSex('female');}
+    else if(ORGANS[h]&&ORGANS[h].female){await setSex('female');go(h);}
+    else if(ORGANS[h]||h==='sources')go(h);else bodyCam('front');
   }catch(err){load.textContent='The anatomy data did not load ('+err.message+'). Reload the page to try again.';}
 })();
 })();

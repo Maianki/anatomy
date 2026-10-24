@@ -38,7 +38,7 @@ class Module:
         return re.findall(r".+?\.[\u201d\"\u2019]?(?=\s+[A-Z\u201c(]|$)", self.paras[pid])
 
     def ok(self, s):
-        return not re.search(r"\(\s*\)|\(\s*(?:(?:and|or|see|also|,|;)\s*)+\)|\(see [a-z]?\s*\)|\([a-z]\)| shows | shown in ,| in \.$| in ,", s)
+        return not re.search(r"\(\s*\)|\(\s*(?:(?:and|or|see|also|,|;)\s*)+\)|\(see [a-z]?\s*\)|\([a-z]\)| shows | shown in ,| in \.$| in ,|\. (?:provides|shows|lists|summarizes) | of and ,", s)
 
     def section_pids(self, title, under=None):
         return [p for p in self.paras if self.section[p] == title and p not in self.boxed and (under is None or under in self.path[p])]
@@ -86,7 +86,7 @@ class Module:
         i = p.index(prefix)  # fails loudly if the words are not in the source
         m = re.search(r"\.[\u201d\"\u2019]?(?=\s|$)", p[i:])
         s = p[i:i + m.end()]
-        assert not re.search(r"\(\s*\)|\(\s*(?:(?:and|or|see|also|,|;)\s*)+\)|\(see [a-z]?\s*\)|\([a-z]\)| shows | shown in ,| in \.$| in ,", s), s  # sentence points at a figure we don't show
+        assert not re.search(r"\(\s*\)|\(\s*(?:(?:and|or|see|also|,|;)\s*)+\)|\(see [a-z]?\s*\)|\([a-z]\)| shows | shown in ,| in \.$| in ,|\. (?:provides|shows|lists|summarizes) | of and ,", s), s  # sentence points at a figure we don't show
         sec = self.section[pid]
         if sec == "Chapter Review":  # on openstax.org these paragraphs live on the chapter's review page
             ch = self.number.split(".")[0]

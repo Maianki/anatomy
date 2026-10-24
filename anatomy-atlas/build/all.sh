@@ -1,6 +1,7 @@
 #!/bin/sh
 # Rebuild every data file the site loads.
-# Usage: build/all.sh <@dagno/anatomy-model package dir> <isa_BP3D_4.0_obj_99.zip> <output dir, e.g. site/data>
+# Usage: HRA_DIR=<ccf-releases checkout> build/all.sh <@dagno/anatomy-model package dir> <isa_BP3D_4.0_obj_99.zip> <output dir, e.g. site/data>
+#   HRA_DIR: github.com/hubmapconsortium/ccf-releases (female body, Human Reference Atlas); see README for the commit used.
 #   Geometry is read from the official BodyParts3D archive; names, FMA IDs and concepts from the npm package
 #   (verified identical to the official tables by verify_bp3d.py).
 # Order matters: build3.py (lungs) and build5.py (brain) record meshes with data errors, which build.py (body) leaves out.
@@ -20,6 +21,7 @@ python3 -I "$HERE/build.py" "$SRC" "$OUT"    # whole body
 python3 -I "$HERE/build2.py" "$SRC" "$OUT"   # heart + thorax context
 python3 -I "$HERE/build4.py" "$SRC" "$OUT"   # liver, digestive tract, urinary + abdomen context
 python3 -I "$HERE/build7.py" "$SRC" "$OUT"   # male reproductive + pelvis context
+python3 -I "$HERE/build8.py" "$SRC" "$OUT"   # female body, female reproductive, female pelvis (needs HRA_DIR)
 python3 -I "$HERE/content_heart.py" "$OS/m46676.cnxml" "$OUT/heart2.json" "$OUT/content-heart.json"
 python3 -I "$HERE/content_lungs.py" "$OS" "$OUT/lungs.json" "$OUT/content-lungs.json"
 python3 -I "$HERE/content_abdomen.py" "$OS" "$OUT"
@@ -27,8 +29,9 @@ python3 -I "$HERE/content_brain.py" "$OS" "$OUT" "$SRC" "$BP/partof_element_part
 python3 -I "$HERE/content_body.py" "$OS" "$OUT"
 python3 -I "$HERE/content_bones.py" "$OS" "$OUT"
 python3 -I "$HERE/content_repro.py" "$OS" "$OUT"
+python3 -I "$HERE/content_female.py" "$OS" "$OUT"
 python3 -I "$HERE/content_sources.py" "$OUT" "$PKG" "$HERE/../sources/verification" "$HERE/../sources/crosscheck/webmd.json"   # Sources screen: sections and quote counts actually used
-for n in body heart2 thorax lungs liver gut urinary abdomen brain head skeleton bones-skull bones-spine bones-thorax bones-upper bones-pelvis bones-lower repro-male pelvis; do
+for n in body heart2 thorax lungs liver gut urinary abdomen brain head skeleton bones-skull bones-spine bones-thorax bones-upper bones-pelvis bones-lower repro-male pelvis body-f repro-female bones-pelvis-f pelvis-f; do
   base64 < "$OUT/$n.bin.gz" | tr -d '\n' > "$OUT/$n.gz.txt"
   rm "$OUT/$n.bin.gz"
 done

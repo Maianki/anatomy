@@ -12,11 +12,12 @@ TITLES = {  # OpenStax A&P 2e section titles, as passed to contentlib.slug in th
     "25.3": "Gross Anatomy of the Kidney", "Ch. 19": "Chapter Review",
     "7.1": "Divisions of the Skeletal System", "7.2": "The Skull", "7.3": "The Vertebral Column", "7.4": "The Thoracic Cage",
     "8.1": "The Pectoral Girdle", "8.2": "Bones of the Upper Limb", "8.3": "The Pelvic Girdle and Pelvis", "8.4": "Bones of the Lower Limb",
-    "27.1": "Anatomy and Physiology of the Testicular Reproductive System"}
+    "27.1": "Anatomy and Physiology of the Testicular Reproductive System", "27.2": "Anatomy and Physiology of the Ovarian Reproductive System"}
 NAMES = {"heart": "Heart", "lungs": "Lungs", "liver": "Liver, gallbladder and pancreas", "gut": "Digestive tract",
          "urinary": "Urinary system", "brain": "Brain", "body": "Whole body (spleen, diaphragm)",
          "bones-skull": "Skull", "bones-spine": "Vertebral column", "bones-thorax": "Thoracic cage", "bones-upper": "Upper limbs",
-         "bones-pelvis": "Pelvis", "bones-lower": "Lower limbs", "repro-male": "Male reproductive system"}
+         "bones-pelvis": "Pelvis", "bones-lower": "Lower limbs", "repro-male": "Male reproductive system",
+         "repro-female": "Female reproductive system", "bones-pelvis-f": "Pelvis (female)"}
 sections = {}
 
 
@@ -60,6 +61,7 @@ data["geometry"]["licenseUpdated"] = "2025-02-27"
 data["geometry"]["note"] = ("The OBJ files still carry an older CC BY-SA 2.1 Japan notice; the database's current licence page "
                             "(updated 2025-02-27) replaces it with CC BY 4.0.")
 if VER:
+    h = json.load(open(f"{VER}/geometry-hra.json"))
     o = json.load(open(f"{VER}/openstax.json")); b = json.load(open(f"{VER}/bodyparts3d.json")); g = json.load(open(f"{VER}/geometry.json"))
     data["verification"] = {
         "date": "2026-10-24",
@@ -69,8 +71,13 @@ if VER:
             "The 3D geometry is read straight from the official archive (isa_BP3D_4.0_obj_99.zip). In every organ and bone workstation, every vertex of the original lies within "
             f"{max(v['max_mm'] for v in g.values()):.1f} mm of what you see.",
             "The data errors listed in each organ's Notes tab (two misplaced lung arteries, two brain structures named for the wrong side) are present in the official archive itself.",
+            f"Female body: every Human Reference Atlas model used has a CC BY 4.0 licence and a DOI in its own metadata. In the female reproductive "
+            f"and pelvis workstations, every vertex of the original lies within {max(v['max_mm'] for v in h.values() if isinstance(v, dict) and 'max_mm' in v):.1f} mm "
+            f"of what you see (files pinned by SHA-256, ccf-releases commit {h['commit'][:7]}).",
             "The official archive has five pairs of meshes with the same FMA ID and identical geometry (hyoid bone FJ2772/FJ3201, cricoid cartilage FJ2440/FJ2769, celiac artery FJ1846/FJ2013, hepatic artery FJ1916/FJ2386 and FJ1924/FJ2394). Only the first mesh of each pair is shown.",
         ]}
+if os.path.exists(f"{OUT}/hra-sources.json"):  # female body: Human Reference Atlas files actually used (written by build8.py)
+    data["hra"] = json.load(open(f"{OUT}/hra-sources.json"))
 if XCHECK:
     data["crosscheck"] = json.load(open(XCHECK))
 json.dump(data, open(f"{OUT}/sources.json", "w"), indent=1)

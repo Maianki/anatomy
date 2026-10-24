@@ -3,7 +3,7 @@
 The single reference for what we are building, what has been decided and why, what the data is
 missing, and what still needs checking. Update it whenever a decision changes or a check is done.
 
-Last updated: 2026-10-24 (bones added; organ tools on every workstation; WebMD cross-check; verified against the official BodyParts3D archive and the live OpenStax site).
+Last updated: 2026-10-24 (female body from the Human Reference Atlas; male reproductive workstation; bones; verified against the official BodyParts3D archive, the HRA files and the live OpenStax site).
 
 ## 1. What we are building
 
@@ -11,7 +11,7 @@ Last updated: 2026-10-24 (bones added; organ tools on every workstation; WebMD c
   and their parts.
 - **Version 1 (now):** organs and their parts, and the bones of the skeleton (normal anatomy).
 - **Version 2 (later):** diseases. Disease passages in the textbook are deliberately left out of version 1.
-- **Flow:** a whole human body opens first. Tapping an organ selects it. Organs with enough detail
+- **Flow:** a whole human body opens first, male or female (switch). Tapping an organ selects it. Organs with enough detail
   open an organ workstation: the organ alone in 3D, with its parts named, quoted text and a guided tour.
 - **Top priority:** accuracy. Nothing is assumed or invented. Where something is unclear or missing,
   the app says so.
@@ -31,7 +31,7 @@ Last updated: 2026-10-24 (bones added; organ tools on every workstation; WebMD c
 | D9 | Organs are selected by **FMA concept or exact dataset name**, not by the dataset's "system" field. | The system field has errors (brain ventricles under "cardiac", liver tissue under "venous", choroid plexus under "sensory"). |
 | D10 | Meshes with **errors in the source data are left out** (not corrected) and listed on the page with the reason. | Correcting the source ourselves would be an assumption. |
 | D11 | **Gaps are shown, not filled**: "Not in this model" and "About this model" boxes on each page. | Students must know what the model does not show. |
-| D12 | **Adult male body only** for now. A female body is added only when a verified source exists. | No verified free female full-body model with separate organs was found. |
+| D12 | **Two whole bodies, male and female** (switch on the body page). Male: BodyParts3D. Female: Human Reference Atlas models of the Visible Human Female (D36). | The user asked for both. Each body comes from one real person, so organs are never mixed between bodies. |
 | D13 | Workstation layout **inspired by the reference video** (an angiogram trainer): context view, main 3D view, exact controls, orientation cube, leader-line labels. **None of its angiogram content is copied.** | The user asked to use it as a layout reference only. |
 | D14 | Workstation features: organ-in-region context view that turns with the main view; labels; section cuts (transverse, coronal, sagittal) through the real geometry; explode; see-through; standard anatomical views with angle readouts; orientation cube (A/P/L/R/S/I); guided tour; part list with FMA IDs. | Agreed after the heart workstation was shown. |
 | D15 | **Lungs are shown without lung surfaces.** Lobes are shown through the airways and vessels the dataset assigns to them. | The dataset has no lung surface, fissure or pleura meshes; drawing an outline would be invented. |
@@ -55,8 +55,10 @@ Last updated: 2026-10-24 (bones added; organ tools on every workstation; WebMD c
 | D33 | **WebMD is used only to cross-check facts**, as D5 requires. No WebMD text, image or model is copied. For each check, `sources/crosscheck/webmd.json` records our quote, the WebMD page (title, reviewer, date), whether the two agree, and a summary in our own words. It is shown on the Sources page with a thank-you. **NIH 3D is not used**, so it is not credited. | The user asked for a shout-out to sources used. Crediting a source we did not use would be inaccurate. |
 | D34 | Every selected part shows the BodyParts3D credit with a link to the licence, beside its FMA ID and mesh ID. | "Citations everywhere": each 3D part carries its source, as each quote does. |
 | D35 | **Male reproductive workstation** from BodyParts3D: the 12 meshes the dataset files as reproductive, plus the urethra, the dorsal vessels of the penis, the testicular arteries and veins, and the bladder for context. Text from OpenStax 27.1 (titled "Anatomy and Physiology of the Testicular Reproductive System" in the current edition) and 25.2. Passages on disorders (prostate enlargement, prostate cancer, vasectomy) are left for version 2. The body view now shows these organs and the urethra; before this they were missing from it. | Requested by the user. Every mesh is from the dataset; the build fails if a candidate mesh matches no group or two. |
-| D36 | **Female body: not built yet.** BodyParts3D is one male body and has no female structures (no uterus, ovaries, uterine tubes, vagina, vulva or breast). A candidate source is the Human Reference Atlas (HRA) reference organs on NIH 3D, built from the Visible Human Female and licensed CC BY. Its ovaries and a female body set are confirmed; a uterus and the full contents still need checking. humanatlas.io is blocked by this environment's network policy. Placing female organs in the male body is not done: they come from a different person, and the pelvis differs between the sexes (OpenStax 8.3). Waiting on the user's choice. | Accuracy first: no invented or mismatched anatomy. |
+| D36 | **Female body from the Human Reference Atlas (HRA)** 3D Reference Object Library (HuBMAP), files from github.com/hubmapconsortium/ccf-releases (release v1.2 models with v1.3 metadata, commit b036a91, each file pinned by SHA-256). Each model's own metadata gives CC BY 4.0, a DOI, creators and reviewers. Only models made from the **Visible Human Female** (NLM; the donor was a 59-year-old woman) are used: skin, pelvis, both knees (femur, patella, tibia, fibula), heart, lungs with bronchi and larynx, liver, pancreas, spleen, kidneys, ureters, bladder, small intestine, thymus, spinal cord, eyes, blood vessels, uterus, uterine tubes and ovaries. **Left out:** the large intestine (a custom sculpt from Stony Brook data), the brain (Allen atlas), and the full-term placenta (pregnancy). The organs already share one body frame in metres with the same axes as ours, so the only change is a 0.7948 m upward shift that puts the feet at the floor. Names and IDs come from HRA's crosswalk table; the hip-bone meshes are named from their own node names, because the crosswalk gives only a tissue ("Compact bone tissue"). Some files store every triangle with its own corners; exactly coincident vertices are merged before simplifying, which leaves the surface unchanged. | The user asked for a separate female body with female reproductive organs. HRA is the only verified, openly licensed scan-based female set found; using only Visible Human Female models keeps the body to one person. |
 | D37 | The body page's bone search also matches the names of the bones inside each region ("femur" finds Lower limbs), and a selected region lists its bone groups. | The user could not find the femur: it was in the Lower limbs workstation, but nothing on the body page named it. |
+| D38 | **Shared organs open the male workstations.** In the female body, organs that are the same in both sexes (heart, lungs, liver and pancreas, small intestine, urinary organs, and the skeleton outside the pelvis) open the existing male workstation. The card says "(male model)", and the workstation's Notes tab says so too. Male organs are never placed inside the female body; the female body view always shows the female models. Organs the female files lack (brain, skull, spine, ribs, upper limbs) appear under "Not in the female files: open the male model". | The user asked to reuse the male organs rather than rebuild them. Placing male geometry in the female body would put organs of a different person, with a different pelvis, in the wrong places. |
+| D39 | **Female-only workstations**: female reproductive system (uterus, cervix, uterine tubes, ovaries, uterine arteries and veins, bladder for context; text from OpenStax 27.2) and female pelvis (ilium, ischium, pubis, sacrum, coccyx; text from 8.3, including its comparison of the female and male pelvis, and 7.3). Disease passages are left for version 2. | The structures that differ between the sexes. |
 
 ## 3. What is built
 
@@ -76,6 +78,8 @@ Last updated: 2026-10-24 (bones added; organ tools on every workstation; WebMD c
 | Pelvis | Pelvis | Bone by bone, 2 steps | 8.3, 7.3 |
 | Lower limbs | Lower limbs | Bone by bone, 8 steps | 8.4 |
 | Male reproductive system | Testis, epididymis, deferent duct, seminal vesicle, prostate, penis | Path of sperm, 7 steps | 27.1, 25.2 |
+| Female reproductive system (female body) | Uterus, uterine tube, ovary | Path of the oocyte, 6 steps | 27.2, 25.2 |
+| Pelvis (female) | Pelvis in the female body, bones mode | Bone by bone, 6 steps | 8.3, 7.3 |
 
 Quoted sections also include the Chapter 19 Chapter Review page (one heart quote).
 
@@ -124,7 +128,13 @@ The geometry and the FMA ID are identical in each pair (checked on the official 
   bones, the dataset has 199: every other bone is present, each as its own mesh (the sternum as three parts).
 - **Male reproductive:** no scrotum, spermatic cord, ejaculatory ducts, bulbourethral glands or prepuce. The
   urethra is one mesh (its four regions are not separate).
-- **Female:** none. BodyParts3D has no female body or female organs (D36).
+- **Female (HRA files used):** no vagina, vulva, breasts, female urethra, or ligaments of the uterus and ovaries;
+  no brain, stomach, oesophagus, large intestine, gallbladder, diaphragm, muscles or nerves other than the spinal cord;
+  skeleton only pelvis and lower limbs down to the ankle (no feet). The knee files' joint parts (menisci, cartilage,
+  entheses) are not shown.
+- **HRA metadata error:** the uterus model's metadata says it was made from the Visible Human Male, in every release
+  (v1.1 to v2.0). A uterus cannot come from a male body, and the model sits in the female body's frame with the other
+  female organs, so this looks like a metadata error. It is shown with a note. Consider reporting it to HRA.
 
 ### Gaps in the text (OpenStax)
 
@@ -144,18 +154,22 @@ The geometry and the FMA ID are identical in each pair (checked on the official 
 | Spleen | 10.7 cm | about 12 cm |
 | Gallbladder | 6.0 cm | 8–10 cm |
 | Testis | 2.9 cm (each) | about 4–5 cm |
+| Uterus with cervix (female body) | 6.3 × 5.2 cm | about 7 × 5 cm |
+| Ovary (female body) | 2.5 cm (left), 2.6 cm (right) | 2–3 cm |
 
 The right kidney sits about 2 cm lower than the left, as the text says.
 
 ### Verification against the original sources (2026-10-24)
 
-- **OpenStax:** all 376 quotes found word for word on the live openstax.org pages; all 21 links open the right page
+- **OpenStax:** all 418 quotes found word for word on the live openstax.org pages; all 22 links open the right page
   and land on the quoted paragraph (`sources/verification/openstax.json`). This check caught one quote with an empty
   figure reference, "(; see also )", which the build's guard then learned to reject (D7).
 - **BodyParts3D names:** all 2,234 meshes exist in the official archive; every name and FMA ID matches the official
   tables (`sources/verification/bodyparts3d.json`).
 - **BodyParts3D positions:** with one fixed conversion (mm to m, Z-up to Y-up, feet at origin), every mesh centre in
   the npm copy matches the official archive to 0.00 mm.
+- **Female geometry:** in the female reproductive and pelvis workstations every original HRA vertex lies within
+  1.0 mm of the displayed surface (`build/verify_hra.py`, `sources/verification/geometry-hra.json`).
 - **Geometry shown:** in every organ and bone workstation, every original vertex lies within 1.0 mm of the displayed surface
   (`sources/verification/geometry.json`).
 - **Licence:** the current licence page says CC BY 4.0 (updated 2025-02-27). The OBJ files still carry an older
@@ -211,10 +225,10 @@ WebMD's kidney and liver "picture" pages now open disease articles, so there was
 - [ ] **Educator review** of structure names, the brain grouping, the quoted passages, and every item in section 4.
 - [x] **Check the repackaged data against the original** BodyParts3D archive. Done 2026-10-24; geometry now comes from the official archive.
 - [x] **Confirm the brachium name swap** and the misplaced lung arteries against the original archive. Both are in the official data. Consider reporting them to DBCLS.
-- [x] **Open every OpenStax section link.** Done 2026-10-24: all 21 pages and all 376 quotes verified on the live site.
-- [ ] **Female body (D36):** the user decides the approach. Allowing `humanatlas.io` and `cdn.humanatlas.io` in the environment's network settings would let the HRA library's contents and licence be checked.
+- [x] **Open every OpenStax section link.** Done 2026-10-24: all 22 pages and all 418 quotes verified on the live site.
+- [x] **Female body (D36):** built from the HRA Visible Human Female models (GitHub copy; humanatlas.io itself is blocked here).
 - [ ] **Decide on commercial use.** If the app will be paid, replace the OpenStax text (D6).
-- [ ] **Find a verified female body source** (D12, D36).
+- [ ] **Educator review of the female body**, especially the uterus metadata note (D36) and the shared-workstation approach (D38).
 - [ ] **Decide whether lungs need surfaces** from a second source, which would need its own checks (D15).
 - [ ] **Test on real phones, tablets and laptops** with a GPU. So far tested only in headless Chromium with software rendering.
 - [ ] **Review naming differences** between dataset and textbook (papillary muscles, "pineal body" vs "pineal gland", "superior temporal gyrus" vs "superior temporal lobe", older segment names).

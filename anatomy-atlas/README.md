@@ -1,6 +1,6 @@
 # Anatomy Atlas (design demo)
 
-An interactive 3D atlas for students learning organs and bones (one adult male body; no female body yet, see DECISIONS D36). The whole body opens first, with a
+An interactive 3D atlas for students learning organs and bones, with a male and a female body (DECISIONS D12, D36, D38). The whole body opens first, with a
 switch between **Organs** and **Bones** so only one kind is clickable at a time. Organs and bone
 regions marked "Workstation" open a study view with the structure in its body region, labels with
 leader lines, section cuts, an exploded view, see-through and vessel views (organs), an orientation
@@ -21,6 +21,8 @@ cube, a guided tour with Play, and text quoted from a textbook.
 | Pelvis | Pelvis | Bone by bone (2 steps) |
 | Lower limbs | Lower limbs | Bone by bone (8 steps) |
 | Male reproductive system | Testis, epididymis, deferent duct, seminal vesicle, prostate, penis | Path of sperm (7 steps) |
+| Female reproductive system (female body) | Uterus, uterine tube, ovary | Path of the oocyte (6 steps) |
+| Pelvis (female) | Pelvis, bones mode in the female body | Bone by bone (6 steps) |
 
 The spleen and diaphragm are single meshes with no named parts, so they have no workstation. The
 body view shows quoted text for them.
@@ -42,6 +44,7 @@ Accuracy rules this project follows:
 | What | Source | Licence |
 | --- | --- | --- |
 | 3D geometry | BodyParts3D 4.0, official archive `isa_BP3D_4.0_obj_99.zip`. Credit: "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International" | CC BY 4.0 |
+| Female body geometry, names, IDs | Human Reference Atlas 3D Reference Object Library (HuBMAP), Visible Human Female models, from github.com/hubmapconsortium/ccf-releases (v1.2 models, commit b036a91). Each model's DOI and citation is in `sources/hra/` and on the Sources page | CC BY 4.0 |
 | Names, FMA IDs, concept groups | `@dagno/anatomy-model@0.1.2` (BodyParts3D tables prepared by Human Atlas), checked identical to the official tables | CC BY 4.0 |
 | Quoted text | OpenStax, *Anatomy and Physiology 2e*, © Rice University (`sources/openstax`, from github.com/openstax/osbooks-anatomy-physiology): sections 7.2–7.4, 8.1–8.4, 13.2, 13.3, 19.1, 21.1, 22.1, 22.2, 23.3–23.6, 25.2, 25.3, 27.1 | CC BY-NC-SA 4.0 |
 | Fact cross-check (no content copied) | WebMD pages listed in `sources/crosscheck/webmd.json`, summarised in our own words | n/a |
@@ -62,7 +65,8 @@ sources/openstax/         the OpenStax modules the text is quoted from, plus the
 sources/bodyparts3d/      official BodyParts3D name and part-of tables, and the licence page
 sources/verification/     results of the checks against the original sources
 sources/crosscheck/       facts cross-checked with WebMD (links, reviewer, date, result)
-test/                     headless-browser checks: ui.mjs (screens), play.mjs (tour Play), tools.mjs (see-through, vessels), bones.mjs (bone search), screenshots.mjs
+sources/hra/              metadata (licence, DOI, creators) of every Human Reference Atlas model used, and its crosswalk table
+test/                     headless-browser checks: ui.mjs (screens), play.mjs (tour Play), tools.mjs (see-through, vessels), bones.mjs (bone search), female.mjs (female body), screenshots.mjs
 ```
 
 Geometry is stored as base64 text of gzipped binary (`.gz.txt`) because the artifact host does not
@@ -75,7 +79,8 @@ are recomputed in the browser.
 pip install numpy scipy fast-simplification
 npm pack @dagno/anatomy-model@0.1.2 && tar xzf dagno-anatomy-model-0.1.2.tgz
 curl -LO https://dbarchive.biosciencedbc.jp/data/bodyparts3d/LATEST/isa_BP3D_4.0_obj_99.zip
-build/all.sh package isa_BP3D_4.0_obj_99.zip site/data
+git clone --filter=blob:none https://github.com/hubmapconsortium/ccf-releases && git -C ccf-releases checkout b036a91aaf7234f462b1249d4a5f4fb0e982f412
+HRA_DIR=ccf-releases build/all.sh package isa_BP3D_4.0_obj_99.zip site/data
 ```
 
 Geometry is read from the official BodyParts3D archive (`official.py`). Names, FMA IDs and concept groups come
@@ -88,7 +93,8 @@ from the npm package, which was checked to match the official tables exactly. `a
 5. `build2.py`: heart (with great vessels cut short near the heart) and thorax context.
 6. `build4.py`: liver/gallbladder/pancreas, digestive tract, urinary system, and abdomen context.
 7. `build7.py`: male reproductive organs and the pelvis context.
-8. `content_*.py`: quoted text, the mapping from each mesh to a passage, the guided tours, and the Sources page data.
+8. `build8.py`: female body, female reproductive organs and female pelvis (Human Reference Atlas; `glb.py` reads the files).
+9. `content_*.py`: quoted text, the mapping from each mesh to a passage, the guided tours, and the Sources page data.
 
 Organ and bone workstation meshes are simplified only as far as keeps every original vertex within 1 mm (`common.py`).
 Where the archive has two meshes with the same FMA ID and identical geometry, only the first is used and the other is
@@ -107,6 +113,7 @@ and shown on the Sources page.
 VERIFY_OUT=sources/verification/openstax.json python3 build/verify_openstax.py site/data /tmp/openstax-pages
 python3 build/verify_bp3d.py isa_BP3D_4.0_obj_99.zip package/model sources/verification/bodyparts3d.json sources/bodyparts3d/isa_element_parts.txt
 VERIFY_OUT=sources/verification/geometry.json python3 build/verify_output.py site/data isa_BP3D_4.0_obj_99.zip
+HRA_DIR=ccf-releases VERIFY_OUT=sources/verification/geometry-hra.json python3 build/verify_hra.py site/data
 ```
 
 `verify_geometry.py` and `verify_coverage.py` compare the npm copy's own geometry with the original; they found the
@@ -117,7 +124,7 @@ deviations that led to reading geometry from the official archive instead.
 ```sh
 cd site && python3 -m http.server 8765
 # open http://127.0.0.1:8765/anatomy-atlas.html  (or #heart, #lungs, #liver, #gut, #urinary, #brain,
-#   #repro-male, #bones-skull, #bones-spine, #bones-thorax, #bones-upper, #bones-pelvis, #bones-lower, #sources)
+#   #female, #repro-male, #repro-female, #bones-pelvis-f, #bones-skull, #bones-spine, #bones-thorax, #bones-upper, #bones-pelvis, #bones-lower, #sources)
 ```
 
 ## Decisions, data findings and open checks
